@@ -1,0 +1,27 @@
+title = "DeepSeek GB10 Runtime secret scan"
+
+[extend]
+useDefault = true
+
+# Reviewed false positives only: two recorded SHA256 digests, and a Python
+# variable naming a model vocabulary token ID. No whole file is excluded.
+[[allowlists]]
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''docs[/\\]integration[/\\]VALIDATION_20261108\.json$''']
+regexTarget = "line"
+regexes = ['''"tokenizer-tests\.log": "fdaca240959e071bb8b773a359fa91cedd28e3ee71edf921ea5cf1ecb4111de7"''']
+
+[[allowlists]]
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''ds41f-4xgx10-switchless[/\\]bench[/\\]edit_bench\.json$''']
+regexTarget = "line"
+regexes = ['''"golden/doc_tokens\.py": "9319e53d4168160a424e6f7f8335364aaa63c77379ae6d8ce7986fbc8cde75e0"''']
+
+[[allowlists]]
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''ds41f-4xgx10-switchless[/\\]engine[/\\]dspark[/\\]ref[/\\]dspark_ref\.py$''']
+regexTarget = "line"
+regexes = ['''"noise_token": args\.dspark_noise_token_id, "sum3_order_trials": sums''']

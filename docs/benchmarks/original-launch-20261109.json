@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "date": "2026-11-09",
+  "profile": "C4, official native precision, no steering asset in candidate",
+  "samples_per_phase": 24,
+  "exact_output_matches_all_three": 24,
+  "summaries": {
+    "baseline-before": {
+      "responses": 24,
+      "output_tokens": 10463,
+      "output_over_decode_time": 105.29290833749852,
+      "output_over_request_time": 102.44830770838165,
+      "median_request_tps": 113.26856026259227,
+      "ttft_median_s": 0.13028559149825014
+    },
+    "candidate": {
+      "responses": 24,
+      "output_tokens": 10463,
+      "output_over_decode_time": 105.07802727147745,
+      "output_over_request_time": 102.28913889859611,
+      "median_request_tps": 112.35244924382278,
+      "ttft_median_s": 0.12952263100305572
+    },
+    "baseline-after": {
+      "responses": 24,
+      "output_tokens": 10463,
+      "output_over_decode_time": 105.09368769059155,
+      "output_over_request_time": 102.31530049481916,
+      "median_request_tps": 112.77721229182862,
+      "ttft_median_s": 0.1292991895461455
+    }
+  },
+  "change_percent_vs_mean_controls": -0.10957993022729928,
+  "candidate_checks": {
+    "single_original_model_listed": true,
+    "creative_alias_rejected": 400,
+    "tool_roundtrip": true,
+    "image_semantics": true,
+    "cached_prefix_tokens": 65008
+  },
+  "production_restored": true,
+  "raw_sha256": {
+    "intent.json": "ee44dd955e98e0a4d71dd8b81e949884ac8469fe5c00ca4824cb07290a032b4e",
+    "baseline-before.json": "ed224bcd6cc521e117b8a8a164ef82aa685c418aa9cbfc3d7a7f87224cd59396",
+    "candidate.json": "9e77776b0e124ed5560b277629b821164fff5b3205287e2946a995b6d7de604a",
+    "baseline-after.json": "e462779312c26702bd57333394b51d6f2473a0eea95ff70182323e8589541416",
+    "FINAL.json": "d2753984556de468712b4627dfcce8e9d2b6c6d600eacac34676a1fc5aca0124"
+  }
+}

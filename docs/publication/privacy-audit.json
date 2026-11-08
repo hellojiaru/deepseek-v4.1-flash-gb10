@@ -1,0 +1,473 @@
+{
+  "schema": 1,
+  "review_date": "2026-10-21",
+  "base_commit": "a92b8f44046f4435c3c29c07fbc39e6e4b157080",
+  "scope": "Tracked added diff lines and complete new text files; pre-existing upstream content is outside the new-material scan.",
+  "files_reviewed": 85,
+  "text_lines_scanned": 6437,
+  "pattern_categories": [
+    "personal_path",
+    "private_address",
+    "private_evidence_id",
+    "credential_literal",
+    "artifact_name"
+  ],
+  "unresolved_findings": [],
+  "missing_local_documentation_targets": [],
+  "manual_review": [
+    "Initial file:// path matches are synthetic rejection tests/comments.",
+    "New probability fixtures and image CPU tests are synthetic.",
+    "Public smoke has no HTTP call by default and does not log environment authentication.",
+    "No model weights, private image binaries, captured user prompts or deployment scripts are included.",
+    "README now identifies the fork before upstream history. The public smoke extension/explicit thinking setting and text/finish checks are documented; changed script remains synthetic and opt-in.",
+    "LF normalization preserves Apache license/reference source content. Vision metadata retains historical runtime hashes separately from public LF hashes; the encoder cache identity must be freshly derived.",
+    "Post-publication CPU CI correction changes only public_contract.rs expected synthetic image records to include the existing type:image field; no runtime behavior or private fixture changed."
+  ],
+  "limitations": [
+    "Pattern scans are not a general security or semantic secrecy proof.",
+    "Historical measurement aggregates are not a new public checkout benchmark.",
+    "Files changed after these hashes require renewed review."
+  ],
+  "excluded_self": "docs/publication/privacy-audit.json",
+  "inventory": [
+    {
+      "path": ".gitattributes",
+      "bytes": 93,
+      "sha256": "e3f5bc566fddb012bc6ebb090cdeea0b82de9d68c2dee6d7dbc97dcb250d6e1d"
+    },
+    {
+      "path": ".github/workflows/public-regressions.yml",
+      "bytes": 1517,
+      "sha256": "d7a74b5b3e62de7758b7dc0c3cab29288c414efc91171899a055323a585c7c98"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 398,
+      "sha256": "f076d4d66993c896cc2be7a5e0a5226fc1fd45d8f5c0bbd50517104d2580aef7"
+    },
+    {
+      "path": "LICENSES/Apache-2.0-DeepInfer.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 4088,
+      "sha256": "73b8c1fd5c33b9430823e833989e00ed82e9b34e535b53bc87ed4169d93a4869"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11190,
+      "sha256": "dcbd499c1df9c4b3cf7bd4621d4215014b6160fd5940f09c266ff74ec2c6ce99"
+    },
+    {
+      "path": "docs/publication/README.md",
+      "bytes": 4105,
+      "sha256": "96778d523d9d9ccb89c1e5d6f6ae286b74e9b20e91914bf1a8e26de9706413f5"
+    },
+    {
+      "path": "docs/publication/build-and-test.md",
+      "bytes": 8034,
+      "sha256": "e832988f9013c52e1282995c0466d1d233c0f0b4fd4b5bc92f96229edede7264"
+    },
+    {
+      "path": "docs/publication/measurements.md",
+      "bytes": 6011,
+      "sha256": "a4f98c25d99c62e57feec584330d6a076739ff071233e8dad673bfeb63e97692"
+    },
+    {
+      "path": "docs/publication/privacy-audit.md",
+      "bytes": 2766,
+      "sha256": "c2d89511d4f2753bde30320d403ea15939e7d74bcc860ea93bf8ade5339c460a"
+    },
+    {
+      "path": "docs/publication/provenance.md",
+      "bytes": 5679,
+      "sha256": "0d5a9291ac2a7658b8921e365c049219d0f2527ff34588e02f5a6b6d791dbe0d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/CMakeLists.txt",
+      "bytes": 1523,
+      "sha256": "4f6b083d77159bbcf8c6b511ec66a46a5b4a4c236718a437f9f9f5a2f0e3bc08"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/indexer.cu",
+      "bytes": 46355,
+      "sha256": "88bda2d8eded4157540197faf2530036691c40a1a64d9dd5ec77a3ec31a10261"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/fused_tests.cu",
+      "bytes": 41846,
+      "sha256": "e4f66fed32bb324a231bcafd1457f4c8e49276f71dd708055f01a895bf47169e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/frontend_protocol.h",
+      "bytes": 5409,
+      "sha256": "740c5c8f9255b0298e8c4a3553f77e3317251badb2b6bd8852356835d4ec326b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/spec_sampling.h",
+      "bytes": 2579,
+      "sha256": "7714c01f402557381e3a13cf6da69e45e6377e5fee78df1f231e681602200e7b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/dspark.cu",
+      "bytes": 63727,
+      "sha256": "9a177e594147aae502bb427bab744b83a0a747320a68aa2f72cf6ed424ded6ba"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/dspark.h",
+      "bytes": 19780,
+      "sha256": "8d826c809906975d548bca942793505d9bf11eda323638cb9d56f4c0545be0f3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/dsk.h",
+      "bytes": 22108,
+      "sha256": "fb893a2a65de9cf6b48ebf449f70b9b844a8a755376440287af294280a149c88"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/norm_router.cu",
+      "bytes": 2314,
+      "sha256": "6d029d5be6891cb35e451d0d9db874358a8c9f06c02d39f4a46874739a757f67"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/CMakeLists.txt",
+      "bytes": 1370,
+      "sha256": "68d0ca8fc2585dd4520084f2f8d0e2b715ca2b65f8597f67fcbdc618d09009a5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ced_policy.h",
+      "bytes": 1610,
+      "sha256": "5e1e8225a41e08cc9334c35f9f0a5fd984f8cd09cba0217dadae9b9d37517837"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/config.h",
+      "bytes": 4990,
+      "sha256": "d966779e1421352c4a41bf8d854a1067e24501253abb78fee788b64855f753dd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/creative.cu",
+      "bytes": 1264,
+      "sha256": "3c4b306eebc37335167e5dbe9cdb1ee7747f4fb4e8f9c504decb65a05a3ca55b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/creative.h",
+      "bytes": 416,
+      "sha256": "8966e12bdd2c1cf5dfc7b7ea88632a3fc5e94d36691b00b484fb9b8979b438fc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/impl.h",
+      "bytes": 19126,
+      "sha256": "da79a153d85ce5cb1911df2c4774e33b51f766bdcfd2a6bd34b57786ed5e666a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/model.cu",
+      "bytes": 50801,
+      "sha256": "6a16e9c598b17cc76c68bd12adcfb907660160642d5b83b62fec44caae594f97"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/model.h",
+      "bytes": 23209,
+      "sha256": "664693db28dfc42b70d470ff7f4fde23f3f3a0cef9fe19f685780a98630189d4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ops.cu",
+      "bytes": 11435,
+      "sha256": "8a845430277cfe9bf7fd444584f61c389480343255d19fb6373934b91880a207"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ops.h",
+      "bytes": 16868,
+      "sha256": "af0f9af05b294c536884893f49ff508898be707a079f604565faf589b2f654a9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/prefill.cu",
+      "bytes": 40644,
+      "sha256": "6e2ce1e9f1cd47bb7437ffb2dd55aeb738df36de0a062c36399a56b7abce3456"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/prefill.h",
+      "bytes": 5723,
+      "sha256": "4607fb1ddec1645eb7b76016b355cc76f9a8d239d8bb117a51d27d1e3bb57732"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/sample.cu",
+      "bytes": 23247,
+      "sha256": "b7a16f4e7fcf9c7821f426ca15b870e071f0a04bdc4131e7a3b8a1900a92dee9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec.cu",
+      "bytes": 57256,
+      "sha256": "5c95aa487734d2f9b8acc53252dc1ed6347c7a55d2341f551b81d046666050ce"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec_batch.h",
+      "bytes": 4546,
+      "sha256": "d95c99bb52f53720d31f2dd2818209ad977411d15e225708443f66d9c4151d10"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/state.cu",
+      "bytes": 37530,
+      "sha256": "dec37cfbfd2fbbf5a2645a7c0f00db2d9ea6cdd3be24d71ac0fa73c329d047eb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/creative_test.cu",
+      "bytes": 3412,
+      "sha256": "c60e7b08a95b79fbcde23eca810fc3c309922daacd3846910bdc44f2e28a01ac"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/probability_host_test.cpp",
+      "bytes": 2775,
+      "sha256": "71b2408fc28bd1012c82adbb5d0831d87c72f59468f23f951f183194bdcd8fba"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/vision_test.cu",
+      "bytes": 4157,
+      "sha256": "d0d7b803ddeaf51026e5861a37009a1d7d034d17eef0b3729737da3b7d3ae3ed"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/vision_layout.h",
+      "bytes": 1645,
+      "sha256": "005aee0ff532598d23416ff495a8c8bfa8c42175e06ce7843da4afadcad0a2fd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/cmd.cpp",
+      "bytes": 32426,
+      "sha256": "06852eb07307b82425983af9b7275118396ce60341b5d09f80da82a4225b66b4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/cmd.h",
+      "bytes": 15708,
+      "sha256": "e7c63f6a50a19285c27c9aed807032e1bb041fc50398e1922f91b9cb814a4f54"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/main.cpp",
+      "bytes": 95595,
+      "sha256": "64270783659e859d0402c51017e76fe31d9ecb27bfb093acb12b61e635d42848"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/runtime_metrics.h",
+      "bytes": 5641,
+      "sha256": "2d83c4798b51346a6b84aac97971e7fcdc59e85af2a529d7cce49a585c9203a8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/serve.cpp",
+      "bytes": 82725,
+      "sha256": "008fa7a1b4a4c330ccd2c4379711524078eaaacee403e87793f52a9ab59f06d1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/runtime_metrics_test.cpp",
+      "bytes": 2142,
+      "sha256": "503587480cd4fa64734499ee4c901d6bd4309374671bda7347caa6cadf964c76"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/serve_test.py",
+      "bytes": 17015,
+      "sha256": "e8f91f3ed688493481588a75e0636e608641ee666916cc8a056d809854da354a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_budget_test.cpp",
+      "bytes": 9242,
+      "sha256": "242e52612c6d7867ed97d52d25175e01d39a419663ab9daa13b75d44f7f364d2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_features_test.cpp",
+      "bytes": 2096,
+      "sha256": "6771b1bc7b957aceb04fdbe6726b9b08b342b76c01ea9e58d0f61cd6890dcf96"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_prefix_test.cpp",
+      "bytes": 1684,
+      "sha256": "53497bd4498f0d35d9322b52189dec43a8c73b9dcc1e382d1020a7264c0911f3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_features.h",
+      "bytes": 1916,
+      "sha256": "fe4a66f210b821083df393beb816e653fb8504c27a7657349b9e9a452c1b273e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_files.h",
+      "bytes": 6145,
+      "sha256": "c4e98eac7175ea55fd05f81581f30209acfc2b18a3a6ea5c8c8bf5600f0e723f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_prefix.h",
+      "bytes": 913,
+      "sha256": "44461b61fa1636331c558a6851ed32d2e7952e16bc26967dc4761837432caa9a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_window.h",
+      "bytes": 1201,
+      "sha256": "958b1843c3393d96afbc668d4e7aa69ea1997ddf562ecdaded628af217cd3fd2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/.gitignore",
+      "bytes": 26,
+      "sha256": "f1316eb139c4c3003f6239e67a83c2de796b7c1ae57929f1bb6dc01ed97d3426"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/CMakeLists.txt",
+      "bytes": 3582,
+      "sha256": "ee4ae71656f5a62a125c21013b6eaf392b4000245c34cc5e64fa7b6148f91034"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/README.md",
+      "bytes": 3690,
+      "sha256": "5f0609afb2f0b75409e9492e1313f69bf542cc0253ca1f31126c329eb15fc27a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/VALIDATION.md",
+      "bytes": 2836,
+      "sha256": "9faf1f745859fdd68b6ac2d54531973ad05316f67803857bcca4bff0243baea1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution-fixtures.json",
+      "bytes": 6040,
+      "sha256": "f5e8eb0977f0d02986f24f8d44018c3aea143768822b0c3be17d8b72a7ad5181"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution_fixtures.h",
+      "bytes": 1828,
+      "sha256": "bb9aa6a307de137f3fe1cc1951b1275dc83a4679c0eafea79f2ea55164e2e32b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution_oracle.py",
+      "bytes": 10633,
+      "sha256": "fb029fc46538c67c24be1aabe9f5688b575ef50d4bf9a1ccf5a5edc598156ded"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/probabilistic_sample_probe.cu",
+      "bytes": 14680,
+      "sha256": "d5de5f8c6cc9267be7ed34e48c4b388eaba21c74fcd02057373c7690b5a01298"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/PROVENANCE.json",
+      "bytes": 2850,
+      "sha256": "37e33d775b580de96ad4eadd632f962644475262139ddb203c4a73806e2b74a6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/examples/httpcheck.rs",
+      "bytes": 1622,
+      "sha256": "76db4ec725e5ee8ca21a66a51c0f819e38dacdb8c62e7de99551c39fcaaa7fd1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/engine.rs",
+      "bytes": 8512,
+      "sha256": "bc32111a02b6ef7a2f15d33c66a98a1ff319c1397ab894ee4446044da2ad5ea8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/feature_file.rs",
+      "bytes": 11755,
+      "sha256": "2ad4833ec0eab15e4d26e603662c004c5bd899aca2cf3896d28d4c0f03cb5986"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/lib.rs",
+      "bytes": 332,
+      "sha256": "e137d19ed42d5269d6e5e534227c904dc0bf055b5ff7944fc4d54a9f7e415a00"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/main.rs",
+      "bytes": 22464,
+      "sha256": "128b653c63141e7128c86803587a6dc12cfff130922334c8f4cb26e31b6caa5a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/protocol.rs",
+      "bytes": 19268,
+      "sha256": "b083d8167549b13ade8ad7825c82f65fc00905fbcfbbf8ef7edee30345eec808"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/server.rs",
+      "bytes": 46916,
+      "sha256": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/session.rs",
+      "bytes": 29192,
+      "sha256": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/sha256.rs",
+      "bytes": 4039,
+      "sha256": "4e55d8ed1d10aa3942e7aaabc3820d4d852e2f4f9f29b8a1d5c6b14ad22dd4af"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/telemetry.rs",
+      "bytes": 6446,
+      "sha256": "2cf5031cad79482ffdd7f91f6bab3010d73faa480281cd33afe7b5d073c97b30"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/vision.rs",
+      "bytes": 24285,
+      "sha256": "ae0ccf321b056d2156964aa9ec90eb6dd018052415bac8bfebe12264aa159514"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/engine_image_retry.rs",
+      "bytes": 5729,
+      "sha256": "9cb83f768b87a491b78be498cd47b15dfaa42438e9b1dc8d0275d30e95927782"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/public_contract.rs",
+      "bytes": 4734,
+      "sha256": "b4af6606d3449fead5ac3ea6221b7dbac56f93fa29e0f8a74a9b7434a3463316"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/vision_prefix_transport.rs",
+      "bytes": 9392,
+      "sha256": "eebfa6a2680e44d12e75a782a879d498817f7b3c1b442257555b98136af59f9d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/tools/public_smoke.py",
+      "bytes": 5920,
+      "sha256": "18d311d693c2464d0b830f8cd66603815ca4b0f94d50c124837bd447a06db58a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/tools/test_public_smoke.py",
+      "bytes": 1209,
+      "sha256": "8899de71dca73ecc1367c3a362d9dceb8755ef0dc16978a2c99605a011ab6bfa"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/PROVENANCE.json",
+      "bytes": 2229,
+      "sha256": "ef8ea577b7212da95b1a1791014be449bd98e6bb4758e798459d421452054bab"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/encoder.py",
+      "bytes": 12197,
+      "sha256": "14e54451800ca94e4eaec78fb7d42d133ba6f91680b350d26024add0646aace6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/reference_image_processor.py",
+      "bytes": 7699,
+      "sha256": "482759e3bcc4e9bb5ee582b244cc563f5d0e163d8b48dda91ebb7106e62f9272"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/reference_vision.py",
+      "bytes": 4808,
+      "sha256": "e66e47b74b600ca99c6ba0e7f7ddea82517883e7f65ee0ddb32c85e43b0092bc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/requirements.txt",
+      "bytes": 204,
+      "sha256": "ab91be6fa81a6ba361c7781f5c48f035d2d18dedc482126bb099271f5eab1cc4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/tests/test_encoder_cpu.py",
+      "bytes": 7617,
+      "sha256": "ecec5dcecf651aba776677a8be33c2d932f2d549ce6b6d773eea1d55a51ce5aa"
+    }
+  ],
+  "apache_license_lf_normalized_content_equal": true,
+  "image_processor_lf_normalized_content_equal": true,
+  "public_text_line_endings": "LF",
+  "inventory_hash_basis": "SHA-256 of actual LF-normalized public working-tree bytes, excluding this inventory itself.",
+  "incremental_reviews": [
+    {
+      "date": "2026-10-21",
+      "base_public_commit": "9db03da",
+      "path": "ds41f-4xgx10-switchless/frontend/tests/public_contract.rs",
+      "sha256": "b4af6606d3449fead5ac3ea6221b7dbac56f93fa29e0f8a74a9b7434a3463316",
+      "scope": "Synthetic expected image object type field and explanatory comment only; runtime unchanged.",
+      "unresolved_findings": []
+    }
+  ]
+}

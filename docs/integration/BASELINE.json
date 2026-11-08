@@ -1,0 +1,2123 @@
+{
+  "schema": 1,
+  "date": "2026-11-08",
+  "status": "local_complete_clean_build_qualified_baseline_restored",
+  "public_fork_commit": "d793c869f40bf638b06c4c1738af0d29473f5ed5",
+  "engine_commit": "16a67bc9ad72d1079889cb83804a2179a595e9c5",
+  "baseline_engine_sha256": "dc4d02a8b12648f670e51a741a98cc86ca3f191249d0a57056fb7cfd34d5f619",
+  "baseline_frontend_sha256": "2622574d12e9366e6575cd42b9a2efb9197db8b318a0ff277cdae0869a7c0274",
+  "configuration": {
+    "slots": 4,
+    "verify_rows": 24,
+    "max_context_tokens_per_slot": 1048576,
+    "active_context_tokens_total": 4194304,
+    "slice": 64,
+    "session_gib": 8,
+    "session_margin_gib": 4,
+    "disk_gib": 8,
+    "spec_probabilistic": true,
+    "vision_prefix_policy": "tail-exact"
+  },
+  "scale_compaction": false,
+  "W4A4": false,
+  "files": [
+    {
+      "path": "ds41f-4xgx10-switchless/engine/CMakeLists.txt",
+      "sha256": "8734df3e4a1c2ea001251d3bd366c20113f4514017743aeed29f9ee62b412d29",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5f815d12e10d41aac49987a155e7ea7c6afe9255c025bd3de8ee3e2b8ba4daa3",
+      "qualified_input_sha256": "5f815d12e10d41aac49987a155e7ea7c6afe9255c025bd3de8ee3e2b8ba4daa3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/PROBABILISTIC.patch",
+      "sha256": "1240da5d4f6d2dd7ce999041a29428f4e80ab22bf6c929296c05bc500774cf55",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d28b3d3157524565065ba1be0e5500b223ae746d3e3363ededd2fee5b13f2472",
+      "qualified_input_sha256": "d28b3d3157524565065ba1be0e5500b223ae746d3e3363ededd2fee5b13f2472"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/PROBABILISTIC_SOURCE.json",
+      "sha256": "d406389a67697b6867d56c2ecb684b1ecb2f22b3f1723e5e5627305420bd3cbb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2d59f0b875abdeb125639c8fa96ee36deaa95f32de98e1fb7e6ceb17f4a0987b",
+      "qualified_input_sha256": "2d59f0b875abdeb125639c8fa96ee36deaa95f32de98e1fb7e6ceb17f4a0987b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/PROBABILISTIC_SOURCE.v1.json",
+      "sha256": "9ce4c448261bd888ed1cb1c5fbfe1db5b41d53818fccb2334f33260ff2d0a83a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "85feb415f721e7b7304fe1e89de8431798b137ee4dfdf8227157db9738779b64",
+      "qualified_input_sha256": "85feb415f721e7b7304fe1e89de8431798b137ee4dfdf8227157db9738779b64"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/CMakeLists.txt",
+      "sha256": "9215b8f33d7e8a412834bdb237e28e4ca2eb6a99bf96e979c29614d70eb87061",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1623cade4720656e8784996d449482d77be5cc389b306c843a3c3688570208c7",
+      "qualified_input_sha256": "1623cade4720656e8784996d449482d77be5cc389b306c843a3c3688570208c7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/README.md",
+      "sha256": "827be9e3b687057e3add6de418b1c6536738568ce94032b4e8c6f3013f6ed62a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ded601de4a467ae3cff46d6a379675c83c10a90860e132951c13bd149a776787",
+      "qualified_input_sha256": "ded601de4a467ae3cff46d6a379675c83c10a90860e132951c13bd149a776787"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/attn.h",
+      "sha256": "c13b521520265b582418c31a794ca3305b7de98f8c9af631175d11123ff9cc49",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a0185116eb2c8c73445940d95b49816b43ddbbb8fd48dce70d09b7c7c3a0a92a",
+      "qualified_input_sha256": "a0185116eb2c8c73445940d95b49816b43ddbbb8fd48dce70d09b7c7c3a0a92a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/attn_common.cuh",
+      "sha256": "e79ce898c710bd1b0f8c539c6f9717fe06a9af7737a98ed3331838eb56261532",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3b5bec3e65bd6f834d4cd97b8fa3232dc71c8fb4ed17feaafcbc195dc630e344",
+      "qualified_input_sha256": "3b5bec3e65bd6f834d4cd97b8fa3232dc71c8fb4ed17feaafcbc195dc630e344"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/compressor.cu",
+      "sha256": "808dac1ae796623b52acd7dea300be7734d353d59d34ad0cbfaffd75246c43cb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "87e3723dc6cba2ab00b67dc2892b8c5d11b5ce6da6f735f25caea5dbe751db59",
+      "qualified_input_sha256": "87e3723dc6cba2ab00b67dc2892b8c5d11b5ce6da6f735f25caea5dbe751db59"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/compressor.cuh",
+      "sha256": "15ab211844b13c50f2cd3a66aa7b2ec223860a99fea344fad0563fcaffdb8f2b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "abda6a6fdda7b63a78092cc95ba73dd2e4b24d03ecfe2ed0f5cb81ffe05970a7",
+      "qualified_input_sha256": "abda6a6fdda7b63a78092cc95ba73dd2e4b24d03ecfe2ed0f5cb81ffe05970a7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/gemv.cu",
+      "sha256": "6947166f9ee8789a1a3562a8dc5beb8f2e46ca18992cf4862d11295ba344c5fe",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ea8ddaa3c549f789ba65335de0849ee9319d5479dd7749d1cf96c52dff0e1aca",
+      "qualified_input_sha256": "ea8ddaa3c549f789ba65335de0849ee9319d5479dd7749d1cf96c52dff0e1aca"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/gemv_row.cuh",
+      "sha256": "2460dc9320b8ecb5cb536e4c2600830069260f154ecb531db76d7edc73ad92cb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "beca8f3262d68e801db7ef6326e7d2880bacdfa0a965cc7cac8f2c8f0b7ce6a8",
+      "qualified_input_sha256": "beca8f3262d68e801db7ef6326e7d2880bacdfa0a965cc7cac8f2c8f0b7ce6a8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/indexer.cu",
+      "sha256": "88bda2d8eded4157540197faf2530036691c40a1a64d9dd5ec77a3ec31a10261",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a032975fdb6ed50e5de067a637e40d3aae4b40ab53326e8bd25b3df7566ec593",
+      "qualified_input_sha256": "a032975fdb6ed50e5de067a637e40d3aae4b40ab53326e8bd25b3df7566ec593"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/launch.h",
+      "sha256": "47cae910a446f5a5d7c1d4201ec93745786bd5fcfcf5a2ec5e73437564c192cf",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "e1800bd8b01ddcb2ffa8b58636401ce016b4e7fca7be0515b2cb002515368929",
+      "qualified_input_sha256": "e1800bd8b01ddcb2ffa8b58636401ce016b4e7fca7be0515b2cb002515368929"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/mhc.cu",
+      "sha256": "e53c599653269055df060ad1038df6db2713c02162b2c5e3f3438cb38e337b0e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2c4ad4fefdb225ac308d4c5fa6966d1ce9c06573a190d683f8a62be05201f815",
+      "qualified_input_sha256": "2c4ad4fefdb225ac308d4c5fa6966d1ce9c06573a190d683f8a62be05201f815"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/mhc_dev.cuh",
+      "sha256": "2c99ff4b8af3b40c789e2659c36e66e0b3b6f17b86304b2008153c6c789e90e7",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1f517da11c7f5e2bf43f7569c573b93fd23b82834356e77e4aa39b8a752d6aa0",
+      "qualified_input_sha256": "1f517da11c7f5e2bf43f7569c573b93fd23b82834356e77e4aa39b8a752d6aa0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/prep.cu",
+      "sha256": "4744eeb6f25076c25033254174807c77c8f31d0c279a57c402582d50d1669b32",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b530ba06ea98c7f754f4916ee8d616921bb84e13c8811057cf92fe8d05d7459f",
+      "qualified_input_sha256": "b530ba06ea98c7f754f4916ee8d616921bb84e13c8811057cf92fe8d05d7459f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/rope.cu",
+      "sha256": "9d8863097350bfc27ecc9b5a83852fb96fd8585e1ee30f1ef7aa80321764ffa4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6d463bb53ad45bc6698c5c27b68909afa874415de6dc737fa58f9174076a7be8",
+      "qualified_input_sha256": "6d463bb53ad45bc6698c5c27b68909afa874415de6dc737fa58f9174076a7be8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/sparse_attn.cu",
+      "sha256": "127d7c96c9eb4f1d5125a58a7351de23a05eac71e907b0b036bf643569940200",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6116785dcd5ee488d158741de7b65d2e7aa6a7370d87a431a9df0da60664ae47",
+      "qualified_input_sha256": "6116785dcd5ee488d158741de7b65d2e7aa6a7370d87a431a9df0da60664ae47"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/attn_tests.cu",
+      "sha256": "0975b31a75119a6b75fda1c9a83662c4565353a287d568d0c15034884fac21a9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fd9a15fb97e758cf0bbc59ccb573e1d6f0c9d2ec361df74ca8606c3b39a79bf0",
+      "qualified_input_sha256": "fd9a15fb97e758cf0bbc59ccb573e1d6f0c9d2ec361df74ca8606c3b39a79bf0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/bench_attn.cu",
+      "sha256": "3b41ab5810dcb45cff1508d90b024f45619fa3f2b27b9d13d7b4349a271d5b95",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cbe2d60e1ab56f7d95cfa906a587d015e3193d1d52dcbbe5dcee4ae63a3345e0",
+      "qualified_input_sha256": "cbe2d60e1ab56f7d95cfa906a587d015e3193d1d52dcbbe5dcee4ae63a3345e0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/bench_index.cu",
+      "sha256": "8cb436f08cbe7dde90f842b280e43134fa78492fb7e358ba3147b3b98afa245b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "27eb912f00611b5bcf1fc58df17eb0bbe4b1cd8a1b2dc0ccc365815a7d4e0fd6",
+      "qualified_input_sha256": "27eb912f00611b5bcf1fc58df17eb0bbe4b1cd8a1b2dc0ccc365815a7d4e0fd6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/bench_step.cu",
+      "sha256": "2e52f285b093c3cd179c8dfb186074cae7c4d2af9085396337fcb4be18acebf5",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "74c0bcc9b81f1b8feeb26f72cc5742bc11e40848eab8546f78eccc14e856dfa1",
+      "qualified_input_sha256": "74c0bcc9b81f1b8feeb26f72cc5742bc11e40848eab8546f78eccc14e856dfa1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/check_topk.py",
+      "sha256": "43d8c02c4cfa9812d4bede70357d512b9fcb8435619644a22d49f2b0f0e6560f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a0471ed8e7f17b984997963067ccda5d84191e8db28b1dbf753d2cf138184cb2",
+      "qualified_input_sha256": "a0471ed8e7f17b984997963067ccda5d84191e8db28b1dbf753d2cf138184cb2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/dump_freqs.py",
+      "sha256": "0e3395a30e81649086cd0bbe01b366507af35752d094c19be3fab93bc0f43301",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ba68360da8a686a2868c4fe0ca297de0085ab07b3c57459765125d0b7c5d6ec1",
+      "qualified_input_sha256": "ba68360da8a686a2868c4fe0ca297de0085ab07b3c57459765125d0b7c5d6ec1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/fill.cuh",
+      "sha256": "8ff2aa7d66f219169fd86bdee670943fc203515a8356b5e515a0b79628a8d555",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "332f7fc78237694d43bc7431528100ff6f9feba68354abd1d9daa48bff91295e",
+      "qualified_input_sha256": "332f7fc78237694d43bc7431528100ff6f9feba68354abd1d9daa48bff91295e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/fused_tests.cu",
+      "sha256": "e4f66fed32bb324a231bcafd1457f4c8e49276f71dd708055f01a895bf47169e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b28de8af4314cfe1b5b1468b013a5c633cb14b7e17a4fdcf2a89f5468f234ae2",
+      "qualified_input_sha256": "b28de8af4314cfe1b5b1468b013a5c633cb14b7e17a4fdcf2a89f5468f234ae2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen.sh",
+      "sha256": "f5d33a0f3a2169ab2388dd30545a87a29541e49c2bccc335fb4f16ea6faa9e13",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "80caafdd220fbb5326d9aaa26817c86b607b6e4053170a9a227f187ed0b8a108",
+      "qualified_input_sha256": "80caafdd220fbb5326d9aaa26817c86b607b6e4053170a9a227f187ed0b8a108"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen_attn.py",
+      "sha256": "0aa130c0708e15f577885933b4d1076c299672f1a8fcfd4be3c6524941833e51",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0cb7badb7782287228b6271930ef9db9964e0b7e00d8701f861f8e4a938a7b8a",
+      "qualified_input_sha256": "0cb7badb7782287228b6271930ef9db9964e0b7e00d8701f861f8e4a938a7b8a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen_dspark.py",
+      "sha256": "3220c2c0ce56b68c33ee52e9ec4a765961d070535be2ea5733a001852554db3f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "bdb98b391ee58bba71bb546f5e40c6ec4134be0aaf3d423e306cc69a03f67226",
+      "qualified_input_sha256": "bdb98b391ee58bba71bb546f5e40c6ec4134be0aaf3d423e306cc69a03f67226"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen_mhc.py",
+      "sha256": "b303a736e7817498c040778b5c706823387c8268a45d3878d3945fc7a61d2f25",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "adf26cb8d30059cb4673a07733e3c6e891310d8cca50457ccd1bb06bf72ce815",
+      "qualified_input_sha256": "adf26cb8d30059cb4673a07733e3c6e891310d8cca50457ccd1bb06bf72ce815"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/mma_fp4_probe.cu",
+      "sha256": "c55dd0e082924b015386fd9ae6cddd0eba0bd30759c64c5b296ea01de94acd90",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fda01e2191e5ecb80cf8f8aece4502756e9bfa4b4892213bc9961f960b17f1f2",
+      "qualified_input_sha256": "fda01e2191e5ecb80cf8f8aece4502756e9bfa4b4892213bc9961f960b17f1f2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/probe_batch_order.py",
+      "sha256": "23c4fbc3f62018166c69eb5ce97dd179a17772c1a2621cf9c2f4aa0240702c62",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a87b1fd64acae841e31e66e6ae4f38fe002a3bd7e010fc5ab37c3a5bd32b6178",
+      "qualified_input_sha256": "a87b1fd64acae841e31e66e6ae4f38fe002a3bd7e010fc5ab37c3a5bd32b6178"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/probe_sinkhorn.py",
+      "sha256": "79d02d7f0e651637b3f26f499efa27a70a3dc24db62c529f9dc04ab30c313566",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b3f0b723153e46d96f5903bb69151d3ae7b1b108a44e5f50f324c86f24c47969",
+      "qualified_input_sha256": "b3f0b723153e46d96f5903bb69151d3ae7b1b108a44e5f50f324c86f24c47969"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/slot_tests.cu",
+      "sha256": "862b8e174fae5c027bce0cabd65367fecd368a4eef130cda792327339806a67f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "42132dc4ecec8cdc23d1a12554ae52b998804caef2ec64dd67bc0c03ddcdf769",
+      "qualified_input_sha256": "42132dc4ecec8cdc23d1a12554ae52b998804caef2ec64dd67bc0c03ddcdf769"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/testutil.h",
+      "sha256": "99525473f1bd1254ea45e8638eaf26606cfe6fb392ab1a6c85e2eab3be4ef197",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0152240cf1262442d051243f5e70c46ab2933e8310427e842fbae20ac5e509dc",
+      "qualified_input_sha256": "0152240cf1262442d051243f5e70c46ab2933e8310427e842fbae20ac5e509dc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/moe_sweep.sh",
+      "sha256": "ade006ec95cd56cee7775bb35f70d3f452ba6b08b0ad0d361a8fd6fece752c61",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1bed64b76fc666079431e23e87e62beb78cf4aafa97d4b15fbaabd693d49d103",
+      "qualified_input_sha256": "1bed64b76fc666079431e23e87e62beb78cf4aafa97d4b15fbaabd693d49d103"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/pick.py",
+      "sha256": "653e622cf3e6242cd97572f6dc667f99a3b28688a178823fbd40a78421fe624f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "e3ba760b3733ef78474103f71227445a3134dd3d1611b2282655cbe4b3f18ee7",
+      "qualified_input_sha256": "e3ba760b3733ef78474103f71227445a3134dd3d1611b2282655cbe4b3f18ee7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/ringparts.sh",
+      "sha256": "2ac676ba2812e893c46b8b4e5853bfa7f653ae072caa48c118824a385c5bbba2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "14ca99e6a7e996da3267e5fad5409cfa51cc040e146e881506103c24a3e95862",
+      "qualified_input_sha256": "14ca99e6a7e996da3267e5fad5409cfa51cc040e146e881506103c24a3e95862"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/run_hash.sh",
+      "sha256": "e09c97c3fba2574db74fb07cd9addeb884d18a8d64f1b015059b644731e1b8e4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "53302ad641bf424057569f8db6ca0ff5e71841f5a867a722592f6214fd696692",
+      "qualified_input_sha256": "53302ad641bf424057569f8db6ca0ff5e71841f5a867a722592f6214fd696692"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/serve_turns.sh",
+      "sha256": "466197980f56fa4233abf2942ef623261205e8f80d26606432b6051bb16411cf",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c64cc3fda5dfa3b82509c202cdfcf19bb1baf746b96cd3a0cd6455042da794b0",
+      "qualified_input_sha256": "c64cc3fda5dfa3b82509c202cdfcf19bb1baf746b96cd3a0cd6455042da794b0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/steps.sh",
+      "sha256": "e11506a560f8a74ae2d1d81ad6157546f2a19589e5adfeb2fbe0a069fce374c4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "53fb834b20ef14f82c18357cf7713afeea30645ae5ae69c554b7a74e4e21ad91",
+      "qualified_input_sha256": "53fb834b20ef14f82c18357cf7713afeea30645ae5ae69c554b7a74e4e21ad91"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/tjoin.py",
+      "sha256": "a14828fca20a471284b71f070b424b4ef290bbbc7aa8b0106d74755119cd8d52",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "257bfef1714fad838e0fb1578f3c486bd62e98f8fcbb976d06536fe80f929fa0",
+      "qualified_input_sha256": "257bfef1714fad838e0fb1578f3c486bd62e98f8fcbb976d06536fe80f929fa0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/turns.py",
+      "sha256": "dc7a8a7112ab80c5962db44523104f9c6df0bfd2d1d6bee51f3b4fc9e57d6227",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1e1a5166cf0e9a5e47eaa2612eb6f5aef74d2f2e4fc52f0ec3ac39cc6b3ad28a",
+      "qualified_input_sha256": "1e1a5166cf0e9a5e47eaa2612eb6f5aef74d2f2e4fc52f0ec3ac39cc6b3ad28a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/turns_cmp.py",
+      "sha256": "025e8418c0f9ab9f4504d577e8860919f21d5fb4c100e87dc0765e3e001de2e2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "637b7d671668d506db08bed8022336c93d4bf5de7a047dac1d60ea5a945ffc83",
+      "qualified_input_sha256": "637b7d671668d506db08bed8022336c93d4bf5de7a047dac1d60ea5a945ffc83"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/CMakeLists.txt",
+      "sha256": "1bf3f9e36728a31c27ea98232c79fc94381595928aae3b5ffd5e392284d7f789",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a04706e47301cc950e08f34149dbba5855cc688cdb03f768bd9271607014eac4",
+      "qualified_input_sha256": "a04706e47301cc950e08f34149dbba5855cc688cdb03f768bd9271607014eac4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/collectives.cu",
+      "sha256": "7a740a1b05c9d9af9e50b37ca09018d7a77c41f18f6ba2d6ef8e416b4288f1e7",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "90a871dcb8aabc522d522ceebcc01c9112348d1a3fdc31d15fc9339eb447a922",
+      "qualified_input_sha256": "90a871dcb8aabc522d522ceebcc01c9112348d1a3fdc31d15fc9339eb447a922"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/collectives.h",
+      "sha256": "86396b8e6ed873c3af718d241a427acce47ea5630cea6f4fa06397ec9f1743fa",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "768102d37aff5a2437dc4b6699304cc7b5f99cda43635511d52b1b02811a0229",
+      "qualified_input_sha256": "768102d37aff5a2437dc4b6699304cc7b5f99cda43635511d52b1b02811a0229"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/fleet.cpp",
+      "sha256": "63c6da6be7010a222941b10aabbc59ace9dd5703586355c6babfe9d3ed42cb08",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0d61a1175935723bad35bfe555e271c08f9e393e2ba4f71a3c23356d5de7f133",
+      "qualified_input_sha256": "0d61a1175935723bad35bfe555e271c08f9e393e2ba4f71a3c23356d5de7f133"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring.cpp",
+      "sha256": "12bcc54fd060db1fbad6ed6a943ecb7f4458bb244ea898a459b9f1e7fe8a97d9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8009bf95d0ffbd864511e2c4368ead0e5c1c7c6a4e84da8df9fcb519c935be8a",
+      "qualified_input_sha256": "8009bf95d0ffbd864511e2c4368ead0e5c1c7c6a4e84da8df9fcb519c935be8a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring.h",
+      "sha256": "f62f6440a02325dbf55cbd18a52d2145c09e6661793808b84ee5e053dde7a5bd",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cd0bad72b9c625bfc312fb2b5b35ac39d02d7785960cce011b7809710acba19e",
+      "qualified_input_sha256": "cd0bad72b9c625bfc312fb2b5b35ac39d02d7785960cce011b7809710acba19e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring_config.h",
+      "sha256": "40f7ce7a595c5672c759a067b0459f5f2fd935374d3dfc81033e7f050f51cfd4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1434ec79dc8228e880c2cb892257f8d026f3064b20e6331a16f1a429c09fe9be",
+      "qualified_input_sha256": "1434ec79dc8228e880c2cb892257f8d026f3064b20e6331a16f1a429c09fe9be"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring_dev.cuh",
+      "sha256": "52317fac21f3d793a0e320c9c370868acc94e8fa7580fc6effab8febde9a7513",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5fc964323fe97713d940e68912eea3c395ef655b8a997ad2633e9171f67303c4",
+      "qualified_input_sha256": "5fc964323fe97713d940e68912eea3c395ef655b8a997ad2633e9171f67303c4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/run4.sh",
+      "sha256": "5f5f09f76fde0435839c630cbd7f8a698de175b1dba75fad44156c914d14dff1",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5e136578c9e5e218082b819004ab7ad6e022eaeff1fde243e3f4285e32a0b473",
+      "qualified_input_sha256": "5e136578c9e5e218082b819004ab7ad6e022eaeff1fde243e3f4285e32a0b473"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/tests/race_model.py",
+      "sha256": "3d8bad80e3272a8fc16f3b752882fa0ca9b550229cda107cfc72ad753fcc0738",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "4d850cb95557e5446ecd885edcb1c549f4965a0c672d0eb8624ca39a9afb7af0",
+      "qualified_input_sha256": "4d850cb95557e5446ecd885edcb1c549f4965a0c672d0eb8624ca39a9afb7af0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/tests/ring_test.cu",
+      "sha256": "00659015a0c2767734bc2d3b98f1d402eaa14e437284698d4522160a1dd0dcbb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "338fed94cd12091adaed2c8eec8decde1a18b79c5cd9b9f69ff7b33295fc5622",
+      "qualified_input_sha256": "338fed94cd12091adaed2c8eec8decde1a18b79c5cd9b9f69ff7b33295fc5622"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/tests/seg_model.py",
+      "sha256": "800c3c103a20e350dbe63571351ccd408dce1d8f1ce5394e91a2fcd00785f7e7",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f29501f2719198824aca3d217713d515be4a25c38b156566024337448e3c8c1f",
+      "qualified_input_sha256": "f29501f2719198824aca3d217713d515be4a25c38b156566024337448e3c8c1f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/check.h",
+      "sha256": "c607dcc1b5a9102d8d74bbaa19e749faf20c983df58dc67e3b0d4d3e90f09811",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a22338601d4ae6783a59ed94ab276884b71f3e939f60f6f51c3c967cabe30e23",
+      "qualified_input_sha256": "a22338601d4ae6783a59ed94ab276884b71f3e939f60f6f51c3c967cabe30e23"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/frontend_echo_engine.cpp",
+      "sha256": "b74c21de77041d59aecbf934bc6b07894dc416fbade515a439844acbd065800e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "233405145aa62c1709c5c23bd45f97902f0fd1bffd07a85b368b79965c54c05b",
+      "qualified_input_sha256": "233405145aa62c1709c5c23bd45f97902f0fd1bffd07a85b368b79965c54c05b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/frontend_protocol.h",
+      "sha256": "740c5c8f9255b0298e8c4a3553f77e3317251badb2b6bd8852356835d4ec326b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "221ae9d9a8fca06fb6975a8d2e231fdddce2b065dbc5888912c871f8725997c6",
+      "qualified_input_sha256": "221ae9d9a8fca06fb6975a8d2e231fdddce2b065dbc5888912c871f8725997c6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/keepfile.h",
+      "sha256": "46850d717f576f28d86b2549554a8ecce66cc6ed70f9c4c1d86ce6e4173efd0f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a82deff6665426f9e493c1a9826af0f0d0b50d0ab0e952dc1c8d3a26cb2290d8",
+      "qualified_input_sha256": "a82deff6665426f9e493c1a9826af0f0d0b50d0ab0e952dc1c8d3a26cb2290d8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/spec_sampling.h",
+      "sha256": "0d879b59a69e0eb3d3b5b997fea32e42e1ccf7ed3fb279b0633de79cef0d5516",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ef107ec1a7d7f05a90a483c52e0f9d7cc90dac2fc263ff78e17dc12ec2b352fb",
+      "qualified_input_sha256": "ef107ec1a7d7f05a90a483c52e0f9d7cc90dac2fc263ff78e17dc12ec2b352fb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/CMakeLists.txt",
+      "sha256": "d7ce0f4867c547bd645bdd92e53fc9a302f310a5f391c12b11e236a5d391140a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "104696c4aee77112410920d8f92c7c57960209c2f425997b1c8313f6c5a5a3e4",
+      "qualified_input_sha256": "104696c4aee77112410920d8f92c7c57960209c2f425997b1c8313f6c5a5a3e4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/README.md",
+      "sha256": "7a070f9b615c256c1125518b7faa26572f03d5629201661202e236a3fdc3a382",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b949cb172eec910c665884a9dc10b0a93794cce1ed9c26efb4944874799b574f",
+      "qualified_input_sha256": "b949cb172eec910c665884a9dc10b0a93794cce1ed9c26efb4944874799b574f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/dspark.cu",
+      "sha256": "c7470f2289022d7a8cefd336e291bed5286929c0eeb2c3f95c9e99c5ebdd6609",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0586fc5ae9e96c24e7a3d6788d6ba2d85b1880b4527b4f55cc721d9486093d5c",
+      "qualified_input_sha256": "0586fc5ae9e96c24e7a3d6788d6ba2d85b1880b4527b4f55cc721d9486093d5c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/dspark.h",
+      "sha256": "ab18a87cc700aa723ed8ba908794c5d8778adc4a168ee735aea58f284ef5d18d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5d7f7edb052ce77510e04d4e649f487d16bfdaf15aa5c4815eab839feb8c30e5",
+      "qualified_input_sha256": "5d7f7edb052ce77510e04d4e649f487d16bfdaf15aa5c4815eab839feb8c30e5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/dp_stage.py",
+      "sha256": "41b4b4d57a223be1a9a18adc65caa53aa382ae7cb15068a9edc16e799ef845d7",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "7dad806ab86bb5ad2e8099cbce4c93c74d90a737b2386bc963a39156882f54cb",
+      "qualified_input_sha256": "7dad806ab86bb5ad2e8099cbce4c93c74d90a737b2386bc963a39156882f54cb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/dp_study.py",
+      "sha256": "d69ec014cf2d57c6eede63e88c2bf5ae33e90ec8fa7dfbee1270d4a6916890de",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "e2607086103289642540883a30d10cf95167bf38e16c894923af5febfa3382da",
+      "qualified_input_sha256": "e2607086103289642540883a30d10cf95167bf38e16c894923af5febfa3382da"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/dspark_ref.py",
+      "sha256": "11995852dd49d67c321b92926b9064dcf6a033130685a98cdb8d54ae053a3c0a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0b40f58f49b38cabd2f8793fb4f37ed0a4c218c7d33ff3b845069461fab34795",
+      "qualified_input_sha256": "0b40f58f49b38cabd2f8793fb4f37ed0a4c218c7d33ff3b845069461fab34795"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/gate_inputs.py",
+      "sha256": "ba2cab09037d91857dbd69112270f67f837e0b985618be8e1c1885f5ef71d4d9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "037b4c79989c7233209bba281c11148972901397fcd7d051ac2c62b959398a32",
+      "qualified_input_sha256": "037b4c79989c7233209bba281c11148972901397fcd7d051ac2c62b959398a32"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/gate_study.py",
+      "sha256": "41b98bcf9ebc4d42d23d128a75bc9169c6609c27b0ef258e1079952c169aed83",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0cd8a7327a2564661de20088d651f65a8dbdbf321814854fa58eb499aaeded55",
+      "qualified_input_sha256": "0cd8a7327a2564661de20088d651f65a8dbdbf321814854fa58eb499aaeded55"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/pld_inputs.py",
+      "sha256": "9a993ee5cf79c5c3257c5eac8b16316e3acd908f93cde53bd7135f2430269f2c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "18487341f8ebb17bfaad769e801fd8c2c8adabf2536452319e8cc374dcf89672",
+      "qualified_input_sha256": "18487341f8ebb17bfaad769e801fd8c2c8adabf2536452319e8cc374dcf89672"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/pld_match.cpp",
+      "sha256": "b77e3f50091d2a2f04eea14b8bc95513dc974c8040c78e43c9bcec606b70d740",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "19f24503b1a8043547f25d54cc5b25a1367b413373c4d9561a6f54bc00c44dc6",
+      "qualified_input_sha256": "19f24503b1a8043547f25d54cc5b25a1367b413373c4d9561a6f54bc00c44dc6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/pld_study.py",
+      "sha256": "2457165dd692d109ee249df6d2809f8fee485315d8e1b7e8f1567abc7ffa168b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3a1411ec9a6f0216e4e035ee6733549e614823954b2958bb6ff569d766bc9e2f",
+      "qualified_input_sha256": "3a1411ec9a6f0216e4e035ee6733549e614823954b2958bb6ff569d766bc9e2f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/tree_costs.py",
+      "sha256": "48d1781fe61a219c85af5faa34baa27a5c08dfa49eacfb45754eb6596c5eaa7d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6f35a7ec4fa5a3502a59e1efe305f1dddb1d526a107415a2a89e7241d9a4ccd0",
+      "qualified_input_sha256": "6f35a7ec4fa5a3502a59e1efe305f1dddb1d526a107415a2a89e7241d9a4ccd0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/tree_study.py",
+      "sha256": "1cd2f371b39c0238e2c6750ff9b01b0b04b957cb2aeaa1bc41ed090ecec8d0e0",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ed57e57c857c7156a1bb61caa0dd154a4d301fdfb2197e599c87951424d3bbc5",
+      "qualified_input_sha256": "ed57e57c857c7156a1bb61caa0dd154a4d301fdfb2197e599c87951424d3bbc5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/verify_policy.py",
+      "sha256": "1ef30f04401039319f72827887f5d74da043cf94285bef91c36ef1ac44321a9e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "82fba06783344b5eb6d150a6c1b829a4d0ebc7fc5ce070b54b088e0c9d4bf809",
+      "qualified_input_sha256": "82fba06783344b5eb6d150a6c1b829a4d0ebc7fc5ce070b54b088e0c9d4bf809"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/vocab_freq.py",
+      "sha256": "cea11adde6f0b2fff51fffe5014635aa4e3718e53bbcc81f276bebfb262312e3",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1587844b032dc6362c56d81bba86f8049e42fa8c759170d3f6c9cedc9b84306b",
+      "qualified_input_sha256": "1587844b032dc6362c56d81bba86f8049e42fa8c759170d3f6c9cedc9b84306b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/vocab_script.py",
+      "sha256": "a2aee14815c0d3f33890fadf55fe1e3d879e9b9d014a039788797e42abbc39d2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c0ddb457ecc5a5a4e9af019f3978377fa0cbe474da459c7e0b8c774bcb9ed2b7",
+      "qualified_input_sha256": "c0ddb457ecc5a5a4e9af019f3978377fa0cbe474da459c7e0b8c774bcb9ed2b7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/vocab_study.py",
+      "sha256": "683aeef5fde6c48cc7a3c97f986864dd1e7955687a340e2726e807e77e748ae3",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0b6d1f6faba9fa0d37461fa3797b638e18f1d028a7118ac6276852f6076750d6",
+      "qualified_input_sha256": "0b6d1f6faba9fa0d37461fa3797b638e18f1d028a7118ac6276852f6076750d6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/tests/bench_dspark.cu",
+      "sha256": "e5a2eba7f3e5caaade6a0715e4ecce39aff474fe91a7111bcb8291d153c87087",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8ac08795e11d4a2b5b7f35bb089d61cec56d9da85136e9d4b0094d716d86a905",
+      "qualified_input_sha256": "8ac08795e11d4a2b5b7f35bb089d61cec56d9da85136e9d4b0094d716d86a905"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/tests/dspark_tests.cu",
+      "sha256": "9f86f8810b8143445ee752d11b4d791a2de0497a1d9666c983e813cc5ead94da",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c3110a3b6a8792c12b5fa8aa029fd5dcb530ebc019c6f51e1c132686697f5d2f",
+      "qualified_input_sha256": "c3110a3b6a8792c12b5fa8aa029fd5dcb530ebc019c6f51e1c132686697f5d2f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/tests/lite_tests.cu",
+      "sha256": "997dc817599be105a9cb04c6e2e6e1838c574016ec2adc154c57a72178aa13fb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "760d0df6b762eaee62e12f40361b3c939b3d8de178e433ee7e0f02006718e06c",
+      "qualified_input_sha256": "760d0df6b762eaee62e12f40361b3c939b3d8de178e433ee7e0f02006718e06c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/CMakeLists.txt",
+      "sha256": "c562224911094be064102740dce602756c5775ae6d0a6de6ffb909f651249f07",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a51900cc1b28abdd24cb9b1f1ef22b459e0bae9d430da518257f8842824aa52c",
+      "qualified_input_sha256": "a51900cc1b28abdd24cb9b1f1ef22b459e0bae9d430da518257f8842824aa52c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/cache.h",
+      "sha256": "15cf1275813a8d31da420fc5f651f352bf8b9eee2e4107d8e0afccc2307263d9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ab076af7425e1ef12b7abf91f70390db970dab1b3eb157662bdfa7157e7e8678",
+      "qualified_input_sha256": "ab076af7425e1ef12b7abf91f70390db970dab1b3eb157662bdfa7157e7e8678"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/engram.h",
+      "sha256": "ed7ddd609ba1dcc324c694cb30133d0a99f44188481bdc960b7303cdad82ff84",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "85aef5c2387d6d7af01adb5f541409e31c72fd8222f37eb8eb8b220548cec674",
+      "qualified_input_sha256": "85aef5c2387d6d7af01adb5f541409e31c72fd8222f37eb8eb8b220548cec674"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/hash.cpp",
+      "sha256": "8979d2467258952b613f6c82b437c8faf8d6404ed88c4de2a67162416fb6c780",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6867ae7b1c029285c31ca84f5ecb8dfbb3af640307370bcf451e98118dc70ca1",
+      "qualified_input_sha256": "6867ae7b1c029285c31ca84f5ecb8dfbb3af640307370bcf451e98118dc70ca1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/measure.sh",
+      "sha256": "b0bacb871eeebe4df8a3843cb999de269cd090a9e403b5fdfe1d88a6fe547958",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5a2e01dcf41d81608c2cce49b914229a8181a1864592a98d9263817b569f2ea1",
+      "qualified_input_sha256": "5a2e01dcf41d81608c2cce49b914229a8181a1864592a98d9263817b569f2ea1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/golden_case.py",
+      "sha256": "184a9d6c25599bc4c978ddd1c66c2e45088ead1122eacd553c7e7218e6459431",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1e6a243d314e44dd748fd3fe738e70d259cbc7848609ec8d94105c57aeacad3c",
+      "qualified_input_sha256": "1e6a243d314e44dd748fd3fe738e70d259cbc7848609ec8d94105c57aeacad3c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/make_hashmap.py",
+      "sha256": "9b0e593705e067db522f7d58561cc5b741d718a590cfece371722473223a4e8d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "51379b3a8f9fb4654c256ffc38cdffc32c2954a7cbd8613b4ebe085125507255",
+      "qualified_input_sha256": "51379b3a8f9fb4654c256ffc38cdffc32c2954a7cbd8613b4ebe085125507255"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/make_hashmap_stdlib.py",
+      "sha256": "2f26e98c4ee75872dca52be9499fa46b01b590cd3198c2f6f2057216537d858b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "264e4ac089bba35973f9c0fa56c3f0e05188b37a896e25ab63dbc3af8590c17a",
+      "qualified_input_sha256": "264e4ac089bba35973f9c0fa56c3f0e05188b37a896e25ab63dbc3af8590c17a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/tokenize_corpus.py",
+      "sha256": "f6a48b6054f215881f14b482396cd8084e016b47661c2a8345bc775757cde766",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "db1bb89885e0823ffbb68f86f6bfccbe8d80e3e712845a22ac6d5133266cd191",
+      "qualified_input_sha256": "db1bb89885e0823ffbb68f86f6bfccbe8d80e3e712845a22ac6d5133266cd191"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/store.cpp",
+      "sha256": "3207cd35236ead15abd4f830b2786f5d9d8def99cfd66a6c536ac1ce06310919",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9b8a68e1b054068ced4ff9349ed7f5317093e0202659164f12ec682c86b510dd",
+      "qualified_input_sha256": "9b8a68e1b054068ced4ff9349ed7f5317093e0202659164f12ec682c86b510dd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/cachesim.cpp",
+      "sha256": "6000b81c76d0da176dc26db42ca4545ce77308a995afc04bf15d99c254531dc1",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a918ebe47d007fd2f7afb2556170319ddb3e6df4a9c99aaf2a79d48143d7fc06",
+      "qualified_input_sha256": "a918ebe47d007fd2f7afb2556170319ddb3e6df4a9c99aaf2a79d48143d7fc06"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/e2e.cpp",
+      "sha256": "60576a1d8c8b172a4fe6ce421ed565c73632ed935d03c28d11e1ad5e911a966a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cd49fe6fc179cfdbfd89bbcc697da0b8b903748366abcce48514bdcac08ba77e",
+      "qualified_input_sha256": "cd49fe6fc179cfdbfd89bbcc697da0b8b903748366abcce48514bdcac08ba77e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/gathercheck.cpp",
+      "sha256": "d1adc23975b48153cb2d514a608faec71fd6997c97a40f964baacfd8bdf9fe7e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f573234312eed7a23c0eeab7615d405952684738d3531a8dacf5088febaf403d",
+      "qualified_input_sha256": "f573234312eed7a23c0eeab7615d405952684738d3531a8dacf5088febaf403d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/hashcheck.cpp",
+      "sha256": "beeb5fe57ed386d32cb29d330d74437a234bce7318e957624224e4832865d6a8",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "96452dae6a09c57efa43774a14e3e30a7e18be851caef1bdeec5f3d73497bdea",
+      "qualified_input_sha256": "96452dae6a09c57efa43774a14e3e30a7e18be851caef1bdeec5f3d73497bdea"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/iobench.cpp",
+      "sha256": "6599d8f8f2930a951d8409b2261ebc47cb37759ab467f0edf890b5913f88c0f9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "7abba5601159480fa6c89372db481d82dbb8f9f497dbb3d9f8cb8dda38fca8ce",
+      "qualified_input_sha256": "7abba5601159480fa6c89372db481d82dbb8f9f497dbb3d9f8cb8dda38fca8ce"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/pack.cpp",
+      "sha256": "bdda994605f3acbefe5061a0a440aaf15601b4e26a6bd3e0a9104892b77a1ebe",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8ee9a7ab59c774f8864330a69d5c5ccea7ab03e793df40e19e1902c76893c863",
+      "qualified_input_sha256": "8ee9a7ab59c774f8864330a69d5c5ccea7ab03e793df40e19e1902c76893c863"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/rowcheck.cpp",
+      "sha256": "68e332fe25490bac8a8ddc3254a24b34f7795415240b410621dc0432d2513621",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1bfcaa4eff0de02b8ed0524e639efcef5369a17df7ff125bad1f6c0335473df7",
+      "qualified_input_sha256": "1bfcaa4eff0de02b8ed0524e639efcef5369a17df7ff125bad1f6c0335473df7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/storecheck.cpp",
+      "sha256": "f24b58c024505b4e5ad6f137f5fdea823068cb2c1fb7f88c05126512c8d73e5e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8b228699b3863589825a426f4f5f05b5e31d02119c3bd2259d7be5afbf6e47e7",
+      "qualified_input_sha256": "8b228699b3863589825a426f4f5f05b5e31d02119c3bd2259d7be5afbf6e47e7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/uring.h",
+      "sha256": "e4e8d230b36e0dc2e012f73a5a2b871b3a816676632a19f8408473d09284efab",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "86a2a5868c7ee9576725a1118e37fc7f593755dda65836dd32dcbf2c57b69b57",
+      "qualified_input_sha256": "86a2a5868c7ee9576725a1118e37fc7f593755dda65836dd32dcbf2c57b69b57"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/CMakeLists.txt",
+      "sha256": "6a804bc6ddfb4b1ab1c935f4633ce590ca9f3cf9c7c7d16c6d116b9896f89cc5",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a0fc222b9f370bd9ee3d90db6aacfac7375aadc71c5ea94684d666f65d617c59",
+      "qualified_input_sha256": "876f352294528b966892ffb3cdeb2aa05edc28ab427de562e85b8d20f2f3c359",
+      "integration_change": "add test_native24 target only"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/README.md",
+      "sha256": "fb3be90fce0fdc8bc2c7e2226ddbb293103b0823819184711805049aad0effa8",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "7a32bfe22618dfd4e707d02943c0b1a1a0a06f8f954e2ed0578d3ce1d17a29f3",
+      "qualified_input_sha256": "7a32bfe22618dfd4e707d02943c0b1a1a0a06f8f954e2ed0578d3ce1d17a29f3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/act_quant.cu",
+      "sha256": "0b0e25bfb0ce5310520ddbd32997f81988a55148383dc0572b8ecb675885b3e9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "04401531b62335325f4f3ec81d8cf2fb99a5430e1872c88c2084d6c0e3aa3e56",
+      "qualified_input_sha256": "04401531b62335325f4f3ec81d8cf2fb99a5430e1872c88c2084d6c0e3aa3e56"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/common.cuh",
+      "sha256": "83e8b162af7c1b9ad5bb7a53ff937a8d2f3a1ed71de2db4abd25b9d6ad101d18",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "db2baa414b7e7ef337ee102f2a6591c318a919b6b5252ff4f53723718e6633a2",
+      "qualified_input_sha256": "db2baa414b7e7ef337ee102f2a6591c318a919b6b5252ff4f53723718e6633a2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/dsk.h",
+      "sha256": "fb893a2a65de9cf6b48ebf449f70b9b844a8a755376440287af294280a149c88",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fa9de617aef9a9d3e303cb13d29992ca5edf0707246cc6a395c6d3a18ba2a26c",
+      "qualified_input_sha256": "fa9de617aef9a9d3e303cb13d29992ca5edf0707246cc6a395c6d3a18ba2a26c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/gemv16.cu",
+      "sha256": "0aaa22837cecfdb9434f10c5063f1b3d7e7f1975e702036581648d354abf3d92",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cb191088a48efa052599f53605f9847a227810ada73c3c8edb811f297d1e2e0c",
+      "qualified_input_sha256": "cb191088a48efa052599f53605f9847a227810ada73c3c8edb811f297d1e2e0c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/gemv_fp4.cu",
+      "sha256": "dff22f788210b02b089610146ebfccc26a39622c14cc477d3f2b8b02773d1b40",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "124413cfdd2185c6bc534a7955d4c86667d0679a7eac9662502bd54c53ea1a0d",
+      "qualified_input_sha256": "124413cfdd2185c6bc534a7955d4c86667d0679a7eac9662502bd54c53ea1a0d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/gemv_fp8.cu",
+      "sha256": "94d3d8a3ba8ecf919185a9e6c6808db1f7b690484b0a8d2e4b72deb12284b6e4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "946af35548bc680809aabc66a621f78b041eb1c74b7d8586b9e6a2968630969e",
+      "qualified_input_sha256": "946af35548bc680809aabc66a621f78b041eb1c74b7d8586b9e6a2968630969e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/l2pf.cu",
+      "sha256": "4e2747adf6d0a5bf63346fac28cf3e50e66d5b361c8cd1f1563343769aa718c8",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "531085eb30e73f53aa95865b86790a5c87951fba3534f05085bafecfe2afc5a7",
+      "qualified_input_sha256": "531085eb30e73f53aa95865b86790a5c87951fba3534f05085bafecfe2afc5a7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/moe.cu",
+      "sha256": "7eeebed0beb80f37bd8c3ece206a7ab521b9f97ae9dc6a986464a44b9a2fee8f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b99027cedef96d872f697e7679253aa8f8905261dda79e8fb3534b3ccfdf483a",
+      "qualified_input_sha256": "b99027cedef96d872f697e7679253aa8f8905261dda79e8fb3534b3ccfdf483a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/norm_router.cu",
+      "sha256": "6d029d5be6891cb35e451d0d9db874358a8c9f06c02d39f4a46874739a757f67",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ef79e9b8c08e8b6ad5d3717630b33ee588f4b221115b07b4b0e5df2fcf8fa8b7",
+      "qualified_input_sha256": "ef79e9b8c08e8b6ad5d3717630b33ee588f4b221115b07b4b0e5df2fcf8fa8b7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/pa_common.cuh",
+      "sha256": "4a1322e6b2395b1afd34f56c23dd53865055b123558bd9f92b27f1193848f18e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d85d559f1c5bd87393e47ed456a11ac56e15f2bd4d6a76d1d6784714c7fc77bd",
+      "qualified_input_sha256": "d85d559f1c5bd87393e47ed456a11ac56e15f2bd4d6a76d1d6784714c7fc77bd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill.cu",
+      "sha256": "9c2d2935ac2eef324f53a02a6af747a059b9dabdc1810ea84802d75b00dd5d6c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c959a93c6f5467b505988f801b084c14260b957fea12d1242ebb4c9721ed2081",
+      "qualified_input_sha256": "c959a93c6f5467b505988f801b084c14260b957fea12d1242ebb4c9721ed2081"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_attn.cu",
+      "sha256": "2294222ea158b9c3bef965479c7ed1d0b2884c434d6a3872dc56441b24d3d649",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "51948b468ad411077b55d814672ad3776ce122b5f15684d8ee398f2b48044b05",
+      "qualified_input_sha256": "51948b468ad411077b55d814672ad3776ce122b5f15684d8ee398f2b48044b05"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_attn.h",
+      "sha256": "2cdb5d2a1e1025bffe48e3c886bac0f76a786831a6280663bab46fa354b277d7",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "65ff0b433260908b5a22487a4b463b6dbaa1807eb33b462a766d75a82a5fcff3",
+      "qualified_input_sha256": "65ff0b433260908b5a22487a4b463b6dbaa1807eb33b462a766d75a82a5fcff3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_comp.cu",
+      "sha256": "e1475b30cec03754d2a44d7ff4d2c43b4f186c21386e9dd4cef982ba86447a36",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8ed89c7bbe692f9c4915e4a1194dbc5a43702054bd420911fae18a8c171a023d",
+      "qualified_input_sha256": "8ed89c7bbe692f9c4915e4a1194dbc5a43702054bd420911fae18a8c171a023d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_index.cu",
+      "sha256": "bd8098728a2580ce7a96ef6fcac396eb23ae5eaaf46350b01b3886c740ce7804",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0e4feb78e4121e72c8cdfc6393a4a35bec93846583b2ebb8086eb96afd37afce",
+      "qualified_input_sha256": "0e4feb78e4121e72c8cdfc6393a4a35bec93846583b2ebb8086eb96afd37afce"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_mhc.cu",
+      "sha256": "bd3991ce30cd83df02a2237e548ab3b784b9e4beef40818a059c396d68a29439",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a7223b032e6098b8f2a5fd36cdc29256964bbdfe1480d0ddbe3964a4a2db15df",
+      "qualified_input_sha256": "a7223b032e6098b8f2a5fd36cdc29256964bbdfe1480d0ddbe3964a4a2db15df"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24.h",
+      "sha256": "59821e28b6bc9102260b10bff3f05e60a99e7591297dc0d70a0d377e61f6e933",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "92d88012950b6c0d0559f26bfdd5cd3c69117196b687f0361604792423d528f3",
+      "qualified_input_sha256": "92d88012950b6c0d0559f26bfdd5cd3c69117196b687f0361604792423d528f3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24_bf16.cuh",
+      "sha256": "fbf17c709dab41b79b5a22b86abc477ced16deb7a418f0bbee118cf0ff2e0b0e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9af4eda058967c30d1e172d2d06f0dd877a9077635b519aa2e19d7e025761fc8",
+      "qualified_input_sha256": "9af4eda058967c30d1e172d2d06f0dd877a9077635b519aa2e19d7e025761fc8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24_fp8.cuh",
+      "sha256": "2c238356b6621bbb2ee66ceddc5796a3e484a72777b0dd3d48394bea0693c11b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6276e99deda0bc0eb77e2b8938cf3b1db5479ad869394b7f9cb3a26202305734",
+      "qualified_input_sha256": "6276e99deda0bc0eb77e2b8938cf3b1db5479ad869394b7f9cb3a26202305734"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24_moe.cuh",
+      "sha256": "01779c3d8e2ae2ab36e71e0fcdf18d0548f268b60f956f287d3441fe5648ed87",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fc65e36772e3a0b5f4cda187095e1038d96ed2a46995ece8be73dd92cc38192e",
+      "qualified_input_sha256": "fc65e36772e3a0b5f4cda187095e1038d96ed2a46995ece8be73dd92cc38192e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/abcmp.py",
+      "sha256": "3ed819aa456a8b1cdc2cb4e60f2a2572c96564ae10bb74b71832235a8d5e366d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "55ac8401c6cf756ec9f1fc406ad37111715e12ff674600149a75c6d791f3f9c2",
+      "qualified_input_sha256": "55ac8401c6cf756ec9f1fc406ad37111715e12ff674600149a75c6d791f3f9c2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/abload.py",
+      "sha256": "5a4c962fafdba90788f055be943784c6fb12ee09de1002de80083328c7647015",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ade16e37786e8879e092407a86aa87e9e63cf4e10bf89151ac7140ac6ec8943e",
+      "qualified_input_sha256": "ade16e37786e8879e092407a86aa87e9e63cf4e10bf89151ac7140ac6ec8943e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/abserve.sh",
+      "sha256": "1c9bc9ab4c1a45af45b5667a38227aa64189ad2ae75bf1788020063f2c9e344f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "51640c6fcb086e09463a0080eb1398ddaf7891e62f43b49057e8410fd6c2e3ee",
+      "qualified_input_sha256": "51640c6fcb086e09463a0080eb1398ddaf7891e62f43b49057e8410fd6c2e3ee"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_chain.cu",
+      "sha256": "719d919751e58e31f12ed435cd0e3517d1011072da4b1d3dc42d2509766cc8ad",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c7ca2c2b5278021e28a28e97e1c07acd9de9512097a10d9a7a9a756b89f9c988",
+      "qualified_input_sha256": "c7ca2c2b5278021e28a28e97e1c07acd9de9512097a10d9a7a9a756b89f9c988"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_kernels.cu",
+      "sha256": "0b2cf0224c543a8870c32e6c60ab407cead529a635c60d16b11c9f8632784970",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "896a9b736c0ff60eadf097f818368e5d6f4be88344960b04c9e0d003a83f4e08",
+      "qualified_input_sha256": "896a9b736c0ff60eadf097f818368e5d6f4be88344960b04c9e0d003a83f4e08"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_pattn.cu",
+      "sha256": "4ab080c99cb9e13567d97a8b1b0c4b624f35abcca23824b26d4e9a8252455018",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5a73fdef0b0a3b9b41ba368fdaa48d3e3a7abf8e75e1625b6d1289e3486060ac",
+      "qualified_input_sha256": "5a73fdef0b0a3b9b41ba368fdaa48d3e3a7abf8e75e1625b6d1289e3486060ac"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_wcomp.cu",
+      "sha256": "4680a97092a851c277264f7975f7329f7104651a18d442c5862383923f67b7a9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1626f4169e7403894bd910a545bd4d2f47487d9985f1441b50d7e05407da1eb8",
+      "qualified_input_sha256": "1626f4169e7403894bd910a545bd4d2f47487d9985f1441b50d7e05407da1eb8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/chainprof.py",
+      "sha256": "77eb55ce53c5fea09799ce4c191bc6a4cadf554232006dd4cb606b55135ad841",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a175a0b0e802a4adfdd858ca444acfd8c000eb2363553120b334e204eaa65ca8",
+      "qualified_input_sha256": "a175a0b0e802a4adfdd858ca444acfd8c000eb2363553120b334e204eaa65ca8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/dsw_read.h",
+      "sha256": "32dfea4d37605f66ecd38cd0faeac65b7f3af957180d62563c62d61859d1f37c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0689c532cc6fa441d2a3a3a7c4eeb59cc0fde7137a8b22370c42b92bd1b761d2",
+      "qualified_input_sha256": "0689c532cc6fa441d2a3a3a7c4eeb59cc0fde7137a8b22370c42b92bd1b761d2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/escales.cpp",
+      "sha256": "5748f66b4702c8c0095341ff6d2f6c4979aa184c0657a56b0963ccae6f93d33c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f24dde91f154b6ae8a793b36b6609a2277357dc1a411b248878bf3f6026581b6",
+      "qualified_input_sha256": "f24dde91f154b6ae8a793b36b6609a2277357dc1a411b248878bf3f6026581b6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/gen_ref.py",
+      "sha256": "df91e394888a7d0d4e371d06cea7ad8b5af65a9c022ec1c2dfa27c82473884b4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ccfcc558fd0b8eb061ececec581a0706c39963b45044a0a37106f2d69b1caa2e",
+      "qualified_input_sha256": "ccfcc558fd0b8eb061ececec581a0706c39963b45044a0a37106f2d69b1caa2e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/gen_ref_prefill.py",
+      "sha256": "14b467c6d9489d3338e9500b8150655101569167c5b59b7b6aa176aeaf1e4344",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c1beb1c00213846ddc858846a631493a869a3e2ad86408afedf94cdf10fae5af",
+      "qualified_input_sha256": "c1beb1c00213846ddc858846a631493a869a3e2ad86408afedf94cdf10fae5af"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/npy.h",
+      "sha256": "2db6248151aeed0b16743e3cf09523b76a0576d477521608ca348b135a8a29e9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "4abadc0c0a17c2cf2498b52584884da81ea99692141333acbf63e75f132b96a7",
+      "qualified_input_sha256": "4abadc0c0a17c2cf2498b52584884da81ea99692141333acbf63e75f132b96a7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/probe_router_sum.py",
+      "sha256": "672a9790a8aaa66ab2e72b163f286372b769dfcebe381047326064ce6b6543fc",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9520382ec49aa9288b9940adf9b788cb2ddac8c2625ef3cd6db6200767ae804b",
+      "qualified_input_sha256": "9520382ec49aa9288b9940adf9b788cb2ddac8c2625ef3cd6db6200767ae804b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/small_gemms.h",
+      "sha256": "b2c6b2410857b98a802688c224a390fc53892b3268d2e76ad254b82cd482be76",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5d6ccf8bc7d16c8879db0094d8b04b08341eda967a774cad84e949613ed534d1",
+      "qualified_input_sha256": "5d6ccf8bc7d16c8879db0094d8b04b08341eda967a774cad84e949613ed534d1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/test_kernels.cu",
+      "sha256": "f7f1a6b02d0eac947a62ef804d0e7d093353b09dcdd70ff73d0303ddb8c19885",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "62855cff6c4faa82d134d9e216ab342de31349a8fc76e40303cdcb21cfe52901",
+      "qualified_input_sha256": "62855cff6c4faa82d134d9e216ab342de31349a8fc76e40303cdcb21cfe52901"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/test_native24.cu",
+      "sha256": "2666981037406f1169e83bc2e4c240af4270d16db77a7012145daa79cbd6d336",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "e155ea589691607706df3ea2453daa1b7fcbe5577f0b5e790e939a53b23ba53e",
+      "qualified_input_sha256": "e155ea589691607706df3ea2453daa1b7fcbe5577f0b5e790e939a53b23ba53e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/test_pattn.cu",
+      "sha256": "76a606cb91d5a9dc7479aa12bb19fc3d376556d87a41f4d372f8006630a89ef3",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d43207d17ea324bc7f62821b2fc68a48bd9eda69f14ccae93c8475230f83bc1f",
+      "qualified_input_sha256": "d43207d17ea324bc7f62821b2fc68a48bd9eda69f14ccae93c8475230f83bc1f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/CMakeLists.txt",
+      "sha256": "68d0ca8fc2585dd4520084f2f8d0e2b715ca2b65f8597f67fcbdc618d09009a5",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d04481ac78e716b47be2248d08848e3dc2023ca851f2c55a913ae415b0173637",
+      "qualified_input_sha256": "d04481ac78e716b47be2248d08848e3dc2023ca851f2c55a913ae415b0173637"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ced_policy.h",
+      "sha256": "5e1e8225a41e08cc9334c35f9f0a5fd984f8cd09cba0217dadae9b9d37517837",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "341733de85c38d6387ec71e53a5d0c1196ce71bac8a08a55f80358b7d58d3f5f",
+      "qualified_input_sha256": "341733de85c38d6387ec71e53a5d0c1196ce71bac8a08a55f80358b7d58d3f5f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/config.h",
+      "sha256": "9b8bb365ed9f3ae2a7f709f34e9e9b36d19abc77370145ef670b2a82dc16fd77",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ac4d20bc1a3cf45cc89c16a9c25921fbcc3c8b46304377bd0e2510e622a57f26",
+      "qualified_input_sha256": "ac4d20bc1a3cf45cc89c16a9c25921fbcc3c8b46304377bd0e2510e622a57f26"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/creative.cu",
+      "sha256": "3c4b306eebc37335167e5dbe9cdb1ee7747f4fb4e8f9c504decb65a05a3ca55b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "7982d3c3470b152e0d5714e4d8dc7d321767050b2d66e98cd89215be76757a04",
+      "qualified_input_sha256": "7982d3c3470b152e0d5714e4d8dc7d321767050b2d66e98cd89215be76757a04"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/creative.h",
+      "sha256": "8966e12bdd2c1cf5dfc7b7ea88632a3fc5e94d36691b00b484fb9b8979b438fc",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c638d76c8e19fa579df42a6a9ae33052c6474137c3ec4bc03e240120952059a1",
+      "qualified_input_sha256": "c638d76c8e19fa579df42a6a9ae33052c6474137c3ec4bc03e240120952059a1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/fused.cu",
+      "sha256": "23410010d91abda7b52b7097531b3dfe9225f9c75a56900adda988e6c51ae4fd",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "28c2858714aedc8d2f5a3a8ee27cf964f943f2b315d1c8001d0c0f290dfa99ce",
+      "qualified_input_sha256": "28c2858714aedc8d2f5a3a8ee27cf964f943f2b315d1c8001d0c0f290dfa99ce"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/impl.h",
+      "sha256": "6887fdb34f6949c94bda9c52884b195a1a3c39bc58623307f2eaafb47c92bde9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "69961649553826aa91508a106084f4cd5545102df73fe648ed6bcb7088a0feeb",
+      "qualified_input_sha256": "69961649553826aa91508a106084f4cd5545102df73fe648ed6bcb7088a0feeb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/model.cu",
+      "sha256": "c028f3eaff80deb4ad65b605784d5d3b4105b28f153e48feb26f4353eb7fe707",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f06724fdb3ebec9ec860bdd48be66c7d965f3e935e6d7cc4405cb770115ecbae",
+      "qualified_input_sha256": "f06724fdb3ebec9ec860bdd48be66c7d965f3e935e6d7cc4405cb770115ecbae"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/model.h",
+      "sha256": "664693db28dfc42b70d470ff7f4fde23f3f3a0cef9fe19f685780a98630189d4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a2315eb0d44c7af0be134443165ac77a3756a54e98b52a9e55f98d19a7cccf0d",
+      "qualified_input_sha256": "a2315eb0d44c7af0be134443165ac77a3756a54e98b52a9e55f98d19a7cccf0d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/nvtx.h",
+      "sha256": "0d7ad9868973afc43e2a5221a212fc3c467d62f8fcd1e726cf4e7375d990351d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "382a7bb6418773eeb64f4c8228ebb72bd9e1070013edd605a72bf40114c3479e",
+      "qualified_input_sha256": "382a7bb6418773eeb64f4c8228ebb72bd9e1070013edd605a72bf40114c3479e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ops.cu",
+      "sha256": "8a845430277cfe9bf7fd444584f61c389480343255d19fb6373934b91880a207",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "17fd54f161b27c7e3091b3ef6ac2eae581a5cdd12433630be5ce6a220d68fedc",
+      "qualified_input_sha256": "17fd54f161b27c7e3091b3ef6ac2eae581a5cdd12433630be5ce6a220d68fedc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ops.h",
+      "sha256": "e6e8a0bf1442fd8c2ddab5774498658fc3a50ee5fa53c82f75351401c685d7ea",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6ae7de25d8562c68b44ed63cd0013d2e59c25059706394ed2b91fd52f3734a80",
+      "qualified_input_sha256": "6ae7de25d8562c68b44ed63cd0013d2e59c25059706394ed2b91fd52f3734a80"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/prefill.cu",
+      "sha256": "6e2ce1e9f1cd47bb7437ffb2dd55aeb738df36de0a062c36399a56b7abce3456",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9c1cb9b0ec33e1ecf232c9d591bc0905812c827ca28004f9bac172e9776d7495",
+      "qualified_input_sha256": "9c1cb9b0ec33e1ecf232c9d591bc0905812c827ca28004f9bac172e9776d7495"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/prefill.h",
+      "sha256": "4607fb1ddec1645eb7b76016b355cc76f9a8d239d8bb117a51d27d1e3bb57732",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "41764958545c4f7bcb75c5750daefd6060d482ab81942da6a732bb297a4a0f1b",
+      "qualified_input_sha256": "41764958545c4f7bcb75c5750daefd6060d482ab81942da6a732bb297a4a0f1b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/row_chunks.h",
+      "sha256": "ee123f528af1abf76295cf147dcce85e22542bd164365d1428fe80dbba1a6583",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "972f10bafd989209bb52312766ddddb4922f29005f9ec6bc01129db305d9bfad",
+      "qualified_input_sha256": "972f10bafd989209bb52312766ddddb4922f29005f9ec6bc01129db305d9bfad"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/sample.cu",
+      "sha256": "f18c4ca6b861081c34c8cae7c99b2bfb1bdc70e876cc0b8c7727984d938f591d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3cf9f913cb919a036eb6b2eb7ce17c1e5888047b58418616b37581b88d5b6e1b",
+      "qualified_input_sha256": "3cf9f913cb919a036eb6b2eb7ce17c1e5888047b58418616b37581b88d5b6e1b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec.cu",
+      "sha256": "5c95aa487734d2f9b8acc53252dc1ed6347c7a55d2341f551b81d046666050ce",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9ff666bda434665f3bef8691a687e5e578b77cc3e8e995afb8954e3c47a1b49f",
+      "qualified_input_sha256": "9ff666bda434665f3bef8691a687e5e578b77cc3e8e995afb8954e3c47a1b49f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec.h",
+      "sha256": "f70aef0008f72a843f6302eb14c748f3393672aa36f0ed40da1315fb0aabe18a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f6ef65ce1d581b112a478199a9240d4afefe8e97edff9007ae8ed8f3e46045c7",
+      "qualified_input_sha256": "f6ef65ce1d581b112a478199a9240d4afefe8e97edff9007ae8ed8f3e46045c7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec_batch.h",
+      "sha256": "d95c99bb52f53720d31f2dd2818209ad977411d15e225708443f66d9c4151d10",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d28a23d5989990978dbc0bd9c34a2fe70a5f8902079adebd902f712eb7846a51",
+      "qualified_input_sha256": "d28a23d5989990978dbc0bd9c34a2fe70a5f8902079adebd902f712eb7846a51"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spill.cpp",
+      "sha256": "60fa704718415c17daf2d80e58cdf0b0c699daf2eeac2bb0b323e0b02ce8d191",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b6075f710fe907f05f6903672d64c818716c213f9f054979502c6dc5ee6cbb05",
+      "qualified_input_sha256": "b6075f710fe907f05f6903672d64c818716c213f9f054979502c6dc5ee6cbb05"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spill.h",
+      "sha256": "63c5279101a81bc0841a30d6700b40f89983f996f9810144657a98ced433af2b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "076d35df1adbad707a2953b40568321033a98d96bc21b11c6092d9627f685500",
+      "qualified_input_sha256": "076d35df1adbad707a2953b40568321033a98d96bc21b11c6092d9627f685500"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/state.cu",
+      "sha256": "dec37cfbfd2fbbf5a2645a7c0f00db2d9ea6cdd3be24d71ac0fa73c329d047eb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "049a81e219e5a1f07a5afcf6b6a632d10b3074e3413d21f173a46651d53bc050",
+      "qualified_input_sha256": "049a81e219e5a1f07a5afcf6b6a632d10b3074e3413d21f173a46651d53bc050"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/state.h",
+      "sha256": "1c891e8626a1ce9675c26172e572047a20cda1c223a36c75fe86ed6f7116011b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "36e31baf2988d7a633893813f09bd2857dd51e87642bcac72ec5d4ab4ba6eaba",
+      "qualified_input_sha256": "36e31baf2988d7a633893813f09bd2857dd51e87642bcac72ec5d4ab4ba6eaba"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/coll_tests.cu",
+      "sha256": "f44f70fefb1da26544b8f22ed41ee6ff8fa6e14ac4f4c16e5a808f9d55017de9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "af90faf93658f3d3dc210eab702b185d5f09d7cdaa0d3c3f060809b1b0c1c0d5",
+      "qualified_input_sha256": "af90faf93658f3d3dc210eab702b185d5f09d7cdaa0d3c3f060809b1b0c1c0d5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/creative_test.cu",
+      "sha256": "c60e7b08a95b79fbcde23eca810fc3c309922daacd3846910bdc44f2e28a01ac",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "079725db578a86b4054cca187b70e77947b4cf74a435a199f3711866f8d9dfea",
+      "qualified_input_sha256": "079725db578a86b4054cca187b70e77947b4cf74a435a199f3711866f8d9dfea"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/probability_host_test.cpp",
+      "sha256": "71b2408fc28bd1012c82adbb5d0831d87c72f59468f23f951f183194bdcd8fba",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "49f83626459c51ef4f7dcf5f4269e83124d946e1afe7107159f2937be236a0df",
+      "qualified_input_sha256": "49f83626459c51ef4f7dcf5f4269e83124d946e1afe7107159f2937be236a0df"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/spec_batch_test.cu",
+      "sha256": "f7966948d969ef571e55e9197c4d0eea3fc0b13e66a799297db51d87e0580375",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3872f6f271846116304d2dd3381ee151791fbe84c6ff27237c8061019b04c2e6",
+      "qualified_input_sha256": "3872f6f271846116304d2dd3381ee151791fbe84c6ff27237c8061019b04c2e6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/vision_test.cu",
+      "sha256": "d0d7b803ddeaf51026e5861a37009a1d7d034d17eef0b3729737da3b7d3ae3ed",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fb1de32457596401762c572af6796f1908464c2517cdd70cfe608960012f4dc0",
+      "qualified_input_sha256": "fb1de32457596401762c572af6796f1908464c2517cdd70cfe608960012f4dc0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/vision_layout.h",
+      "sha256": "005aee0ff532598d23416ff495a8c8bfa8c42175e06ce7843da4afadcad0a2fd",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "29b95b2103e82fa402069c18992f4cd2d0e0851a21aa0411085731fc15eaac14",
+      "qualified_input_sha256": "29b95b2103e82fa402069c18992f4cd2d0e0851a21aa0411085731fc15eaac14"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/wave_probe.cu",
+      "sha256": "37cf96ea5391895207e7481e61734c6b8e55b1a77fe7c4805cf194cfacb7f56c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d747b6fb3ce2e4cac0f2b9339012c571e07ca15033d238eb08acd91496bf71cb",
+      "qualified_input_sha256": "d747b6fb3ce2e4cac0f2b9339012c571e07ca15033d238eb08acd91496bf71cb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/CMakeLists.txt",
+      "sha256": "ad60565ac3f98c102ff97c2c77bcfddc0962d2d3e2806d02058ab687cd20994f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2a55741845469f99d797766f85c9060ed0d64c5702726e72b9d685ec842bf90b",
+      "qualified_input_sha256": "2a55741845469f99d797766f85c9060ed0d64c5702726e72b9d685ec842bf90b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/cmd.cpp",
+      "sha256": "6b6ff537f9457c3bd5ebe95615039e3d7cf9763853e309aecf0301ba7fdfbfbd",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cf448c8f5b8f7bffb94332dfb5930a23e9bd278fd31078b762f48f5e6aaf9a4c",
+      "qualified_input_sha256": "cf448c8f5b8f7bffb94332dfb5930a23e9bd278fd31078b762f48f5e6aaf9a4c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/cmd.h",
+      "sha256": "3a8ae6ae05c7389e3e7467b9bf269385a32d85cad2f03c6f9f6d9606559b8fd3",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6670bad120180f81bdff4de46e5f788145f038feb2d540792fca2c114ef340f8",
+      "qualified_input_sha256": "6670bad120180f81bdff4de46e5f788145f038feb2d540792fca2c114ef340f8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/fleet.sh",
+      "sha256": "cdbfdc17e9d57f257a0fc6b2225bb02639525f36e403a74cbf4346485111093e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "bfc0fbc490c5fd878c938db9dd595cb7e6e43e94a49b6537d719f16c769e96b6",
+      "qualified_input_sha256": "bfc0fbc490c5fd878c938db9dd595cb7e6e43e94a49b6537d719f16c769e96b6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/golden.h",
+      "sha256": "ab4ee3fba4ecc5d8ebee7d3f74b7cdb275a0d8b2dd601f5232ab41e0621b014c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5c66e42d1a1bcfc6903c09a79e3da6798c00b739bbb0ca1bcde4831548616ea2",
+      "qualified_input_sha256": "5c66e42d1a1bcfc6903c09a79e3da6798c00b739bbb0ca1bcde4831548616ea2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/main.cpp",
+      "sha256": "d1d5e6541711a8cc8f3e4cb3728666738e636940fdcbfc48b9ad40829c2f67dc",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9be72b5cf81b06eed870cb1121a4ab8f0ff52213e6ac3beacad4829c2ef4726f",
+      "qualified_input_sha256": "9be72b5cf81b06eed870cb1121a4ab8f0ff52213e6ac3beacad4829c2ef4726f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/npy.h",
+      "sha256": "83aa40918f2ef13ecb74b2785266a0d9984b57e3f1b01755d19069b6919f5c36",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c6aafde4b17da8d2d17e115a2c34a79f0c27769532abaedddeefa0030dfc8190",
+      "qualified_input_sha256": "c6aafde4b17da8d2d17e115a2c34a79f0c27769532abaedddeefa0030dfc8190"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/ring.sh",
+      "sha256": "7f08602cfc126d388b357bb0c27a36027f08a2c6364e8b50646444f7ed632710",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "349737825d3527ba6cb56dc7c89109b7341629cf46ad58b6855f2a8438b4f84b",
+      "qualified_input_sha256": "349737825d3527ba6cb56dc7c89109b7341629cf46ad58b6855f2a8438b4f84b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/ringlock.sh",
+      "sha256": "64147d50445c072cc5d88a7d38ec014961afa87c65fab768003d4389c411d513",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0b8a91aa8dedee77dce91232269e32fa36b1bd4af1a0d9cfad811e73c5e4601d",
+      "qualified_input_sha256": "0b8a91aa8dedee77dce91232269e32fa36b1bd4af1a0d9cfad811e73c5e4601d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/run4.sh",
+      "sha256": "b8da7175ba20075d6d0a18f86c1de25b33439eb6463667a3b09def0f13c578cf",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "4aba410c93a15b245abdd8f15e7bf294e736ca64000bd15d5b2ea530e25df7dd",
+      "qualified_input_sha256": "4aba410c93a15b245abdd8f15e7bf294e736ca64000bd15d5b2ea530e25df7dd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/runtime_metrics.h",
+      "sha256": "2d83c4798b51346a6b84aac97971e7fcdc59e85af2a529d7cce49a585c9203a8",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "ed179db97e6e090c69a0e039ea3d1c6c8ad9c4f56ee265f762df43a99ce6de40",
+      "qualified_input_sha256": "ed179db97e6e090c69a0e039ea3d1c6c8ad9c4f56ee265f762df43a99ce6de40"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/serve.cpp",
+      "sha256": "6fae537a891ec6a48f8b8b940c32a0fb9e230e45e119048a4bc2495b44a7525a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2bdc5558dd9c864b1d895e4a37368ecf169f737ce1da375e4c02a1327a6d6940",
+      "qualified_input_sha256": "2bdc5558dd9c864b1d895e4a37368ecf169f737ce1da375e4c02a1327a6d6940"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/serve.h",
+      "sha256": "0576241f8bc26d3627d3c31f6477e39dcf095ba2c395bdb81e1b1a897ac68a1c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b40ec409c244a98fed796b12f1316b7236c16c5dc640ccc6904ad1bf938e3756",
+      "qualified_input_sha256": "b40ec409c244a98fed796b12f1316b7236c16c5dc640ccc6904ad1bf938e3756"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/service.sh",
+      "sha256": "36aafe098e5baae4d76485a7f356a1b11a6c9d4630e6cd7b22d97a5d0917eec0",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "aad9e8ee2df536c3eb0aae2b222503603650a2e3f4b66c5c510852b2156281e8",
+      "qualified_input_sha256": "aad9e8ee2df536c3eb0aae2b222503603650a2e3f4b66c5c510852b2156281e8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/batch_test.py",
+      "sha256": "ce804ecb0fef7aace4eceedd274e08718a410063099c541c553f91e0354d7cf9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "49865bc10611a447056466d3435e2ca0b167c72bc054ee1f2f2bc821cdd9d982",
+      "qualified_input_sha256": "49865bc10611a447056466d3435e2ca0b167c72bc054ee1f2f2bc821cdd9d982"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/disk_test.py",
+      "sha256": "32f5f9f1963d20b1f0bcfaaaa67a03ac04e2a01993ff5c9eb74ce7187c72abaf",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "85717e30be7edbd328206b65c79ed97989f7a3ecbe963add2f9acfd319b05aa0",
+      "qualified_input_sha256": "85717e30be7edbd328206b65c79ed97989f7a3ecbe963add2f9acfd319b05aa0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/frontend_e2e.py",
+      "sha256": "308f758ad573cfff62af804d0f1cccb3706dd12df3239ef62e99085cc4d921a9",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "1789a8a7ac6c9c331b7e325094fd00f841a17f2906ef7335cbf1d5e05ca56ea7",
+      "qualified_input_sha256": "1789a8a7ac6c9c331b7e325094fd00f841a17f2906ef7335cbf1d5e05ca56ea7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/kept_test.py",
+      "sha256": "261b7329e803174bc2a53f0dd5ce3c13cfee8bd94b03effc94797f598c5dc749",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "05da955cdde31e4319794e0dde713d445dd15d0276953bfcb2ad50c9b7a51a65",
+      "qualified_input_sha256": "05da955cdde31e4319794e0dde713d445dd15d0276953bfcb2ad50c9b7a51a65"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/revisit.py",
+      "sha256": "5871b0363c37704efb3574742e27e5c099986c1048275f9e41333516900f8380",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "e5baa6a8f881cefb38c51530d71aa1822e508637b23028e4db44169f57ee6ecd",
+      "qualified_input_sha256": "e5baa6a8f881cefb38c51530d71aa1822e508637b23028e4db44169f57ee6ecd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/runtime_metrics_test.cpp",
+      "sha256": "503587480cd4fa64734499ee4c901d6bd4309374671bda7347caa6cadf964c76",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "21babe4cea2900dd99d7a592743096f103bf5588c4a6b9987dd7394e83d26d6d",
+      "qualified_input_sha256": "21babe4cea2900dd99d7a592743096f103bf5588c4a6b9987dd7394e83d26d6d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/serve_test.py",
+      "sha256": "e8f91f3ed688493481588a75e0636e608641ee666916cc8a056d809854da354a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d88466f787d0c13dc484381408060ef0ce105ef65e6fb3fd20983a3dfeca775f",
+      "qualified_input_sha256": "d88466f787d0c13dc484381408060ef0ce105ef65e6fb3fd20983a3dfeca775f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/slice_test.py",
+      "sha256": "9db1f9382568c7e9c78526c9ced36d777b72b60b4bfaaadb1cdbaa61ab1f739d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f96f3a111244c2274500397ecf234af954308326179ad25eaab387e62187fc7f",
+      "qualified_input_sha256": "f96f3a111244c2274500397ecf234af954308326179ad25eaab387e62187fc7f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/snap_test.py",
+      "sha256": "0ed31cd952637ad9565d6ae903046d5afee00da889a8f3ca263f976fdb9ea5d6",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "05756b95f6c3ca53f758e434ccf109949e8241e61ebba17c03398271146a3c1b",
+      "qualified_input_sha256": "05756b95f6c3ca53f758e434ccf109949e8241e61ebba17c03398271146a3c1b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/soak.py",
+      "sha256": "6af41ed9f9ee047e95f3a6766f1375dee2fe4765fe4b0e96deb37914a1f1cab1",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fd4059667b619f50a2b6554dbf1eff0a886b6c7a31c6e39de3bb96c1a2af818a",
+      "qualified_input_sha256": "fd4059667b619f50a2b6554dbf1eff0a886b6c7a31c6e39de3bb96c1a2af818a",
+      "prepublication_sha256": "7c6e7656900effafdb4aac1e7d48f56829b744e68667b2a2d92286568f7688dc",
+      "publication_change": "reserved example network addresses/hostnames only; no inference logic changed"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_budget_test.cpp",
+      "sha256": "242e52612c6d7867ed97d52d25175e01d39a419663ab9daa13b75d44f7f364d2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "171a465a13ede9580adfb026866a25a82d078779d802588ebffbf220ff101554",
+      "qualified_input_sha256": "171a465a13ede9580adfb026866a25a82d078779d802588ebffbf220ff101554"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_features_test.cpp",
+      "sha256": "6771b1bc7b957aceb04fdbe6726b9b08b342b76c01ea9e58d0f61cd6890dcf96",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "65920c1ac167e93ce125eeba3bc9da197df24b45294d05fa916172ab04575298",
+      "qualified_input_sha256": "65920c1ac167e93ce125eeba3bc9da197df24b45294d05fa916172ab04575298"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_prefix_test.cpp",
+      "sha256": "53497bd4498f0d35d9322b52189dec43a8c73b9dcc1e382d1020a7264c0911f3",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3b6995203d2d1f0ba511e3dadadfaa971b3dd7a77c290d817c94c24e12a264ef",
+      "qualified_input_sha256": "3b6995203d2d1f0ba511e3dadadfaa971b3dd7a77c290d817c94c24e12a264ef"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/yield_test.sh",
+      "sha256": "f136e4c31da2832f4b172767e55bbe043a0b2c7799d31ec8debeff1aad3c9be6",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "67f88a56a47304af0de54122a676a28ae12ea7d8fdd974ad17f54c4ee61f47cf",
+      "qualified_input_sha256": "67f88a56a47304af0de54122a676a28ae12ea7d8fdd974ad17f54c4ee61f47cf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/evict_cache.py",
+      "sha256": "d7929460b1c52ed7218733bda199f987c74026e978ed33f0759e0a7984ecc01d",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cb9f8fcd29d3624316c86fb58ce4c9478eba15b813d8efc9ff2677a0f61e56b1",
+      "qualified_input_sha256": "cb9f8fcd29d3624316c86fb58ce4c9478eba15b813d8efc9ff2677a0f61e56b1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/idleprof.py",
+      "sha256": "7fa938637e816729171e1f90d81dc328fca54471fdc744e64c63d68af99580ee",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "79da93270ae2f077876007b8b0bba7b62dc0321e02ecb12b854e87b6c5ad3e35",
+      "qualified_input_sha256": "79da93270ae2f077876007b8b0bba7b62dc0321e02ecb12b854e87b6c5ad3e35"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/kprof.py",
+      "sha256": "76f2c3ecc78e3585f6c914efb3e07b82f637212205823869bd22957d4e796ef2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "292b2e7147cbb4acf23b54b803743af4e4e9034dfdb2bcefe796bcb594bc7ab1",
+      "qualified_input_sha256": "292b2e7147cbb4acf23b54b803743af4e4e9034dfdb2bcefe796bcb594bc7ab1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/kwall.py",
+      "sha256": "ee2dca2417e20c074635afa06ae7387b3718d1b2df0093f88f70d995161b982c",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "4ec401f55c714559f49c00b7071264e5d9ddcc94378570e12f93ba12a06cc14e",
+      "qualified_input_sha256": "4ec401f55c714559f49c00b7071264e5d9ddcc94378570e12f93ba12a06cc14e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/specprof.py",
+      "sha256": "e72a2616f71996427badef705fb3fa7cca63396c8ec0f2bbb54a5e313adb4cda",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2b77610a329d6fb425f78be59cc9fb2419eb242b79d4e6927ec1d349a78663b8",
+      "qualified_input_sha256": "2b77610a329d6fb425f78be59cc9fb2419eb242b79d4e6927ec1d349a78663b8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_breakdown.py",
+      "sha256": "861b0150ea2bad8efebfa3d2fc2d4ed62f73fb3a0bd8f5d5e2b09547e751c2d2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "367f4ed66d0d70fd7146d40a4ce733bcb78cd6ee0d3513f509bdb05d7bdd15f7",
+      "qualified_input_sha256": "367f4ed66d0d70fd7146d40a4ce733bcb78cd6ee0d3513f509bdb05d7bdd15f7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_join.py",
+      "sha256": "51577524a7c2b68013d410443bad300920b6e4c9f4688e866f0fa48ecbe5f2d0",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b9309c93a0a2f95041eeeb0d93c069f6f6a528f853bf727f5654fcadca697e4e",
+      "qualified_input_sha256": "b9309c93a0a2f95041eeeb0d93c069f6f6a528f853bf727f5654fcadca697e4e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_levers.py",
+      "sha256": "b6cf600c9fb48da88bcb4ccd6a67fc063d3ee8bfa1be8c411d9c9d9b4cb6ffe5",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "45836d43b6508f1c242e1b88a9e4f7ca78533e9bb8d64ab05c2972d8669af807",
+      "qualified_input_sha256": "45836d43b6508f1c242e1b88a9e4f7ca78533e9bb8d64ab05c2972d8669af807"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_part.sh",
+      "sha256": "35ba11da5e8b4d0d672c174d96d72e8380e7c925113fd0911c717a51caa90d43",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "5d6f289bcbce3de2660dadf451a04454f3ad523027c0ccaae5438d4167fa39bb",
+      "qualified_input_sha256": "5d6f289bcbce3de2660dadf451a04454f3ad523027c0ccaae5438d4167fa39bb",
+      "prepublication_sha256": "69f7f738d063b5d2e78941f977340e9ed1c34a43ba6ad13c8608e7829923cb2b",
+      "publication_change": "reserved example network addresses/hostnames only; no inference logic changed"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_prof.py",
+      "sha256": "2c899241f7acf6ab1f0798c2dbf136cc6771d940f149edf83e87a6d640b7b605",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d066e21f71377eacd6d6f3af91ee5fd436a5a8a2e4bce5082dcddbe50e2f4b1b",
+      "qualified_input_sha256": "d066e21f71377eacd6d6f3af91ee5fd436a5a8a2e4bce5082dcddbe50e2f4b1b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_roles.py",
+      "sha256": "b87421bc62b6c58bb5759293795c183c2bf5a2f069c5ce2d692c3378206ab5b8",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "c007cf0064858d39e442e9b7fba39d214cbeba44f68d90240da978470a827131",
+      "qualified_input_sha256": "c007cf0064858d39e442e9b7fba39d214cbeba44f68d90240da978470a827131"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_routes.py",
+      "sha256": "0acbf98679ca168c551610aa7706f656db718e8c0a43fba5659ac8a8678eb396",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d8b5bc641240b4d92c1934e59d866c8b725fdc20e56381c1f034f3e9ac8e43fd",
+      "qualified_input_sha256": "d8b5bc641240b4d92c1934e59d866c8b725fdc20e56381c1f034f3e9ac8e43fd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_turns.py",
+      "sha256": "f14748cb72801b3661d3996ef6993f956e4a8339b5060b3431102a605c8c70cb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2070ceb50a8e54bdc3b018455fcde32b98ecb8f4e771d3d8132b2d2d93e6e445",
+      "qualified_input_sha256": "2070ceb50a8e54bdc3b018455fcde32b98ecb8f4e771d3d8132b2d2d93e6e445"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_features.h",
+      "sha256": "fe4a66f210b821083df393beb816e653fb8504c27a7657349b9e9a452c1b273e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3cd29379deae42c0d455c2cca179d99e4d8e54ea64c16ec85647e03042a7a60a",
+      "qualified_input_sha256": "3cd29379deae42c0d455c2cca179d99e4d8e54ea64c16ec85647e03042a7a60a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_files.h",
+      "sha256": "c4e98eac7175ea55fd05f81581f30209acfc2b18a3a6ea5c8c8bf5600f0e723f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "40bb14ad153532cb76724d93f7761a1bd13c770d773ed4c74cdde903e5e864e1",
+      "qualified_input_sha256": "40bb14ad153532cb76724d93f7761a1bd13c770d773ed4c74cdde903e5e864e1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_prefix.h",
+      "sha256": "44461b61fa1636331c558a6851ed32d2e7952e16bc26967dc4761837432caa9a",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "b9f649811eaf131ac6b322271034e0b6e2cbea47713a4826c2b851ce1469c5a5",
+      "qualified_input_sha256": "b9f649811eaf131ac6b322271034e0b6e2cbea47713a4826c2b851ce1469c5a5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_window.h",
+      "sha256": "958b1843c3393d96afbc668d4e7aa69ea1997ddf562ecdaded628af217cd3fd2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "3eaa25c784f468fce4df720713fdfed0921ad214094c3a3d3967516a381b8693",
+      "qualified_input_sha256": "3eaa25c784f468fce4df720713fdfed0921ad214094c3a3d3967516a381b8693"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/.gitignore",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "f1316eb139c4c3003f6239e67a83c2de796b7c1ae57929f1bb6dc01ed97d3426",
+      "qualified_input_sha256": "f1316eb139c4c3003f6239e67a83c2de796b7c1ae57929f1bb6dc01ed97d3426",
+      "sha256": "f1316eb139c4c3003f6239e67a83c2de796b7c1ae57929f1bb6dc01ed97d3426"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/CMakeLists.txt",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "ee4ae71656f5a62a125c21013b6eaf392b4000245c34cc5e64fa7b6148f91034",
+      "qualified_input_sha256": "ee4ae71656f5a62a125c21013b6eaf392b4000245c34cc5e64fa7b6148f91034",
+      "sha256": "ee4ae71656f5a62a125c21013b6eaf392b4000245c34cc5e64fa7b6148f91034"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/README.md",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "5f0609afb2f0b75409e9492e1313f69bf542cc0253ca1f31126c329eb15fc27a",
+      "qualified_input_sha256": "5f0609afb2f0b75409e9492e1313f69bf542cc0253ca1f31126c329eb15fc27a",
+      "sha256": "5f0609afb2f0b75409e9492e1313f69bf542cc0253ca1f31126c329eb15fc27a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/VALIDATION.md",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "9faf1f745859fdd68b6ac2d54531973ad05316f67803857bcca4bff0243baea1",
+      "qualified_input_sha256": "9faf1f745859fdd68b6ac2d54531973ad05316f67803857bcca4bff0243baea1",
+      "sha256": "9faf1f745859fdd68b6ac2d54531973ad05316f67803857bcca4bff0243baea1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution-fixtures.json",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "f5e8eb0977f0d02986f24f8d44018c3aea143768822b0c3be17d8b72a7ad5181",
+      "qualified_input_sha256": "f5e8eb0977f0d02986f24f8d44018c3aea143768822b0c3be17d8b72a7ad5181",
+      "sha256": "f5e8eb0977f0d02986f24f8d44018c3aea143768822b0c3be17d8b72a7ad5181"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution_fixtures.h",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "bb9aa6a307de137f3fe1cc1951b1275dc83a4679c0eafea79f2ea55164e2e32b",
+      "qualified_input_sha256": "bb9aa6a307de137f3fe1cc1951b1275dc83a4679c0eafea79f2ea55164e2e32b",
+      "sha256": "bb9aa6a307de137f3fe1cc1951b1275dc83a4679c0eafea79f2ea55164e2e32b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution_oracle.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "fb029fc46538c67c24be1aabe9f5688b575ef50d4bf9a1ccf5a5edc598156ded",
+      "qualified_input_sha256": "fb029fc46538c67c24be1aabe9f5688b575ef50d4bf9a1ccf5a5edc598156ded",
+      "sha256": "fb029fc46538c67c24be1aabe9f5688b575ef50d4bf9a1ccf5a5edc598156ded"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/probabilistic_sample_probe.cu",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "d5de5f8c6cc9267be7ed34e48c4b388eaba21c74fcd02057373c7690b5a01298",
+      "qualified_input_sha256": "d5de5f8c6cc9267be7ed34e48c4b388eaba21c74fcd02057373c7690b5a01298",
+      "sha256": "d5de5f8c6cc9267be7ed34e48c4b388eaba21c74fcd02057373c7690b5a01298"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/CMakeLists.txt",
+      "sha256": "d146d541b3f9b74676671f67dd4f9636e0306dcaea79f199476fdb84420f78d2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "70cf8f1579ca9a52011bdd93aa75a4c61391488ad0a32cffdd1b32a78d15e4a4",
+      "qualified_input_sha256": "70cf8f1579ca9a52011bdd93aa75a4c61391488ad0a32cffdd1b32a78d15e4a4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/check_dsw.py",
+      "sha256": "01cb5802d549c5cf209873948f287102e0fdf8111228ec2c9fd9274698a34445",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "408368d67b8e05790e6ef247ca3f0df9867ed02d862495233bd27a09fd8dad66",
+      "qualified_input_sha256": "408368d67b8e05790e6ef247ca3f0df9867ed02d862495233bd27a09fd8dad66"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/convert.cpp",
+      "sha256": "49afbd03f630649cb9469d8fb28f2c02779ba431ceea35b0bafd1064a15d1ece",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "74c5109df263a3daa87671d2cdf06ca919024774cc04cf78192a0a86fa31b65e",
+      "qualified_input_sha256": "74c5109df263a3daa87671d2cdf06ca919024774cc04cf78192a0a86fa31b65e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/dsw.h",
+      "sha256": "b2d37890c2815229f7b1b54f072da96aebc74467fbf40705debab50365340ecb",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "cb56304223bfcf4c91c173ce2bdca8698c7631bd3b71107970c63e3cf09c097c",
+      "qualified_input_sha256": "cb56304223bfcf4c91c173ce2bdca8698c7631bd3b71107970c63e3cf09c097c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/io.h",
+      "sha256": "1cac090a560c309bd214eb8d25f097bfde78bc62543a29fa90fe35cbe65b9405",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "2040a7a54f4d5579ccd54e2e57b52916ee33ea60f955da1d171815457b6e054e",
+      "qualified_input_sha256": "2040a7a54f4d5579ccd54e2e57b52916ee33ea60f955da1d171815457b6e054e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/kcheck.cu",
+      "sha256": "7774a2e81aa2be857426eba799832f92f783e7d440b10bbddeca48b633e161bd",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d1a8f8fc843ee05f46772d6406b86b0e31710c3e7933784769cb487880bffdbf",
+      "qualified_input_sha256": "d1a8f8fc843ee05f46772d6406b86b0e31710c3e7933784769cb487880bffdbf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/layout.h",
+      "sha256": "880bb4204e2475697f51a6d21ec4988bb2e1367e4e2bbbae12a074e0333bf157",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "7fbbd040b47314678e696e35ea06d13378cde66595e5986aa1368b60b85069a8",
+      "qualified_input_sha256": "7fbbd040b47314678e696e35ea06d13378cde66595e5986aa1368b60b85069a8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/load_main.cpp",
+      "sha256": "3fad19224445dc738d7e26afda9e05697faf7cf91d39dc51dea6e9447d710642",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8e03690e54fd048a2e7151d35be4eba1fcc86db3907d170d4ec3520fc91ea9a5",
+      "qualified_input_sha256": "8e03690e54fd048a2e7151d35be4eba1fcc86db3907d170d4ec3520fc91ea9a5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/loader.cpp",
+      "sha256": "98b1bd698e57faefa05a190c407d0caefc43fa54e1f179f545df98194fd69ef0",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "6df2d7f5880543a67ebd54b6d0acf0059af85abf9c371bc66593336319366cc0",
+      "qualified_input_sha256": "6df2d7f5880543a67ebd54b6d0acf0059af85abf9c371bc66593336319366cc0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/loader.h",
+      "sha256": "199252298b5de3d3f9dd8a921035cb8dd31eac1f7210ac4b901dc2116fdecb15",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f1574cd55a7389f4c2d7737f3f49c74771662143f11bacf39d464f72638d60eb",
+      "qualified_input_sha256": "f1574cd55a7389f4c2d7737f3f49c74771662143f11bacf39d464f72638d60eb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/plan.cpp",
+      "sha256": "6d9cbed102d881e610a9f30f5421e1f819adbb02ab368809998293fd4d31c74e",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "53eb9b645ee0a6d4370c0de6423f2adde77b97489835a7ea07845a6c0d7cce58",
+      "qualified_input_sha256": "53eb9b645ee0a6d4370c0de6423f2adde77b97489835a7ea07845a6c0d7cce58"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/plan.h",
+      "sha256": "2a597658ad4703cb5da370a48ea726fb957144282a0028186111f815e7cddd0f",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "0242361d1a0c669eb993abf521e8de5847e7560197ef5b120181c881032aa5e5",
+      "qualified_input_sha256": "0242361d1a0c669eb993abf521e8de5847e7560197ef5b120181c881032aa5e5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/safetensors.cpp",
+      "sha256": "031b56e8123e7dcd0ccd96f7e4338ed72498916cd86b52b35e464ed43ec91dea",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "7e46b6b5d2a5e2dda0b115bab4ce86fd9bd690f5dc06a559c9c667f13be0e8f8",
+      "qualified_input_sha256": "7e46b6b5d2a5e2dda0b115bab4ce86fd9bd690f5dc06a559c9c667f13be0e8f8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/safetensors.h",
+      "sha256": "a6c9cc245699eaada17400fdd33086c66fe69f3d3b9a24ac466d6f1133933fd8",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "205c7fe186cedfd666ad5db16759729fd75a490a2e762e4495861345324f226e",
+      "qualified_input_sha256": "205c7fe186cedfd666ad5db16759729fd75a490a2e762e4495861345324f226e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/tests/rank_test.cpp",
+      "sha256": "bd165e5c4d3f55d3db82d1727dda06eac31e9010f37ca3e4dc18394776bfdcfd",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "eaf959b3f655e9c0b2a87ba7fb20174308da2ce7a78567188719f983cb35f332",
+      "qualified_input_sha256": "eaf959b3f655e9c0b2a87ba7fb20174308da2ce7a78567188719f983cb35f332"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/toc.py",
+      "sha256": "8f50d92dce50f4572c9a4d97872f82e5330c7ba631a852e72e7a610c439170c0",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "db37af8ca3fa47040f9fcadd68a25dc1c02cd967c1cf08f0ec83f3a6e683ea4d",
+      "qualified_input_sha256": "db37af8ca3fa47040f9fcadd68a25dc1c02cd967c1cf08f0ec83f3a6e683ea4d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/verify.cpp",
+      "sha256": "e09fe223b714348143c9cc481d615099e6061216aaa5daee565c7ab1d191c126",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a73bcb6cf78d7a71296ccbd67316c6a5057449b4cc15441ae79d8588f163317d",
+      "qualified_input_sha256": "a73bcb6cf78d7a71296ccbd67316c6a5057449b4cc15441ae79d8588f163317d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/README.md",
+      "sha256": "f155d0c33e6c7a37e844488653ab17ebaa880bd29676a42d99e4b435313233ef",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "a9a0c0dfe405590d72b5b20b094f6a967ba9378d7cd6d88b7d99285ce3f8c650",
+      "qualified_input_sha256": "a9a0c0dfe405590d72b5b20b094f6a967ba9378d7cd6d88b7d99285ce3f8c650"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/analyze.py",
+      "sha256": "c37bb881a0836d74d35f945bedd13ed23a7e071b1e133f759ca3d29d65113361",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9bcb58b6ac0d286e327f84e42acecb62a0d5de8838157b0a8d967d5447b4efaf",
+      "qualified_input_sha256": "9bcb58b6ac0d286e327f84e42acecb62a0d5de8838157b0a8d967d5447b4efaf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/dequery.c",
+      "sha256": "452d24debe852f3e7692f3fa09aa2322a21fce24ad2fd7b73a076726c3db8754",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "e8d97f405e3cdcea285c814e2f0c69c57c0047c591863466c861699c6a203215",
+      "qualified_input_sha256": "e8d97f405e3cdcea285c814e2f0c69c57c0047c591863466c861699c6a203215"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/fixcost.py",
+      "sha256": "c36e29a07f2d3076e14de10483374ae1979d9f0c84428c316e8406eb36f83f8b",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "8ff27e404d62b8b786b5e283a989584a2cec4a0d3109929ce626a0ab7d72040c",
+      "qualified_input_sha256": "8ff27e404d62b8b786b5e283a989584a2cec4a0d3109929ce626a0ab7d72040c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/fixdec.cu",
+      "sha256": "2e6ce6a7a0a3c49f7a95666599239257a6fa17400e78e4572468384f39b97c85",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "bcf7c1c2bd306945187dc74bc7ef10ab659f6b438d9c0e1fa727448dd7389d50",
+      "qualified_input_sha256": "bcf7c1c2bd306945187dc74bc7ef10ab659f6b438d9c0e1fa727448dd7389d50"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/project.py",
+      "sha256": "f28509906bb0f4b11bcbb19ffc4172eb363311a1310e85c8b09a47d86dc087a4",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "093cf1396af0f656d31efe2e46f921202338f9c2ee544d3eea9af0e71b2d4894",
+      "qualified_input_sha256": "093cf1396af0f656d31efe2e46f921202338f9c2ee544d3eea9af0e71b2d4894"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/sample_names.txt",
+      "sha256": "31e4f3d4767e896ef55cd4d181458f50191fab1e7084cec5480fd7fa2ede15b2",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "fb6107d14af0a3a33b1deeab46ca7aee88a09389b6e2331368b501159fd3f68b",
+      "qualified_input_sha256": "fb6107d14af0a3a33b1deeab46ca7aee88a09389b6e2331368b501159fd3f68b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/sass_loops.py",
+      "sha256": "a850f16e877b5b5627060ab9a772ada3153b8d8c1d7d5428d14d9d806b8e3410",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "d0ca8179943b669d6b860e83bbc70ce9224e3b327594f0ed3067010c79433228",
+      "qualified_input_sha256": "d0ca8179943b669d6b860e83bbc70ce9224e3b327594f0ed3067010c79433228"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/wcomp.cpp",
+      "sha256": "9ad5a0725ba6e3c348a524bd395a515d2177f86d9a7f4f2419f73e57515bcfa1",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "9f2b44506e2664f9765b901b195e6a36f0b00c7207ce04e85fca3c81e50c0040",
+      "qualified_input_sha256": "9f2b44506e2664f9765b901b195e6a36f0b00c7207ce04e85fca3c81e50c0040"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/wfix.cpp",
+      "sha256": "0682ec21bef11672e2f464a0031a8d94cc994408ab7d1de3b090a52f6236ec62",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "f8ba9a37d59b98132099eadb45b6afce90ee9a3cb4f669b1a31dd062eb0ada7f",
+      "qualified_input_sha256": "f8ba9a37d59b98132099eadb45b6afce90ee9a3cb4f669b1a31dd062eb0ada7f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/wfix_names.txt",
+      "sha256": "c3fbafd8d88c5768fa03f80b7ba57913dc16f9b40cad68e67562fbc81de613ba",
+      "origin": "C4 16a67bc engine",
+      "origin_snapshot_sha256": "18f336076cba039c979839e64cc7f1c1848b9691de97545487e5ff8b1296ca5b",
+      "qualified_input_sha256": "18f336076cba039c979839e64cc7f1c1848b9691de97545487e5ff8b1296ca5b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/Cargo.lock",
+      "sha256": "bd36cb861f05ac6e2e43fe207db8c426a9ddc2e16e5b78277b74ec1aa9fb4ce8",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "f1e4546cbfdd994d381c136b93452b129930916806aa871d3838ad61a49c7329",
+      "qualified_input_sha256": "f1e4546cbfdd994d381c136b93452b129930916806aa871d3838ad61a49c7329"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/Cargo.toml",
+      "sha256": "80079721ab0d1c9a7a5c6717a2989dc2459039024753bef4591b85d2837e8da8",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "b4c048a3db816e71cd62a24e078175b45b714f5b346c0cb7d469ee67d1676049",
+      "qualified_input_sha256": "b4c048a3db816e71cd62a24e078175b45b714f5b346c0cb7d469ee67d1676049"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/PROVENANCE.json",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "37e33d775b580de96ad4eadd632f962644475262139ddb203c4a73806e2b74a6",
+      "qualified_input_sha256": "37e33d775b580de96ad4eadd632f962644475262139ddb203c4a73806e2b74a6",
+      "sha256": "37e33d775b580de96ad4eadd632f962644475262139ddb203c4a73806e2b74a6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/examples/httpcheck.rs",
+      "sha256": "76db4ec725e5ee8ca21a66a51c0f819e38dacdb8c62e7de99551c39fcaaa7fd1",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "76db4ec725e5ee8ca21a66a51c0f819e38dacdb8c62e7de99551c39fcaaa7fd1",
+      "qualified_input_sha256": "76db4ec725e5ee8ca21a66a51c0f819e38dacdb8c62e7de99551c39fcaaa7fd1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/encoding.rs",
+      "sha256": "e55dcd04b20ab13ae7d17d5217d2d6085ca831685a108f49eaf4acec64ce756d",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "e55dcd04b20ab13ae7d17d5217d2d6085ca831685a108f49eaf4acec64ce756d",
+      "qualified_input_sha256": "e55dcd04b20ab13ae7d17d5217d2d6085ca831685a108f49eaf4acec64ce756d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/engine.rs",
+      "sha256": "bc32111a02b6ef7a2f15d33c66a98a1ff319c1397ab894ee4446044da2ad5ea8",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "bc32111a02b6ef7a2f15d33c66a98a1ff319c1397ab894ee4446044da2ad5ea8",
+      "qualified_input_sha256": "bc32111a02b6ef7a2f15d33c66a98a1ff319c1397ab894ee4446044da2ad5ea8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/feature_file.rs",
+      "sha256": "2ad4833ec0eab15e4d26e603662c004c5bd899aca2cf3896d28d4c0f03cb5986",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "2ad4833ec0eab15e4d26e603662c004c5bd899aca2cf3896d28d4c0f03cb5986",
+      "qualified_input_sha256": "2ad4833ec0eab15e4d26e603662c004c5bd899aca2cf3896d28d4c0f03cb5986"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/gate.rs",
+      "sha256": "5614d811d118800b0c3ce6b668a5a43e8c86e2f6af094210aeceec1ffb211e7d",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "bf3e8503db0cc0e2b63a1935de16ddd0e9938c67732d9633517166b471c0ca84",
+      "qualified_input_sha256": "bf3e8503db0cc0e2b63a1935de16ddd0e9938c67732d9633517166b471c0ca84"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/guard.rs",
+      "sha256": "6d12f324ef23059e38efeba9bc38f48061338c0e53ba1f6dc33fc9736f0af7ab",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "de536dcca2f244cadf1b08bc5c6ebd6657ed6649d55d30db83ffd45a49b1937a",
+      "qualified_input_sha256": "de536dcca2f244cadf1b08bc5c6ebd6657ed6649d55d30db83ffd45a49b1937a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/lib.rs",
+      "sha256": "e137d19ed42d5269d6e5e534227c904dc0bf055b5ff7944fc4d54a9f7e415a00",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "e137d19ed42d5269d6e5e534227c904dc0bf055b5ff7944fc4d54a9f7e415a00",
+      "qualified_input_sha256": "e137d19ed42d5269d6e5e534227c904dc0bf055b5ff7944fc4d54a9f7e415a00"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/main.rs",
+      "sha256": "128b653c63141e7128c86803587a6dc12cfff130922334c8f4cb26e31b6caa5a",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "128b653c63141e7128c86803587a6dc12cfff130922334c8f4cb26e31b6caa5a",
+      "qualified_input_sha256": "128b653c63141e7128c86803587a6dc12cfff130922334c8f4cb26e31b6caa5a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/mock.rs",
+      "sha256": "44152a2a53b5f057bca2d0e4c6316296ff3c1f2be02810cbe6bee116472237c7",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "86234d5c78090b1c18098e113a26eef0c16f06d5073dab779608e09e173f8cb7",
+      "qualified_input_sha256": "86234d5c78090b1c18098e113a26eef0c16f06d5073dab779608e09e173f8cb7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/protocol.rs",
+      "sha256": "b083d8167549b13ade8ad7825c82f65fc00905fbcfbbf8ef7edee30345eec808",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "b083d8167549b13ade8ad7825c82f65fc00905fbcfbbf8ef7edee30345eec808",
+      "qualified_input_sha256": "b083d8167549b13ade8ad7825c82f65fc00905fbcfbbf8ef7edee30345eec808"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/pyjson.rs",
+      "sha256": "76c817ca0141e7a7c47efa82c26c3b31a1f1bd5a66a7715186bfa579b8c4efed",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "c0786173216fffdd2303f4127c0f66f71c97bf8abbe2fb540aa7bf334b940693",
+      "qualified_input_sha256": "c0786173216fffdd2303f4127c0f66f71c97bf8abbe2fb540aa7bf334b940693"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/server.rs",
+      "sha256": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9",
+      "qualified_input_sha256": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/session.rs",
+      "sha256": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf",
+      "qualified_input_sha256": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/sha256.rs",
+      "sha256": "4e55d8ed1d10aa3942e7aaabc3820d4d852e2f4f9f29b8a1d5c6b14ad22dd4af",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "4e55d8ed1d10aa3942e7aaabc3820d4d852e2f4f9f29b8a1d5c6b14ad22dd4af",
+      "qualified_input_sha256": "4e55d8ed1d10aa3942e7aaabc3820d4d852e2f4f9f29b8a1d5c6b14ad22dd4af"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/telemetry.rs",
+      "sha256": "2cf5031cad79482ffdd7f91f6bab3010d73faa480281cd33afe7b5d073c97b30",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "2cf5031cad79482ffdd7f91f6bab3010d73faa480281cd33afe7b5d073c97b30",
+      "qualified_input_sha256": "2cf5031cad79482ffdd7f91f6bab3010d73faa480281cd33afe7b5d073c97b30"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/tokenizer/mod.rs",
+      "sha256": "417f853e51a32455ab46ce6bb3532a2cc279c820698cd7cf9785ac1d6f9bfbe9",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "260c8b32a870089e3dc6c4699c3dafc74b41327640957ddb537987738d5340a9",
+      "qualified_input_sha256": "260c8b32a870089e3dc6c4699c3dafc74b41327640957ddb537987738d5340a9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/tokenizer/pretok.rs",
+      "sha256": "cd5dc5f3553a2f8b59c6e2759396a926a8347814fe76a54c8212fab4c0198b6a",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "0a97f0f3f7cb804c5dba4eb29616813c893453cd3b759c5fe50a597e30436ab9",
+      "qualified_input_sha256": "0a97f0f3f7cb804c5dba4eb29616813c893453cd3b759c5fe50a597e30436ab9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/tokenizer/unicode_tables.rs",
+      "sha256": "003b5822ae45d473024f4891e6c58b57b677c06234f3fe47f349956ceb0c6306",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "6854b5089d9bb3e48699f5623d50aee257c63a58c75930145a4991ed4135e2fb",
+      "qualified_input_sha256": "6854b5089d9bb3e48699f5623d50aee257c63a58c75930145a4991ed4135e2fb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/vision.rs",
+      "sha256": "ae0ccf321b056d2156964aa9ec90eb6dd018052415bac8bfebe12264aa159514",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "ae0ccf321b056d2156964aa9ec90eb6dd018052415bac8bfebe12264aa159514",
+      "qualified_input_sha256": "ae0ccf321b056d2156964aa9ec90eb6dd018052415bac8bfebe12264aa159514"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/engine_image_retry.rs",
+      "sha256": "9cb83f768b87a491b78be498cd47b15dfaa42438e9b1dc8d0275d30e95927782",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "9cb83f768b87a491b78be498cd47b15dfaa42438e9b1dc8d0275d30e95927782",
+      "qualified_input_sha256": "9cb83f768b87a491b78be498cd47b15dfaa42438e9b1dc8d0275d30e95927782"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/public_contract.rs",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "b4af6606d3449fead5ac3ea6221b7dbac56f93fa29e0f8a74a9b7434a3463316",
+      "qualified_input_sha256": "b4af6606d3449fead5ac3ea6221b7dbac56f93fa29e0f8a74a9b7434a3463316",
+      "sha256": "b4af6606d3449fead5ac3ea6221b7dbac56f93fa29e0f8a74a9b7434a3463316"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/vision_prefix_transport.rs",
+      "sha256": "eebfa6a2680e44d12e75a782a879d498817f7b3c1b442257555b98136af59f9d",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "eebfa6a2680e44d12e75a782a879d498817f7b3c1b442257555b98136af59f9d",
+      "qualified_input_sha256": "eebfa6a2680e44d12e75a782a879d498817f7b3c1b442257555b98136af59f9d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/check_against_sglang.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "9d6aaccbd018b8cab620b0da08222a968da84729ad512dffa87086feff15767d",
+      "qualified_input_sha256": "9d6aaccbd018b8cab620b0da08222a968da84729ad512dffa87086feff15767d",
+      "sha256": "9d6aaccbd018b8cab620b0da08222a968da84729ad512dffa87086feff15767d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/fe_bench.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "19bab7a9c5d11a8516c6b24bc161039754ac539ca7f1f53267ee373943f81beb",
+      "qualified_input_sha256": "19bab7a9c5d11a8516c6b24bc161039754ac539ca7f1f53267ee373943f81beb",
+      "sha256": "19bab7a9c5d11a8516c6b24bc161039754ac539ca7f1f53267ee373943f81beb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/gen_encoding_cases.py",
+      "sha256": "ec14a73b4b2897fa8d5587b8b14db6099f85f704beed55486b73212433ae446e",
+      "origin": "paired frontend 2622574d source snapshot",
+      "origin_snapshot_sha256": "ec14a73b4b2897fa8d5587b8b14db6099f85f704beed55486b73212433ae446e",
+      "qualified_input_sha256": "ec14a73b4b2897fa8d5587b8b14db6099f85f704beed55486b73212433ae446e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/gen_tokenizer_cases.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "c99f22f4986996004e5f9d07f5ded66c551c694d22ceaade6f998030d0b444e3",
+      "qualified_input_sha256": "c99f22f4986996004e5f9d07f5ded66c551c694d22ceaade6f998030d0b444e3",
+      "sha256": "c99f22f4986996004e5f9d07f5ded66c551c694d22ceaade6f998030d0b444e3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/gen_unicode_tables.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "68100b868206b50812de24ebde0896e6c4e3aea525372d7ef898c0db433a47b9",
+      "qualified_input_sha256": "68100b868206b50812de24ebde0896e6c4e3aea525372d7ef898c0db433a47b9",
+      "sha256": "68100b868206b50812de24ebde0896e6c4e3aea525372d7ef898c0db433a47b9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/smoke_test.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "e911ac237b3c6031f46740a93bd6f5133ec2c0bc193e06818e81df1b1b286f81",
+      "qualified_input_sha256": "e911ac237b3c6031f46740a93bd6f5133ec2c0bc193e06818e81df1b1b286f81",
+      "sha256": "e911ac237b3c6031f46740a93bd6f5133ec2c0bc193e06818e81df1b1b286f81"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/PROVENANCE.json",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "ef8ea577b7212da95b1a1791014be449bd98e6bb4758e798459d421452054bab",
+      "qualified_input_sha256": "ef8ea577b7212da95b1a1791014be449bd98e6bb4758e798459d421452054bab",
+      "sha256": "ef8ea577b7212da95b1a1791014be449bd98e6bb4758e798459d421452054bab"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/encoder.py",
+      "sha256": "14e54451800ca94e4eaec78fb7d42d133ba6f91680b350d26024add0646aace6",
+      "origin": "captured current vision source",
+      "origin_snapshot_sha256": "14e54451800ca94e4eaec78fb7d42d133ba6f91680b350d26024add0646aace6",
+      "qualified_input_sha256": "14e54451800ca94e4eaec78fb7d42d133ba6f91680b350d26024add0646aace6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/reference_image_processor.py",
+      "sha256": "482759e3bcc4e9bb5ee582b244cc563f5d0e163d8b48dda91ebb7106e62f9272",
+      "origin": "captured current vision source",
+      "origin_snapshot_sha256": "5a49da691715c144eceb0eb2dfaccb992a085a6cc8abb7590982c0115d58ce49",
+      "qualified_input_sha256": "5a49da691715c144eceb0eb2dfaccb992a085a6cc8abb7590982c0115d58ce49"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/reference_vision.py",
+      "sha256": "e66e47b74b600ca99c6ba0e7f7ddea82517883e7f65ee0ddb32c85e43b0092bc",
+      "origin": "captured current vision source",
+      "origin_snapshot_sha256": "4a512e9aeb9aaf4bb264aeb39f0bf17e3dd804456a7aff4843f14154f03fa0da",
+      "qualified_input_sha256": "4a512e9aeb9aaf4bb264aeb39f0bf17e3dd804456a7aff4843f14154f03fa0da"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/requirements.txt",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "ab91be6fa81a6ba361c7781f5c48f035d2d18dedc482126bb099271f5eab1cc4",
+      "qualified_input_sha256": "ab91be6fa81a6ba361c7781f5c48f035d2d18dedc482126bb099271f5eab1cc4",
+      "sha256": "ab91be6fa81a6ba361c7781f5c48f035d2d18dedc482126bb099271f5eab1cc4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/tests/test_encoder_cpu.py",
+      "origin": "public fork d793c869 inherited support/test source",
+      "origin_snapshot_sha256": "ecec5dcecf651aba776677a8be33c2d932f2d549ce6b6d773eea1d55a51ce5aa",
+      "qualified_input_sha256": "ecec5dcecf651aba776677a8be33c2d932f2d549ce6b6d773eea1d55a51ce5aa",
+      "sha256": "ecec5dcecf651aba776677a8be33c2d932f2d549ce6b6d773eea1d55a51ce5aa"
+    }
+  ],
+  "line_endings": "Canonical LF. qualified_input_sha256 is the original tested input. sha256 is the verified canonical clean-build input. Host text/rodata and GPU SASS comparisons are recorded in validation.",
+  "validation": "VALIDATION_20261108.json",
+  "clean_build_artifacts": {
+    "engine": {
+      "sha256": "1deac717988ce523cdcb974fc182bc25a631778aba44caf141c8760e804d4a4f",
+      "bytes": 50353856
+    },
+    "frontend": {
+      "sha256": "165dbe1d72710d14bac57542d2c4a22ff6535a8e2e5e87d6578ba4ac6a3f57ce",
+      "bytes": 20274568
+    },
+    "native24_probe": {
+      "sha256": "2cb4c316e75811a9ad336a50ca7788900413c4a72c79221d8ca6a9127ee73c1a",
+      "bytes": 18665104
+    },
+    "creative_probe": {
+      "sha256": "12c7738e379282cce33c2161345fbc415c3a492b239747005413ad73cf037b12",
+      "bytes": 979160
+    },
+    "vision_probe": {
+      "sha256": "92a3b6c48a30885457913fae3c5af8629d9b68dcb1f4324f855502da6d5acdfb",
+      "bytes": 1451264
+    }
+  },
+  "qualified_build_artifacts": {
+    "engine": {
+      "sha256": "e77797c84fd3416ab9921b3d75efdc62ae17d6aa0b335ddc948571914f4fa7df",
+      "bytes": 50353856
+    },
+    "frontend": {
+      "sha256": "16c9621e13d301f404a1a66e54e0c017a3286f2d244480fa607fd189034d9dbb",
+      "bytes": 20274432
+    },
+    "native24_probe": {
+      "sha256": "1d4601d3037838a8d8f63779a6822ba5046d224946a77d31b6519417abe4cf44",
+      "bytes": 18665104
+    },
+    "creative_probe": {
+      "sha256": "8bbab66890b12d317684fdc5a5ae1b76fc5eba888d96009df54e9f51c23f1df8",
+      "bytes": 979160
+    },
+    "vision_probe": {
+      "sha256": "f00bee3d515cb621071fc097464b0b6937deb7ef8fe7139fb35c34f2a5f4477d",
+      "bytes": 1451264
+    }
+  },
+  "c8_reference_validation": "C8_REFERENCE_20261108.json",
+  "canonical_model_validation": "C8_REFERENCE_20261108.json",
+  "production_default_profile": "c4",
+  "capacity_validation": "../benchmarks/capacity-8m-20261108.json",
+  "cold_prefill_validation": "../benchmarks/prefill-20261108.json",
+  "real_workload_validation": "../benchmarks/real-workloads-20261108.json",
+  "c8_full_capacity_fill_qualified": true,
+  "c8_full_capacity_endurance_qualified": false,
+  "public_default_entrypoint": "tools/serve_original.py",
+  "public_default_activation_steering": false,
+  "optional_steering_requires_explicit_opt_in": true,
+  "original_launcher_validation": "../benchmarks/original-launch-20261109.json",
+  "ordinary_agent_reference": "../benchmarks/ordinary-agents-20261109.json",
+  "prefill_repeat_and_interference_validation": "../benchmarks/prefill-and-latency-20261109.json",
+  "c2_reference_validation": "../benchmarks/c2-20261109.json",
+  "steering_distribution": "optional_experimental_binary_and_readable_json_explicit_opt_in_default_original",
+  "optional_steering_manifest": "../../assets/steering/creative-v1/manifest.json"
+}

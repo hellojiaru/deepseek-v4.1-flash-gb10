@@ -1,0 +1,33 @@
+# repo-wide; each configuration keeps its own .gitignore beside its files
+.claude/
+build/
+build-*/
+target/
+__pycache__/
+*.o
+*.so
+# never commit secrets
+*.key
+.env
+# Local serving and publication evidence must not enter the public source tree.
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.private.json
+*.private.jsonl
+/private/
+/local-evidence/
+/deployment-artifacts/
+**/request-dumps/
+**/vision-spool/
+
+.local/
+/build/
+**/build/
+**/target/
+__pycache__/
+*.pyc
+*.obj
+*.exe

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "date": "2026-11-09",
+  "metric": "actual input tokens / request-to-first-content seconds, including frontend, tokenization and transport",
+  "rows": [
+    {
+      "repeat": 1,
+      "input_tokens": 65537,
+      "cached_tokens": 0,
+      "ttft_s": 7.03853118600091,
+      "effective_input_tps": 9311.175622883931,
+      "done": true
+    },
+    {
+      "repeat": 1,
+      "input_tokens": 262145,
+      "cached_tokens": 0,
+      "ttft_s": 27.176927269028965,
+      "effective_input_tps": 9645.866046774996,
+      "done": true
+    },
+    {
+      "repeat": 2,
+      "input_tokens": 65537,
+      "cached_tokens": 0,
+      "ttft_s": 7.101428681984544,
+      "effective_input_tps": 9228.70635401287,
+      "done": true
+    },
+    {
+      "repeat": 2,
+      "input_tokens": 262145,
+      "cached_tokens": 0,
+      "ttft_s": 27.290022717032116,
+      "effective_input_tps": 9605.891600683473,
+      "done": true
+    },
+    {
+      "repeat": 3,
+      "input_tokens": 65537,
+      "cached_tokens": 0,
+      "ttft_s": 7.045642370998394,
+      "effective_input_tps": 9301.777829338385,
+      "done": true
+    },
+    {
+      "repeat": 3,
+      "input_tokens": 262145,
+      "cached_tokens": 0,
+      "ttft_s": 27.36226321500726,
+      "effective_input_tps": 9580.530599392176,
+      "done": true
+    }
+  ],
+  "summary": [
+    {
+      "input_tokens": 65537,
+      "samples": 3,
+      "mean_ttft_s": 7.061867412994616,
+      "mean_effective_input_tps": 9280.553268745061,
+      "min_effective_input_tps": 9228.70635401287,
+      "max_effective_input_tps": 9311.175622883931
+    },
+    {
+      "input_tokens": 262145,
+      "samples": 3,
+      "mean_ttft_s": 27.276404400356114,
+      "mean_effective_input_tps": 9610.762748950216,
+      "min_effective_input_tps": 9580.530599392176,
+      "max_effective_input_tps": 9645.866046774996
+    }
+  ],
+  "prefill_interference": {
+    "passed": true,
+    "short_arrival_after_long_s": 0.7635488479863852,
+    "short_ttft_s": 26.720722638012376,
+    "long_ttft_s": 27.391986480972264,
+    "long_input_tokens": 262145
+  },
+  "raw_sha256": {
+    "PREFILL_RESULT.json": "dbe5b211bcb0a0b44c8d9f91cf8b4a3a5f03c8c026d503926ba3991fcbe0b5e9",
+    "prefill-1.json": "92afa327a345beb6b5e8e901fea0eb2d780254a56095499fdb8be44490013043",
+    "prefill-2.json": "417611bd6650dae5a99b2392e9eca9a855f0c89d5c86e803bd14845599f9e30f",
+    "interference.json": "38e3c56916367b4fe4c1fc5a1ea7c21a70ded404f6a18773b104a1be37067b4d"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "audited_sessions": 74,
+  "read_only_refusals": 7,
+  "ordinary_long_tasks": 8,
+  "responses": 1589,
+  "output_tokens": 2551292,
+  "weighted_decode_tps": 103.35040181934222,
+  "task_mean_tps": 106.84441149087361,
+  "timed_responses_256plus": 1056,
+  "median_request_tps_256plus": 108.68813531078153,
+  "responses_at_least_130_tps_256plus": 232,
+  "rows": [
+    {
+      "task": "空间设计与多轮文件工作",
+      "date": "2026-10-18",
+      "responses": 234,
+      "output_tokens": 212108,
+      "decode_tps": 122.21187663346348,
+      "max_input_tokens": 369071
+    },
+    {
+      "task": "三维交互程序",
+      "date": "2026-10-19",
+      "responses": 118,
+      "output_tokens": 303642,
+      "decode_tps": 97.11220697262588,
+      "max_input_tokens": 368343
+    },
+    {
+      "task": "长篇驾驶游戏开发",
+      "date": "2026-10-20",
+      "responses": 526,
+      "output_tokens": 750900,
+      "decode_tps": 95.85090302043314,
+      "max_input_tokens": 591982
+    },
+    {
+      "task": "汽车交互展示",
+      "date": "2026-10-21",
+      "responses": 160,
+      "output_tokens": 350686,
+      "decode_tps": 102.64481194204595,
+      "max_input_tokens": 588361
+    },
+    {
+      "task": "Canvas视觉程序",
+      "date": "2026-10-24",
+      "responses": 200,
+      "output_tokens": 280179,
+      "decode_tps": 121.25491363726657,
+      "max_input_tokens": 352050
+    },
+    {
+      "task": "Canvas动画",
+      "date": "2026-10-24",
+      "responses": 100,
+      "output_tokens": 217611,
+      "decode_tps": 99.40883058457752,
+      "max_input_tokens": 280333
+    },
+    {
+      "task": "推理引擎方案研究",
+      "date": "2026-10-30",
+      "responses": 154,
+      "output_tokens": 191390,
+      "decode_tps": 114.12090411852499,
+      "max_input_tokens": 377586
+    },
+    {
+      "task": "Canvas动画与工具工作流",
+      "date": "2026-10-31",
+      "responses": 97,
+      "output_tokens": 244776,
+      "decode_tps": 102.15084501805134,
+      "max_input_tokens": 319386
+    }
+  ],
+  "scope": "October 18-31 ordinary long tasks, excluding CORAL and overlapping four-task tests; historical versions, not an isolated current-build benchmark; non-DSH load and unread sessions not assumed absent",
+  "methods": "source.provider==home-spark-tp4 per response; complete first-content-to-message timing; no output speed imputation; per-request median uses >=256 output tokens; weighted result includes every timed response",
+  "raw_sha256": "c13b4b03613fd15012a32aa91c5d5f65b546761834dbf4761dad52c561a958ba"
+}

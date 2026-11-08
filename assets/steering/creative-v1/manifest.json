@@ -1,0 +1,19 @@
+{
+  "format": "DSCR0001",
+  "layers": 40,
+  "hidden_size": 5120,
+  "bytes": 819216,
+  "binary_sha256": "4ac401fd47fa275a9218bcfbc3d2521122221850fd7f6cf1437a90a518ed8a59",
+  "source_json_sha256": "c6ff9a9656ff9f6a5b7e4c9a9c76adcb0d5cc4adf40f454a3a8c893dd2126663",
+  "compatible_checkpoint": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "compatible_checkpoint_revision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "suggested_scope": "1bae0e1088993b9b82de08f59de5be5a34e42170:c6ff9a9656ff9f6a5b7e4c9a9c76adcb0d5cc4adf40f454a3a8c893dd2126663:lambda1.5:v1",
+  "default_enabled": false,
+  "strength_when_enabled": 1.5,
+  "license": "MIT",
+  "status": "experimental optional legacy calibration asset; not the default model",
+  "extraction_checkpoint_revision": "not preserved in the available legacy generation record; do not treat as freshly fitted on 1017",
+  "calibration_method": "normalized-pair-layer-uncentered-shared-principal",
+  "independent_calibration_prompts": 26,
+  "private_prompts_or_capture_records_distributed": false
+}

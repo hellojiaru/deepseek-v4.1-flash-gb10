@@ -1,0 +1,123 @@
+{
+  "cohort_start": 1793872723690,
+  "cohort_end": 1794092630219,
+  "whole": {
+    "requests": 5902,
+    "output": 3973793,
+    "weighted_tps": 89.33584868587518,
+    "median_request_tps": 119.93148643398189,
+    "max_context": 597735,
+    "ttft_median_s": 0.6495,
+    "sessions": 16,
+    "cache_read_tokens": 1895168545,
+    "input_tokens_including_reuse": 1908882275,
+    "cache_read_fraction": 0.9928158325007235,
+    "model_counts": {
+      "local/deepseek-v41-normal": 5900,
+      "local/deepseek-v41-creative": 2
+    },
+    "stop_reasons": {
+      "toolUse": 5314,
+      "stop": 588
+    }
+  },
+  "observed_peak": 4,
+  "solo_256plus": {
+    "requests": 2680,
+    "output": 2134064,
+    "weighted_tps": 137.01508051641707,
+    "median_request_tps": 126.43032499415477,
+    "max_context": 597735,
+    "ttft_median_s": 0.5335000000000001
+  },
+  "dual_dominant_256plus_per_stream": {
+    "requests": 510,
+    "output": 406585,
+    "weighted_tps": 78.34641724378466,
+    "median_request_tps": 75.55086899180924,
+    "max_context": 579364,
+    "ttft_median_s": 0.538
+  },
+  "dual_windows": {
+    "windows": 20,
+    "requests": 79,
+    "output": 55146,
+    "aggregate_tps": 131.70169015497265
+  },
+  "overlap_time_s": {
+    "0": 191375.766,
+    "1": 19425.87,
+    "2": 4712.531,
+    "3": 1929.975,
+    "4": 2460.162
+  },
+  "definitions": {
+    "solo": "no other audited DSH stream overlaps the whole first-token-to-message interval; output >=256",
+    "dual": "observed peak2 and >=80% of decode interval overlaps one peer; output>=256",
+    "dual_windows": "connected complete-request windows with peak2 and >=80% dual-stream time; exact total output divided by window duration",
+    "scope": "audited DSH traffic only; no claim that external non-DSH work was absent historically"
+  },
+  "raw_response_count": 5905,
+  "raw_output_tokens": 3974918,
+  "missing_complete_timing_responses": 3,
+  "missing_complete_timing_output_tokens": 1125,
+  "turns": {
+    "completed": 588,
+    "error": 1
+  },
+  "error_description": "Concurrency limit exceeded for user, please retry later",
+  "tool_call_events": 5566,
+  "compression_events": {
+    "start": 10,
+    "summary": 10,
+    "end": 10
+  },
+  "historical_single_reference": {
+    "turns": 4,
+    "steps": 155,
+    "llmMs": 1957184,
+    "toolMs": 1054202,
+    "ttftMs": 280103,
+    "ttftSteps": 155,
+    "decodeMs": 1677081,
+    "decodeTokens": 192668
+  },
+  "production_uptime_before_maintenance": [
+    {
+      "rank": 0,
+      "start_epoch": 1793703167.46,
+      "observed_epoch": 1794148146.3482795,
+      "uptime_hours": 123.60524674428834,
+      "sha256": "dc4d02a8b12648f670e51a741a98cc86ca3f191249d0a57056fb7cfd34d5f619"
+    },
+    {
+      "rank": 1,
+      "start_epoch": 1793703167.96,
+      "observed_epoch": 1794148146.3482795,
+      "uptime_hours": 123.60510785539945,
+      "sha256": "dc4d02a8b12648f670e51a741a98cc86ca3f191249d0a57056fb7cfd34d5f619"
+    },
+    {
+      "rank": 2,
+      "start_epoch": 1793703167.78,
+      "observed_epoch": 1794148146.3482795,
+      "uptime_hours": 123.605157855418,
+      "sha256": "dc4d02a8b12648f670e51a741a98cc86ca3f191249d0a57056fb7cfd34d5f619"
+    },
+    {
+      "rank": 3,
+      "start_epoch": 1793703167.13,
+      "observed_epoch": 1794148146.3482795,
+      "uptime_hours": 123.60533841093381,
+      "sha256": "dc4d02a8b12648f670e51a741a98cc86ca3f191249d0a57056fb7cfd34d5f619"
+    }
+  ],
+  "stability_scope": "old production C4 instance; not 123 hours of the new C8 build",
+  "raw_sha256": {
+    "dsh-summaries.json": "b4487c9bc73d0ca87d0da45aa0a00a8553e74390dda4f3f38c64e0ff0ab6d1c7",
+    "dsh-current-instance-requests.json": "e1f26c62e3d26ab5444bbd7d60511a3e8bcb5ced4aba0d9a0986a147373d8a5f",
+    "dsh-classified-requests.json": "4312ecab9b5706374c8f0c8ff0c7677d6c2520932a0666d9198a031349ece797",
+    "DSH_REAL_WORKLOAD_ANALYSIS.json": "52e95e38bf79dfcbaea8c9db55a56fa9e22ca30e782fb23d3f1381feade94962",
+    "turn-errors.private.json": "937d068e167da89d05bf727b14040df7be2cc03901f03ca800b48cafdac115ec"
+  }
+}

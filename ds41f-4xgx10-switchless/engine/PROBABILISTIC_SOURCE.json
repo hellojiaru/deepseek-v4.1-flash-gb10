@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "status": "source-frozen-for-isolated-build",
+  "created": "2026-10-20T14:16:56.826661+00:00",
+  "baseline_engine": "57a7e18d4ddca8dc31c942456bc83347190748558d51f96d671955ca7e22ee67",
+  "default_enabled": false,
+  "switch": "--spec-probabilistic",
+  "files": [
+    {
+      "path": "common/spec_sampling.h",
+      "sha256": "0d879b59a69e0eb3d3b5b997fea32e42e1ccf7ed3fb279b0633de79cef0d5516",
+      "bytes": 2140,
+      "baseline_sha256": null
+    },
+    {
+      "path": "dspark/dspark.cu",
+      "sha256": "c7470f2289022d7a8cefd336e291bed5286929c0eeb2c3f95c9e99c5ebdd6609",
+      "bytes": 63288,
+      "baseline_sha256": "51f96ac8052c027cae897e97f93642d954d3f6b8bb0eb5abef38771f8f050ef3"
+    },
+    {
+      "path": "dspark/dspark.h",
+      "sha256": "8d826c809906975d548bca942793505d9bf11eda323638cb9d56f4c0545be0f3",
+      "bytes": 19780,
+      "baseline_sha256": "9295e63c51583e76a3b0dc7033642890e12560add36c278e2fbe2a8c27d2b4c0"
+    },
+    {
+      "path": "model/impl.h",
+      "sha256": "da79a153d85ce5cb1911df2c4774e33b51f766bdcfd2a6bd34b57786ed5e666a",
+      "bytes": 19126,
+      "baseline_sha256": "283fae6060c33a8d89d61835bbb85b32b713f311022bcf0ccb5774d7026a8562"
+    },
+    {
+      "path": "model/model.cu",
+      "sha256": "6a16e9c598b17cc76c68bd12adcfb907660160642d5b83b62fec44caae594f97",
+      "bytes": 50801,
+      "baseline_sha256": "725e5355d0c690fe538978febfded680ab1155f359734e0288b49d7acd2a2860"
+    },
+    {
+      "path": "model/model.h",
+      "sha256": "664693db28dfc42b70d470ff7f4fde23f3f3a0cef9fe19f685780a98630189d4",
+      "bytes": 23209,
+      "baseline_sha256": "3ec0b01c7c1fb4ed43f5319558cfaabb3955da401246c428b66539d659e62644"
+    },
+    {
+      "path": "model/ops.h",
+      "sha256": "af0f9af05b294c536884893f49ff508898be707a079f604565faf589b2f654a9",
+      "bytes": 16868,
+      "baseline_sha256": "6a328ec5530e66fa24a04b2074b0cfb11dcfa9c1e397b06d39d5859f3ab09693"
+    },
+    {
+      "path": "model/prefill.cu",
+      "sha256": "6e2ce1e9f1cd47bb7437ffb2dd55aeb738df36de0a062c36399a56b7abce3456",
+      "bytes": 40644,
+      "baseline_sha256": "a4a5551cc59a7468ae2100ffa490cac947498e737a2b54539de63b8d66d165c6"
+    },
+    {
+      "path": "model/sample.cu",
+      "sha256": "178a850d47de31c92fd3684e6191600ffadbac6637e8dc7c05a37c68fe0ce1cd",
+      "bytes": 22808,
+      "baseline_sha256": "9ec196b5cec3c001ecdd36354955d39b79f4f8285bd9f599142999a9cf25b317"
+    },
+    {
+      "path": "model/spec.cu",
+      "sha256": "5c95aa487734d2f9b8acc53252dc1ed6347c7a55d2341f551b81d046666050ce",
+      "bytes": 57256,
+      "baseline_sha256": "5e8d6c2bbe446b7ab12f40614bc80dae3a7532d46dbea7c4fad4de1628a955bb"
+    },
+    {
+      "path": "model/spec_batch.h",
+      "sha256": "d28a23d5989990978dbc0bd9c34a2fe70a5f8902079adebd902f712eb7846a51",
+      "bytes": 4641,
+      "baseline_sha256": "130be48fa1fe911978db089a92dde500656dbc0dd454ab4a3ff188a2ea158673"
+    },
+    {
+      "path": "model/state.cu",
+      "sha256": "dec37cfbfd2fbbf5a2645a7c0f00db2d9ea6cdd3be24d71ac0fa73c329d047eb",
+      "bytes": 37530,
+      "baseline_sha256": "b6891b0bac32919797e8d069ca92797091776c4879fc3110334ca39fbb7b9e0d"
+    },
+    {
+      "path": "model/tests/probability_host_test.cpp",
+      "sha256": "71b2408fc28bd1012c82adbb5d0831d87c72f59468f23f951f183194bdcd8fba",
+      "bytes": 2775,
+      "baseline_sha256": null
+    },
+    {
+      "path": "server/cmd.cpp",
+      "sha256": "06852eb07307b82425983af9b7275118396ce60341b5d09f80da82a4225b66b4",
+      "bytes": 32426,
+      "baseline_sha256": "e4eb3d2671892d3616ac474026fe18db3ff2d7cc42df4b8fd0359b62edb42d8f"
+    },
+    {
+      "path": "server/cmd.h",
+      "sha256": "e7c63f6a50a19285c27c9aed807032e1bb041fc50398e1922f91b9cb814a4f54",
+      "bytes": 15708,
+      "baseline_sha256": "a9cfdfdacd988a3d0615d03fefce544554a074f9849c1a30bf15aa02c5d517e3"
+    },
+    {
+      "path": "server/main.cpp",
+      "sha256": "64270783659e859d0402c51017e76fe31d9ecb27bfb093acb12b61e635d42848",
+      "bytes": 95595,
+      "baseline_sha256": "56af940df3066524cb3dc8641f90568bfbb24d079f4730a080c84a66276ec224"
+    },
+    {
+      "path": "server/serve.cpp",
+      "sha256": "008fa7a1b4a4c330ccd2c4379711524078eaaacee403e87793f52a9ab59f06d1",
+      "bytes": 82725,
+      "baseline_sha256": "bd9d7b2b54fdb34f5f41e13b0d66eabfef1e78efaa58e55f0287619ed4d93048"
+    }
+  ],
+  "cpu_control": {
+    "test": "model/tests/probability_host_test.cpp",
+    "compiler": "MSVC19.44/C++17; CUDA12.4 host headers only",
+    "passed": true,
+    "gpu_executed": false,
+    "midpoints_checked": 8388608
+  },
+  "q_bytes_per_slot": 646432,
+  "q_bytes_16_slots": 10342912,
+  "additional_collective_bytes_per_rank_at_RB8": 384,
+  "additional_collective_bytes_per_rank_at_RB16": 768,
+  "cuda_compile_passed": null,
+  "gpu_validation_passed": null,
+  "production_changed": false,
+  "revision": 2,
+  "changes_since_v1": [
+    "q normalizer float4 accumulation matches p traversal/order",
+    "spec.cu namespace correction ops::kMaxRows to model::kMaxRows"
+  ],
+  "prior_manifest_sha256": "9ce4c448261bd888ed1cb1c5fbfe1db5b41d53818fccb2334f33260ff2d0a83a"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "source": "Qualified protocol-5 frontend, retained unchanged by the probabilistic DSpark release",
+  "reference_frontend_binary_sha256": "2622574d12e9366e6575cd42b9a2efb9197db8b318a0ff277cdae0869a7c0274",
+  "runtime_source_files_sha256": {
+    "Cargo.lock": "f1e4546cbfdd994d381c136b93452b129930916806aa871d3838ad61a49c7329",
+    "Cargo.toml": "b4c048a3db816e71cd62a24e078175b45b714f5b346c0cb7d469ee67d1676049",
+    "examples/httpcheck.rs": "76db4ec725e5ee8ca21a66a51c0f819e38dacdb8c62e7de99551c39fcaaa7fd1",
+    "src/encoding.rs": "e55dcd04b20ab13ae7d17d5217d2d6085ca831685a108f49eaf4acec64ce756d",
+    "src/engine.rs": "bc32111a02b6ef7a2f15d33c66a98a1ff319c1397ab894ee4446044da2ad5ea8",
+    "src/feature_file.rs": "2ad4833ec0eab15e4d26e603662c004c5bd899aca2cf3896d28d4c0f03cb5986",
+    "src/gate.rs": "bf3e8503db0cc0e2b63a1935de16ddd0e9938c67732d9633517166b471c0ca84",
+    "src/guard.rs": "de536dcca2f244cadf1b08bc5c6ebd6657ed6649d55d30db83ffd45a49b1937a",
+    "src/lib.rs": "e137d19ed42d5269d6e5e534227c904dc0bf055b5ff7944fc4d54a9f7e415a00",
+    "src/main.rs": "128b653c63141e7128c86803587a6dc12cfff130922334c8f4cb26e31b6caa5a",
+    "src/mock.rs": "86234d5c78090b1c18098e113a26eef0c16f06d5073dab779608e09e173f8cb7",
+    "src/protocol.rs": "b083d8167549b13ade8ad7825c82f65fc00905fbcfbbf8ef7edee30345eec808",
+    "src/pyjson.rs": "c0786173216fffdd2303f4127c0f66f71c97bf8abbe2fb540aa7bf334b940693",
+    "src/server.rs": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9",
+    "src/session.rs": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf",
+    "src/sha256.rs": "4e55d8ed1d10aa3942e7aaabc3820d4d852e2f4f9f29b8a1d5c6b14ad22dd4af",
+    "src/telemetry.rs": "2cf5031cad79482ffdd7f91f6bab3010d73faa480281cd33afe7b5d073c97b30",
+    "src/vision.rs": "ae0ccf321b056d2156964aa9ec90eb6dd018052415bac8bfebe12264aa159514",
+    "tests/engine_image_retry.rs": "9cb83f768b87a491b78be498cd47b15dfaa42438e9b1dc8d0275d30e95927782",
+    "tests/vision_prefix_transport.rs": "eebfa6a2680e44d12e75a782a879d498817f7b3c1b442257555b98136af59f9d",
+    "tools/gen_encoding_cases.py": "ec14a73b4b2897fa8d5587b8b14db6099f85f704beed55486b73212433ae446e",
+    "src/tokenizer/mod.rs": "260c8b32a870089e3dc6c4699c3dafc74b41327640957ddb537987738d5340a9",
+    "src/tokenizer/pretok.rs": "0a97f0f3f7cb804c5dba4eb29616813c893453cd3b759c5fe50a597e30436ab9",
+    "src/tokenizer/unicode_tables.rs": "6854b5089d9bb3e48699f5623d50aee257c63a58c75930145a4991ed4135e2fb"
+  },
+  "notes": [
+    "Source and tests matched the recorded release build manifest before copying.",
+    "Existing upstream tools not in that manifest are retained.",
+    "The published checkout adds public CPU tests; production service configuration is not copied.",
+    "Rebuilding this checkout on another compiler/host does not imply the same binary hash."
+  ]
+}

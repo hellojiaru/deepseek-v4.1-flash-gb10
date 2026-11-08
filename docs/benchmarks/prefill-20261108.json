@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "started": 1794153120.8588214,
+  "rows": [
+    {
+      "target": 65536,
+      "request_id": "ed90dd6d-cb0e-4cc9-91df-c194e172f429",
+      "submitted": true,
+      "ttft_s": 7.03853118600091,
+      "wall_s": 7.124343931034673,
+      "usage": {
+        "prompt_tokens": 65537,
+        "completion_tokens": 5,
+        "total_tokens": 65542,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "effective_cold_prefill_tps": 9311.175622883931,
+      "output_sha256": "7120a00fa7789a51e359a9815693fca7edc2b1a73283518416d5d4e646f3e1b2",
+      "done": true
+    },
+    {
+      "target": 262144,
+      "request_id": "70c89ac0-f51f-44bd-be33-0ac0e4b0c8a8",
+      "submitted": true,
+      "ttft_s": 27.176927269028965,
+      "wall_s": 27.26638940599514,
+      "usage": {
+        "prompt_tokens": 262145,
+        "completion_tokens": 5,
+        "total_tokens": 262150,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "effective_cold_prefill_tps": 9645.866046774996,
+      "output_sha256": "7120a00fa7789a51e359a9815693fca7edc2b1a73283518416d5d4e646f3e1b2",
+      "done": true
+    }
+  ],
+  "fixture": {
+    "files": {
+      "engine/model/model.cu": "c028f3eaff80deb4ad65b605784d5d3b4105b28f153e48feb26f4353eb7fe707",
+      "engine/model/prefill.cu": "6e2ce1e9f1cd47bb7437ffb2dd55aeb738df36de0a062c36399a56b7abce3456",
+      "engine/kernels/moe.cu": "7eeebed0beb80f37bd8c3ece206a7ab521b9f97ae9dc6a986464a44b9a2fee8f",
+      "engine/kernels/gemv_fp8.cu": "94d3d8a3ba8ecf919185a9e6c6808db1f7b690484b0a8d2e4b72deb12284b6e4",
+      "engine/attn/sparse_attn.cu": "127d7c96c9eb4f1d5125a58a7351de23a05eac71e907b0b036bf643569940200",
+      "engine/attn/indexer.cu": "88bda2d8eded4157540197faf2530036691c40a1a64d9dd5ec77a3ec31a10261",
+      "frontend/src/server.rs": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9",
+      "frontend/src/session.rs": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf"
+    },
+    "requests": [
+      {
+        "target": 65536,
+        "input_tokens": 65537,
+        "bytes": 177778,
+        "sha256": "9f24ca19ed5ecfb07e6e40ac66da15119dc5bf9e821eff5fd2927b8995cc4873"
+      },
+      {
+        "target": 262144,
+        "input_tokens": 262145,
+        "bytes": 754799,
+        "sha256": "f6efd736b26080b84103eef65a523b7fd88ff1ccefaa62c3fa3e9954ed648192"
+      }
+    ]
+  },
+  "metric": "prompt_tokens / client TTFT; includes frontend, tokenization and native preparation",
+  "finished": 1794153155.251245,
+  "production_engine_sha256": "dc4d02a8b12648f670e51a741a98cc86ca3f191249d0a57056fb7cfd34d5f619",
+  "production_frontend_sha256": "2622574d12e9366e6575cd42b9a2efb9197db8b318a0ff277cdae0869a7c0274",
+  "all_production_pids_unchanged": true,
+  "raw_sha256": "dbe5b211bcb0a0b44c8d9f91cf8b4a3a5f03c8c026d503926ba3991fcbe0b5e9"
+}

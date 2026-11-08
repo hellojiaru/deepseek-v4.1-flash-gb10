@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "name": "C4 native24 original-weight baseline",
+  "model_revision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "protocol": 5,
+  "engine_args": ["--mode", "serve", "--max-ctx", "1048576", "--slots", "4", "--slice", "64", "--session-gib", "8", "--session-margin-gib", "4", "--disk-gib", "8", "--keep-gib", "0", "--spec-probabilistic", "--verify-rows", "24"],
+  "frontend_args": ["--temperature", "1", "--top-p", "1", "--hold-s", "30", "--max-tokens", "393216", "--encoding", "1017", "--vision-prefix-policy", "tail-exact"],
+  "active_context_tokens_total": 4194304,
+  "full_4x1m_endurance_qualified": false,
+  "scale_compaction": false,
+  "W4A4": false
+}

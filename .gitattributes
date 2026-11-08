@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npy binary
+*.bin binary
+*.safetensors binary
+
+# Keep imported license and frozen baseline whitespace verbatim for provenance.
+LICENSES/*.txt whitespace=-blank-at-eol
+*.patch whitespace=-blank-at-eol
+ds41f-4xgx10-switchless/engine/kernels/rows24_fp8.cuh whitespace=-blank-at-eol
+ds41f-4xgx10-switchless/engine/kernels/rows24_moe.cuh whitespace=-blank-at-eol

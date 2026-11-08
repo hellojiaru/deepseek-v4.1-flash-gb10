@@ -1,0 +1,1369 @@
+{
+  "date": "2026-11-09",
+  "target": "Linux aarch64 GB10 sm_121a",
+  "clean_build": true,
+  "passed": true,
+  "no_previous_objects_or_executables": true,
+  "downloaded_dependency_source_cache_reused": true,
+  "gpu_executed": false,
+  "full_model_loaded": false,
+  "production_process_identity_unchanged": true,
+  "source_files": [
+    {
+      "path": "assets/steering/creative-v1/LICENSE",
+      "sha256": "13d217e78c65d2e30b9e692cddbbc81423c665fb3784435b7c1d01fc279d3d38"
+    },
+    {
+      "path": "assets/steering/creative-v1/README.md",
+      "sha256": "31235c48c6c67c42be8bb954d48d86968706e02e67bd3f1af1e6bbf6c36c7870"
+    },
+    {
+      "path": "assets/steering/creative-v1/directions.bin",
+      "sha256": "4ac401fd47fa275a9218bcfbc3d2521122221850fd7f6cf1437a90a518ed8a59"
+    },
+    {
+      "path": "assets/steering/creative-v1/directions.json",
+      "sha256": "c6ff9a9656ff9f6a5b7e4c9a9c76adcb0d5cc4adf40f454a3a8c893dd2126663"
+    },
+    {
+      "path": "assets/steering/creative-v1/manifest.json",
+      "sha256": "f468cc7a2f0a4785340f9ea8e1b196dad7d65831bf5788e482497b28bc5099ec"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/CMakeLists.txt",
+      "sha256": "8734df3e4a1c2ea001251d3bd366c20113f4514017743aeed29f9ee62b412d29"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/PROBABILISTIC.patch",
+      "sha256": "1240da5d4f6d2dd7ce999041a29428f4e80ab22bf6c929296c05bc500774cf55"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/PROBABILISTIC_SOURCE.json",
+      "sha256": "d406389a67697b6867d56c2ecb684b1ecb2f22b3f1723e5e5627305420bd3cbb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/PROBABILISTIC_SOURCE.v1.json",
+      "sha256": "9ce4c448261bd888ed1cb1c5fbfe1db5b41d53818fccb2334f33260ff2d0a83a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/CMakeLists.txt",
+      "sha256": "9215b8f33d7e8a412834bdb237e28e4ca2eb6a99bf96e979c29614d70eb87061"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/README.md",
+      "sha256": "827be9e3b687057e3add6de418b1c6536738568ce94032b4e8c6f3013f6ed62a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/attn.h",
+      "sha256": "c13b521520265b582418c31a794ca3305b7de98f8c9af631175d11123ff9cc49"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/attn_common.cuh",
+      "sha256": "e79ce898c710bd1b0f8c539c6f9717fe06a9af7737a98ed3331838eb56261532"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/compressor.cu",
+      "sha256": "808dac1ae796623b52acd7dea300be7734d353d59d34ad0cbfaffd75246c43cb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/compressor.cuh",
+      "sha256": "15ab211844b13c50f2cd3a66aa7b2ec223860a99fea344fad0563fcaffdb8f2b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/gemv.cu",
+      "sha256": "6947166f9ee8789a1a3562a8dc5beb8f2e46ca18992cf4862d11295ba344c5fe"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/gemv_row.cuh",
+      "sha256": "2460dc9320b8ecb5cb536e4c2600830069260f154ecb531db76d7edc73ad92cb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/indexer.cu",
+      "sha256": "88bda2d8eded4157540197faf2530036691c40a1a64d9dd5ec77a3ec31a10261"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/launch.h",
+      "sha256": "47cae910a446f5a5d7c1d4201ec93745786bd5fcfcf5a2ec5e73437564c192cf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/mhc.cu",
+      "sha256": "e53c599653269055df060ad1038df6db2713c02162b2c5e3f3438cb38e337b0e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/mhc_dev.cuh",
+      "sha256": "2c99ff4b8af3b40c789e2659c36e66e0b3b6f17b86304b2008153c6c789e90e7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/prep.cu",
+      "sha256": "4744eeb6f25076c25033254174807c77c8f31d0c279a57c402582d50d1669b32"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/rope.cu",
+      "sha256": "9d8863097350bfc27ecc9b5a83852fb96fd8585e1ee30f1ef7aa80321764ffa4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/sparse_attn.cu",
+      "sha256": "127d7c96c9eb4f1d5125a58a7351de23a05eac71e907b0b036bf643569940200"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/attn_tests.cu",
+      "sha256": "0975b31a75119a6b75fda1c9a83662c4565353a287d568d0c15034884fac21a9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/bench_attn.cu",
+      "sha256": "3b41ab5810dcb45cff1508d90b024f45619fa3f2b27b9d13d7b4349a271d5b95"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/bench_index.cu",
+      "sha256": "8cb436f08cbe7dde90f842b280e43134fa78492fb7e358ba3147b3b98afa245b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/bench_step.cu",
+      "sha256": "2e52f285b093c3cd179c8dfb186074cae7c4d2af9085396337fcb4be18acebf5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/check_topk.py",
+      "sha256": "43d8c02c4cfa9812d4bede70357d512b9fcb8435619644a22d49f2b0f0e6560f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/dump_freqs.py",
+      "sha256": "0e3395a30e81649086cd0bbe01b366507af35752d094c19be3fab93bc0f43301"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/fill.cuh",
+      "sha256": "8ff2aa7d66f219169fd86bdee670943fc203515a8356b5e515a0b79628a8d555"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/fused_tests.cu",
+      "sha256": "e4f66fed32bb324a231bcafd1457f4c8e49276f71dd708055f01a895bf47169e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen.sh",
+      "sha256": "f5d33a0f3a2169ab2388dd30545a87a29541e49c2bccc335fb4f16ea6faa9e13"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen_attn.py",
+      "sha256": "0aa130c0708e15f577885933b4d1076c299672f1a8fcfd4be3c6524941833e51"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen_dspark.py",
+      "sha256": "3220c2c0ce56b68c33ee52e9ec4a765961d070535be2ea5733a001852554db3f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/gen_mhc.py",
+      "sha256": "b303a736e7817498c040778b5c706823387c8268a45d3878d3945fc7a61d2f25"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/mma_fp4_probe.cu",
+      "sha256": "c55dd0e082924b015386fd9ae6cddd0eba0bd30759c64c5b296ea01de94acd90"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/probe_batch_order.py",
+      "sha256": "23c4fbc3f62018166c69eb5ce97dd179a17772c1a2621cf9c2f4aa0240702c62"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/probe_sinkhorn.py",
+      "sha256": "79d02d7f0e651637b3f26f499efa27a70a3dc24db62c529f9dc04ab30c313566"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/slot_tests.cu",
+      "sha256": "862b8e174fae5c027bce0cabd65367fecd368a4eef130cda792327339806a67f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tests/testutil.h",
+      "sha256": "99525473f1bd1254ea45e8638eaf26606cfe6fb392ab1a6c85e2eab3be4ef197"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/moe_sweep.sh",
+      "sha256": "ade006ec95cd56cee7775bb35f70d3f452ba6b08b0ad0d361a8fd6fece752c61"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/pick.py",
+      "sha256": "653e622cf3e6242cd97572f6dc667f99a3b28688a178823fbd40a78421fe624f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/ringparts.sh",
+      "sha256": "2ac676ba2812e893c46b8b4e5853bfa7f653ae072caa48c118824a385c5bbba2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/run_hash.sh",
+      "sha256": "e09c97c3fba2574db74fb07cd9addeb884d18a8d64f1b015059b644731e1b8e4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/serve_turns.sh",
+      "sha256": "466197980f56fa4233abf2942ef623261205e8f80d26606432b6051bb16411cf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/steps.sh",
+      "sha256": "e11506a560f8a74ae2d1d81ad6157546f2a19589e5adfeb2fbe0a069fce374c4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/tjoin.py",
+      "sha256": "a14828fca20a471284b71f070b424b4ef290bbbc7aa8b0106d74755119cd8d52"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/turns.py",
+      "sha256": "dc7a8a7112ab80c5962db44523104f9c6df0bfd2d1d6bee51f3b4fc9e57d6227"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/attn/tools/turns_cmp.py",
+      "sha256": "025e8418c0f9ab9f4504d577e8860919f21d5fb4c100e87dc0765e3e001de2e2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/CMakeLists.txt",
+      "sha256": "1bf3f9e36728a31c27ea98232c79fc94381595928aae3b5ffd5e392284d7f789"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/collectives.cu",
+      "sha256": "7a740a1b05c9d9af9e50b37ca09018d7a77c41f18f6ba2d6ef8e416b4288f1e7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/collectives.h",
+      "sha256": "86396b8e6ed873c3af718d241a427acce47ea5630cea6f4fa06397ec9f1743fa"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/fleet.cpp",
+      "sha256": "63c6da6be7010a222941b10aabbc59ace9dd5703586355c6babfe9d3ed42cb08"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring.cpp",
+      "sha256": "12bcc54fd060db1fbad6ed6a943ecb7f4458bb244ea898a459b9f1e7fe8a97d9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring.h",
+      "sha256": "f62f6440a02325dbf55cbd18a52d2145c09e6661793808b84ee5e053dde7a5bd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring_config.h",
+      "sha256": "40f7ce7a595c5672c759a067b0459f5f2fd935374d3dfc81033e7f050f51cfd4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/ring_dev.cuh",
+      "sha256": "52317fac21f3d793a0e320c9c370868acc94e8fa7580fc6effab8febde9a7513"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/run4.sh",
+      "sha256": "5f5f09f76fde0435839c630cbd7f8a698de175b1dba75fad44156c914d14dff1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/tests/race_model.py",
+      "sha256": "3d8bad80e3272a8fc16f3b752882fa0ca9b550229cda107cfc72ad753fcc0738"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/tests/ring_test.cu",
+      "sha256": "00659015a0c2767734bc2d3b98f1d402eaa14e437284698d4522160a1dd0dcbb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/comm/tests/seg_model.py",
+      "sha256": "800c3c103a20e350dbe63571351ccd408dce1d8f1ce5394e91a2fcd00785f7e7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/check.h",
+      "sha256": "c607dcc1b5a9102d8d74bbaa19e749faf20c983df58dc67e3b0d4d3e90f09811"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/frontend_echo_engine.cpp",
+      "sha256": "b74c21de77041d59aecbf934bc6b07894dc416fbade515a439844acbd065800e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/frontend_protocol.h",
+      "sha256": "740c5c8f9255b0298e8c4a3553f77e3317251badb2b6bd8852356835d4ec326b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/keepfile.h",
+      "sha256": "46850d717f576f28d86b2549554a8ecce66cc6ed70f9c4c1d86ce6e4173efd0f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/common/spec_sampling.h",
+      "sha256": "0d879b59a69e0eb3d3b5b997fea32e42e1ccf7ed3fb279b0633de79cef0d5516"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/CMakeLists.txt",
+      "sha256": "d7ce0f4867c547bd645bdd92e53fc9a302f310a5f391c12b11e236a5d391140a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/README.md",
+      "sha256": "7a070f9b615c256c1125518b7faa26572f03d5629201661202e236a3fdc3a382"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/dspark.cu",
+      "sha256": "c7470f2289022d7a8cefd336e291bed5286929c0eeb2c3f95c9e99c5ebdd6609"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/dspark.h",
+      "sha256": "ab18a87cc700aa723ed8ba908794c5d8778adc4a168ee735aea58f284ef5d18d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/dp_stage.py",
+      "sha256": "41b4b4d57a223be1a9a18adc65caa53aa382ae7cb15068a9edc16e799ef845d7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/dp_study.py",
+      "sha256": "d69ec014cf2d57c6eede63e88c2bf5ae33e90ec8fa7dfbee1270d4a6916890de"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/dspark_ref.py",
+      "sha256": "11995852dd49d67c321b92926b9064dcf6a033130685a98cdb8d54ae053a3c0a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/gate_inputs.py",
+      "sha256": "ba2cab09037d91857dbd69112270f67f837e0b985618be8e1c1885f5ef71d4d9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/gate_study.py",
+      "sha256": "41b98bcf9ebc4d42d23d128a75bc9169c6609c27b0ef258e1079952c169aed83"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/pld_inputs.py",
+      "sha256": "9a993ee5cf79c5c3257c5eac8b16316e3acd908f93cde53bd7135f2430269f2c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/pld_match.cpp",
+      "sha256": "b77e3f50091d2a2f04eea14b8bc95513dc974c8040c78e43c9bcec606b70d740"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/pld_study.py",
+      "sha256": "2457165dd692d109ee249df6d2809f8fee485315d8e1b7e8f1567abc7ffa168b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/tree_costs.py",
+      "sha256": "48d1781fe61a219c85af5faa34baa27a5c08dfa49eacfb45754eb6596c5eaa7d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/tree_study.py",
+      "sha256": "1cd2f371b39c0238e2c6750ff9b01b0b04b957cb2aeaa1bc41ed090ecec8d0e0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/verify_policy.py",
+      "sha256": "1ef30f04401039319f72827887f5d74da043cf94285bef91c36ef1ac44321a9e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/vocab_freq.py",
+      "sha256": "cea11adde6f0b2fff51fffe5014635aa4e3718e53bbcc81f276bebfb262312e3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/vocab_script.py",
+      "sha256": "a2aee14815c0d3f33890fadf55fe1e3d879e9b9d014a039788797e42abbc39d2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/ref/vocab_study.py",
+      "sha256": "683aeef5fde6c48cc7a3c97f986864dd1e7955687a340e2726e807e77e748ae3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/tests/bench_dspark.cu",
+      "sha256": "e5a2eba7f3e5caaade6a0715e4ecce39aff474fe91a7111bcb8291d153c87087"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/tests/dspark_tests.cu",
+      "sha256": "9f86f8810b8143445ee752d11b4d791a2de0497a1d9666c983e813cc5ead94da"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/dspark/tests/lite_tests.cu",
+      "sha256": "997dc817599be105a9cb04c6e2e6e1838c574016ec2adc154c57a72178aa13fb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/CMakeLists.txt",
+      "sha256": "c562224911094be064102740dce602756c5775ae6d0a6de6ffb909f651249f07"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/cache.h",
+      "sha256": "15cf1275813a8d31da420fc5f651f352bf8b9eee2e4107d8e0afccc2307263d9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/engram.h",
+      "sha256": "ed7ddd609ba1dcc324c694cb30133d0a99f44188481bdc960b7303cdad82ff84"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/hash.cpp",
+      "sha256": "8979d2467258952b613f6c82b437c8faf8d6404ed88c4de2a67162416fb6c780"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/measure.sh",
+      "sha256": "b0bacb871eeebe4df8a3843cb999de269cd090a9e403b5fdfe1d88a6fe547958"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/golden_case.py",
+      "sha256": "184a9d6c25599bc4c978ddd1c66c2e45088ead1122eacd553c7e7218e6459431"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/make_hashmap.py",
+      "sha256": "9b0e593705e067db522f7d58561cc5b741d718a590cfece371722473223a4e8d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/make_hashmap_stdlib.py",
+      "sha256": "2f26e98c4ee75872dca52be9499fa46b01b590cd3198c2f6f2057216537d858b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/py/tokenize_corpus.py",
+      "sha256": "f6a48b6054f215881f14b482396cd8084e016b47661c2a8345bc775757cde766"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/store.cpp",
+      "sha256": "3207cd35236ead15abd4f830b2786f5d9d8def99cfd66a6c536ac1ce06310919"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/cachesim.cpp",
+      "sha256": "6000b81c76d0da176dc26db42ca4545ce77308a995afc04bf15d99c254531dc1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/e2e.cpp",
+      "sha256": "60576a1d8c8b172a4fe6ce421ed565c73632ed935d03c28d11e1ad5e911a966a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/gathercheck.cpp",
+      "sha256": "d1adc23975b48153cb2d514a608faec71fd6997c97a40f964baacfd8bdf9fe7e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/hashcheck.cpp",
+      "sha256": "beeb5fe57ed386d32cb29d330d74437a234bce7318e957624224e4832865d6a8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/iobench.cpp",
+      "sha256": "6599d8f8f2930a951d8409b2261ebc47cb37759ab467f0edf890b5913f88c0f9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/pack.cpp",
+      "sha256": "bdda994605f3acbefe5061a0a440aaf15601b4e26a6bd3e0a9104892b77a1ebe"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/rowcheck.cpp",
+      "sha256": "68e332fe25490bac8a8ddc3254a24b34f7795415240b410621dc0432d2513621"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/tools/storecheck.cpp",
+      "sha256": "f24b58c024505b4e5ad6f137f5fdea823068cb2c1fb7f88c05126512c8d73e5e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/engram/uring.h",
+      "sha256": "e4e8d230b36e0dc2e012f73a5a2b871b3a816676632a19f8408473d09284efab"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/CMakeLists.txt",
+      "sha256": "6a804bc6ddfb4b1ab1c935f4633ce590ca9f3cf9c7c7d16c6d116b9896f89cc5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/README.md",
+      "sha256": "fb3be90fce0fdc8bc2c7e2226ddbb293103b0823819184711805049aad0effa8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/act_quant.cu",
+      "sha256": "0b0e25bfb0ce5310520ddbd32997f81988a55148383dc0572b8ecb675885b3e9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/common.cuh",
+      "sha256": "83e8b162af7c1b9ad5bb7a53ff937a8d2f3a1ed71de2db4abd25b9d6ad101d18"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/dsk.h",
+      "sha256": "fb893a2a65de9cf6b48ebf449f70b9b844a8a755376440287af294280a149c88"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/gemv16.cu",
+      "sha256": "0aaa22837cecfdb9434f10c5063f1b3d7e7f1975e702036581648d354abf3d92"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/gemv_fp4.cu",
+      "sha256": "dff22f788210b02b089610146ebfccc26a39622c14cc477d3f2b8b02773d1b40"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/gemv_fp8.cu",
+      "sha256": "94d3d8a3ba8ecf919185a9e6c6808db1f7b690484b0a8d2e4b72deb12284b6e4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/l2pf.cu",
+      "sha256": "4e2747adf6d0a5bf63346fac28cf3e50e66d5b361c8cd1f1563343769aa718c8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/moe.cu",
+      "sha256": "7eeebed0beb80f37bd8c3ece206a7ab521b9f97ae9dc6a986464a44b9a2fee8f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/norm_router.cu",
+      "sha256": "6d029d5be6891cb35e451d0d9db874358a8c9f06c02d39f4a46874739a757f67"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/pa_common.cuh",
+      "sha256": "4a1322e6b2395b1afd34f56c23dd53865055b123558bd9f92b27f1193848f18e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill.cu",
+      "sha256": "9c2d2935ac2eef324f53a02a6af747a059b9dabdc1810ea84802d75b00dd5d6c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_attn.cu",
+      "sha256": "2294222ea158b9c3bef965479c7ed1d0b2884c434d6a3872dc56441b24d3d649"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_attn.h",
+      "sha256": "2cdb5d2a1e1025bffe48e3c886bac0f76a786831a6280663bab46fa354b277d7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_comp.cu",
+      "sha256": "e1475b30cec03754d2a44d7ff4d2c43b4f186c21386e9dd4cef982ba86447a36"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_index.cu",
+      "sha256": "bd8098728a2580ce7a96ef6fcac396eb23ae5eaaf46350b01b3886c740ce7804"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/prefill_mhc.cu",
+      "sha256": "bd3991ce30cd83df02a2237e548ab3b784b9e4beef40818a059c396d68a29439"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24.h",
+      "sha256": "59821e28b6bc9102260b10bff3f05e60a99e7591297dc0d70a0d377e61f6e933"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24_bf16.cuh",
+      "sha256": "fbf17c709dab41b79b5a22b86abc477ced16deb7a418f0bbee118cf0ff2e0b0e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24_fp8.cuh",
+      "sha256": "2c238356b6621bbb2ee66ceddc5796a3e484a72777b0dd3d48394bea0693c11b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/rows24_moe.cuh",
+      "sha256": "01779c3d8e2ae2ab36e71e0fcdf18d0548f268b60f956f287d3441fe5648ed87"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/abcmp.py",
+      "sha256": "3ed819aa456a8b1cdc2cb4e60f2a2572c96564ae10bb74b71832235a8d5e366d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/abload.py",
+      "sha256": "5a4c962fafdba90788f055be943784c6fb12ee09de1002de80083328c7647015"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/abserve.sh",
+      "sha256": "1c9bc9ab4c1a45af45b5667a38227aa64189ad2ae75bf1788020063f2c9e344f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_chain.cu",
+      "sha256": "719d919751e58e31f12ed435cd0e3517d1011072da4b1d3dc42d2509766cc8ad"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_kernels.cu",
+      "sha256": "0b2cf0224c543a8870c32e6c60ab407cead529a635c60d16b11c9f8632784970"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_pattn.cu",
+      "sha256": "4ab080c99cb9e13567d97a8b1b0c4b624f35abcca23824b26d4e9a8252455018"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/bench_wcomp.cu",
+      "sha256": "4680a97092a851c277264f7975f7329f7104651a18d442c5862383923f67b7a9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/chainprof.py",
+      "sha256": "77eb55ce53c5fea09799ce4c191bc6a4cadf554232006dd4cb606b55135ad841"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/dsw_read.h",
+      "sha256": "32dfea4d37605f66ecd38cd0faeac65b7f3af957180d62563c62d61859d1f37c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/escales.cpp",
+      "sha256": "5748f66b4702c8c0095341ff6d2f6c4979aa184c0657a56b0963ccae6f93d33c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/gen_ref.py",
+      "sha256": "df91e394888a7d0d4e371d06cea7ad8b5af65a9c022ec1c2dfa27c82473884b4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/gen_ref_prefill.py",
+      "sha256": "14b467c6d9489d3338e9500b8150655101569167c5b59b7b6aa176aeaf1e4344"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/npy.h",
+      "sha256": "2db6248151aeed0b16743e3cf09523b76a0576d477521608ca348b135a8a29e9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/probe_router_sum.py",
+      "sha256": "672a9790a8aaa66ab2e72b163f286372b769dfcebe381047326064ce6b6543fc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/small_gemms.h",
+      "sha256": "b2c6b2410857b98a802688c224a390fc53892b3268d2e76ad254b82cd482be76"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/test_kernels.cu",
+      "sha256": "f7f1a6b02d0eac947a62ef804d0e7d093353b09dcdd70ff73d0303ddb8c19885"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/test_native24.cu",
+      "sha256": "2666981037406f1169e83bc2e4c240af4270d16db77a7012145daa79cbd6d336"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/kernels/tests/test_pattn.cu",
+      "sha256": "76a606cb91d5a9dc7479aa12bb19fc3d376556d87a41f4d372f8006630a89ef3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/CMakeLists.txt",
+      "sha256": "68d0ca8fc2585dd4520084f2f8d0e2b715ca2b65f8597f67fcbdc618d09009a5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ced_policy.h",
+      "sha256": "5e1e8225a41e08cc9334c35f9f0a5fd984f8cd09cba0217dadae9b9d37517837"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/config.h",
+      "sha256": "9b8bb365ed9f3ae2a7f709f34e9e9b36d19abc77370145ef670b2a82dc16fd77"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/creative.cu",
+      "sha256": "3c4b306eebc37335167e5dbe9cdb1ee7747f4fb4e8f9c504decb65a05a3ca55b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/creative.h",
+      "sha256": "8966e12bdd2c1cf5dfc7b7ea88632a3fc5e94d36691b00b484fb9b8979b438fc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/fused.cu",
+      "sha256": "23410010d91abda7b52b7097531b3dfe9225f9c75a56900adda988e6c51ae4fd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/impl.h",
+      "sha256": "6887fdb34f6949c94bda9c52884b195a1a3c39bc58623307f2eaafb47c92bde9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/model.cu",
+      "sha256": "c028f3eaff80deb4ad65b605784d5d3b4105b28f153e48feb26f4353eb7fe707"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/model.h",
+      "sha256": "664693db28dfc42b70d470ff7f4fde23f3f3a0cef9fe19f685780a98630189d4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/nvtx.h",
+      "sha256": "0d7ad9868973afc43e2a5221a212fc3c467d62f8fcd1e726cf4e7375d990351d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ops.cu",
+      "sha256": "8a845430277cfe9bf7fd444584f61c389480343255d19fb6373934b91880a207"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/ops.h",
+      "sha256": "e6e8a0bf1442fd8c2ddab5774498658fc3a50ee5fa53c82f75351401c685d7ea"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/prefill.cu",
+      "sha256": "6e2ce1e9f1cd47bb7437ffb2dd55aeb738df36de0a062c36399a56b7abce3456"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/prefill.h",
+      "sha256": "4607fb1ddec1645eb7b76016b355cc76f9a8d239d8bb117a51d27d1e3bb57732"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/row_chunks.h",
+      "sha256": "ee123f528af1abf76295cf147dcce85e22542bd164365d1428fe80dbba1a6583"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/sample.cu",
+      "sha256": "f18c4ca6b861081c34c8cae7c99b2bfb1bdc70e876cc0b8c7727984d938f591d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec.cu",
+      "sha256": "5c95aa487734d2f9b8acc53252dc1ed6347c7a55d2341f551b81d046666050ce"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec.h",
+      "sha256": "f70aef0008f72a843f6302eb14c748f3393672aa36f0ed40da1315fb0aabe18a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spec_batch.h",
+      "sha256": "d95c99bb52f53720d31f2dd2818209ad977411d15e225708443f66d9c4151d10"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spill.cpp",
+      "sha256": "60fa704718415c17daf2d80e58cdf0b0c699daf2eeac2bb0b323e0b02ce8d191"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/spill.h",
+      "sha256": "63c5279101a81bc0841a30d6700b40f89983f996f9810144657a98ced433af2b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/state.cu",
+      "sha256": "dec37cfbfd2fbbf5a2645a7c0f00db2d9ea6cdd3be24d71ac0fa73c329d047eb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/state.h",
+      "sha256": "1c891e8626a1ce9675c26172e572047a20cda1c223a36c75fe86ed6f7116011b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/coll_tests.cu",
+      "sha256": "f44f70fefb1da26544b8f22ed41ee6ff8fa6e14ac4f4c16e5a808f9d55017de9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/creative_test.cu",
+      "sha256": "c60e7b08a95b79fbcde23eca810fc3c309922daacd3846910bdc44f2e28a01ac"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/probability_host_test.cpp",
+      "sha256": "71b2408fc28bd1012c82adbb5d0831d87c72f59468f23f951f183194bdcd8fba"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/spec_batch_test.cu",
+      "sha256": "f7966948d969ef571e55e9197c4d0eea3fc0b13e66a799297db51d87e0580375"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/tests/vision_test.cu",
+      "sha256": "d0d7b803ddeaf51026e5861a37009a1d7d034d17eef0b3729737da3b7d3ae3ed"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/vision_layout.h",
+      "sha256": "005aee0ff532598d23416ff495a8c8bfa8c42175e06ce7843da4afadcad0a2fd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/model/wave_probe.cu",
+      "sha256": "37cf96ea5391895207e7481e61734c6b8e55b1a77fe7c4805cf194cfacb7f56c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/CMakeLists.txt",
+      "sha256": "ad60565ac3f98c102ff97c2c77bcfddc0962d2d3e2806d02058ab687cd20994f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/cmd.cpp",
+      "sha256": "6b6ff537f9457c3bd5ebe95615039e3d7cf9763853e309aecf0301ba7fdfbfbd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/cmd.h",
+      "sha256": "3a8ae6ae05c7389e3e7467b9bf269385a32d85cad2f03c6f9f6d9606559b8fd3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/fleet.sh",
+      "sha256": "cdbfdc17e9d57f257a0fc6b2225bb02639525f36e403a74cbf4346485111093e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/golden.h",
+      "sha256": "ab4ee3fba4ecc5d8ebee7d3f74b7cdb275a0d8b2dd601f5232ab41e0621b014c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/main.cpp",
+      "sha256": "d1d5e6541711a8cc8f3e4cb3728666738e636940fdcbfc48b9ad40829c2f67dc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/npy.h",
+      "sha256": "83aa40918f2ef13ecb74b2785266a0d9984b57e3f1b01755d19069b6919f5c36"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/ring.sh",
+      "sha256": "7f08602cfc126d388b357bb0c27a36027f08a2c6364e8b50646444f7ed632710"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/ringlock.sh",
+      "sha256": "64147d50445c072cc5d88a7d38ec014961afa87c65fab768003d4389c411d513"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/run4.sh",
+      "sha256": "b8da7175ba20075d6d0a18f86c1de25b33439eb6463667a3b09def0f13c578cf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/runtime_metrics.h",
+      "sha256": "2d83c4798b51346a6b84aac97971e7fcdc59e85af2a529d7cce49a585c9203a8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/serve.cpp",
+      "sha256": "6fae537a891ec6a48f8b8b940c32a0fb9e230e45e119048a4bc2495b44a7525a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/serve.h",
+      "sha256": "0576241f8bc26d3627d3c31f6477e39dcf095ba2c395bdb81e1b1a897ac68a1c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/service.sh",
+      "sha256": "36aafe098e5baae4d76485a7f356a1b11a6c9d4630e6cd7b22d97a5d0917eec0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/batch_test.py",
+      "sha256": "ce804ecb0fef7aace4eceedd274e08718a410063099c541c553f91e0354d7cf9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/disk_test.py",
+      "sha256": "32f5f9f1963d20b1f0bcfaaaa67a03ac04e2a01993ff5c9eb74ce7187c72abaf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/frontend_e2e.py",
+      "sha256": "308f758ad573cfff62af804d0f1cccb3706dd12df3239ef62e99085cc4d921a9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/kept_test.py",
+      "sha256": "261b7329e803174bc2a53f0dd5ce3c13cfee8bd94b03effc94797f598c5dc749"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/revisit.py",
+      "sha256": "5871b0363c37704efb3574742e27e5c099986c1048275f9e41333516900f8380"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/runtime_metrics_test.cpp",
+      "sha256": "503587480cd4fa64734499ee4c901d6bd4309374671bda7347caa6cadf964c76"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/serve_test.py",
+      "sha256": "e8f91f3ed688493481588a75e0636e608641ee666916cc8a056d809854da354a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/slice_test.py",
+      "sha256": "9db1f9382568c7e9c78526c9ced36d777b72b60b4bfaaadb1cdbaa61ab1f739d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/snap_test.py",
+      "sha256": "0ed31cd952637ad9565d6ae903046d5afee00da889a8f3ca263f976fdb9ea5d6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/soak.py",
+      "sha256": "6af41ed9f9ee047e95f3a6766f1375dee2fe4765fe4b0e96deb37914a1f1cab1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_budget_test.cpp",
+      "sha256": "242e52612c6d7867ed97d52d25175e01d39a419663ab9daa13b75d44f7f364d2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_features_test.cpp",
+      "sha256": "6771b1bc7b957aceb04fdbe6726b9b08b342b76c01ea9e58d0f61cd6890dcf96"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/vision_prefix_test.cpp",
+      "sha256": "53497bd4498f0d35d9322b52189dec43a8c73b9dcc1e382d1020a7264c0911f3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tests/yield_test.sh",
+      "sha256": "f136e4c31da2832f4b172767e55bbe043a0b2c7799d31ec8debeff1aad3c9be6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/evict_cache.py",
+      "sha256": "d7929460b1c52ed7218733bda199f987c74026e978ed33f0759e0a7984ecc01d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/idleprof.py",
+      "sha256": "7fa938637e816729171e1f90d81dc328fca54471fdc744e64c63d68af99580ee"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/kprof.py",
+      "sha256": "76f2c3ecc78e3585f6c914efb3e07b82f637212205823869bd22957d4e796ef2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/kwall.py",
+      "sha256": "ee2dca2417e20c074635afa06ae7387b3718d1b2df0093f88f70d995161b982c"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/specprof.py",
+      "sha256": "e72a2616f71996427badef705fb3fa7cca63396c8ec0f2bbb54a5e313adb4cda"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_breakdown.py",
+      "sha256": "861b0150ea2bad8efebfa3d2fc2d4ed62f73fb3a0bd8f5d5e2b09547e751c2d2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_join.py",
+      "sha256": "51577524a7c2b68013d410443bad300920b6e4c9f4688e866f0fa48ecbe5f2d0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_levers.py",
+      "sha256": "b6cf600c9fb48da88bcb4ccd6a67fc063d3ee8bfa1be8c411d9c9d9b4cb6ffe5"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_part.sh",
+      "sha256": "35ba11da5e8b4d0d672c174d96d72e8380e7c925113fd0911c717a51caa90d43"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_prof.py",
+      "sha256": "2c899241f7acf6ab1f0798c2dbf136cc6771d940f149edf83e87a6d640b7b605"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_roles.py",
+      "sha256": "b87421bc62b6c58bb5759293795c183c2bf5a2f069c5ce2d692c3378206ab5b8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_routes.py",
+      "sha256": "0acbf98679ca168c551610aa7706f656db718e8c0a43fba5659ac8a8678eb396"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/tools/ttft_turns.py",
+      "sha256": "f14748cb72801b3661d3996ef6993f956e4a8339b5060b3431102a605c8c70cb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_features.h",
+      "sha256": "fe4a66f210b821083df393beb816e653fb8504c27a7657349b9e9a452c1b273e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_files.h",
+      "sha256": "c4e98eac7175ea55fd05f81581f30209acfc2b18a3a6ea5c8c8bf5600f0e723f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_prefix.h",
+      "sha256": "44461b61fa1636331c558a6851ed32d2e7952e16bc26967dc4761837432caa9a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/server/vision_window.h",
+      "sha256": "958b1843c3393d96afbc668d4e7aa69ea1997ddf562ecdaded628af217cd3fd2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/.gitignore",
+      "sha256": "f1316eb139c4c3003f6239e67a83c2de796b7c1ae57929f1bb6dc01ed97d3426"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/CMakeLists.txt",
+      "sha256": "ee4ae71656f5a62a125c21013b6eaf392b4000245c34cc5e64fa7b6148f91034"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/README.md",
+      "sha256": "5f0609afb2f0b75409e9492e1313f69bf542cc0253ca1f31126c329eb15fc27a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/VALIDATION.md",
+      "sha256": "9faf1f745859fdd68b6ac2d54531973ad05316f67803857bcca4bff0243baea1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution-fixtures.json",
+      "sha256": "f5e8eb0977f0d02986f24f8d44018c3aea143768822b0c3be17d8b72a7ad5181"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution_fixtures.h",
+      "sha256": "bb9aa6a307de137f3fe1cc1951b1275dc83a4679c0eafea79f2ea55164e2e32b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/distribution_oracle.py",
+      "sha256": "fb029fc46538c67c24be1aabe9f5688b575ef50d4bf9a1ccf5a5edc598156ded"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/tests/probabilistic_sample_probe.cu",
+      "sha256": "d5de5f8c6cc9267be7ed34e48c4b388eaba21c74fcd02057373c7690b5a01298"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/CMakeLists.txt",
+      "sha256": "d146d541b3f9b74676671f67dd4f9636e0306dcaea79f199476fdb84420f78d2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/check_dsw.py",
+      "sha256": "01cb5802d549c5cf209873948f287102e0fdf8111228ec2c9fd9274698a34445"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/convert.cpp",
+      "sha256": "49afbd03f630649cb9469d8fb28f2c02779ba431ceea35b0bafd1064a15d1ece"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/dsw.h",
+      "sha256": "b2d37890c2815229f7b1b54f072da96aebc74467fbf40705debab50365340ecb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/io.h",
+      "sha256": "1cac090a560c309bd214eb8d25f097bfde78bc62543a29fa90fe35cbe65b9405"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/kcheck.cu",
+      "sha256": "7774a2e81aa2be857426eba799832f92f783e7d440b10bbddeca48b633e161bd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/layout.h",
+      "sha256": "880bb4204e2475697f51a6d21ec4988bb2e1367e4e2bbbae12a074e0333bf157"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/load_main.cpp",
+      "sha256": "3fad19224445dc738d7e26afda9e05697faf7cf91d39dc51dea6e9447d710642"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/loader.cpp",
+      "sha256": "98b1bd698e57faefa05a190c407d0caefc43fa54e1f179f545df98194fd69ef0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/loader.h",
+      "sha256": "199252298b5de3d3f9dd8a921035cb8dd31eac1f7210ac4b901dc2116fdecb15"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/plan.cpp",
+      "sha256": "6d9cbed102d881e610a9f30f5421e1f819adbb02ab368809998293fd4d31c74e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/plan.h",
+      "sha256": "2a597658ad4703cb5da370a48ea726fb957144282a0028186111f815e7cddd0f"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/safetensors.cpp",
+      "sha256": "031b56e8123e7dcd0ccd96f7e4338ed72498916cd86b52b35e464ed43ec91dea"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/safetensors.h",
+      "sha256": "a6c9cc245699eaada17400fdd33086c66fe69f3d3b9a24ac466d6f1133933fd8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/tests/rank_test.cpp",
+      "sha256": "bd165e5c4d3f55d3db82d1727dda06eac31e9010f37ca3e4dc18394776bfdcfd"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/toc.py",
+      "sha256": "8f50d92dce50f4572c9a4d97872f82e5330c7ba631a852e72e7a610c439170c0"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/verify.cpp",
+      "sha256": "e09fe223b714348143c9cc481d615099e6061216aaa5daee565c7ab1d191c126"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/README.md",
+      "sha256": "f155d0c33e6c7a37e844488653ab17ebaa880bd29676a42d99e4b435313233ef"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/analyze.py",
+      "sha256": "c37bb881a0836d74d35f945bedd13ed23a7e071b1e133f759ca3d29d65113361"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/dequery.c",
+      "sha256": "452d24debe852f3e7692f3fa09aa2322a21fce24ad2fd7b73a076726c3db8754"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/fixcost.py",
+      "sha256": "c36e29a07f2d3076e14de10483374ae1979d9f0c84428c316e8406eb36f83f8b"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/fixdec.cu",
+      "sha256": "2e6ce6a7a0a3c49f7a95666599239257a6fa17400e78e4572468384f39b97c85"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/project.py",
+      "sha256": "f28509906bb0f4b11bcbb19ffc4172eb363311a1310e85c8b09a47d86dc087a4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/sample_names.txt",
+      "sha256": "31e4f3d4767e896ef55cd4d181458f50191fab1e7084cec5480fd7fa2ede15b2"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/sass_loops.py",
+      "sha256": "a850f16e877b5b5627060ab9a772ada3153b8d8c1d7d5428d14d9d806b8e3410"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/wcomp.cpp",
+      "sha256": "9ad5a0725ba6e3c348a524bd395a515d2177f86d9a7f4f2419f73e57515bcfa1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/wfix.cpp",
+      "sha256": "0682ec21bef11672e2f464a0031a8d94cc994408ab7d1de3b090a52f6236ec62"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/engine/weights/wcomp/wfix_names.txt",
+      "sha256": "c3fbafd8d88c5768fa03f80b7ba57913dc16f9b40cad68e67562fbc81de613ba"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/Cargo.lock",
+      "sha256": "bd36cb861f05ac6e2e43fe207db8c426a9ddc2e16e5b78277b74ec1aa9fb4ce8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/Cargo.toml",
+      "sha256": "80079721ab0d1c9a7a5c6717a2989dc2459039024753bef4591b85d2837e8da8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/PROVENANCE.json",
+      "sha256": "37e33d775b580de96ad4eadd632f962644475262139ddb203c4a73806e2b74a6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/examples/httpcheck.rs",
+      "sha256": "76db4ec725e5ee8ca21a66a51c0f819e38dacdb8c62e7de99551c39fcaaa7fd1"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/encoding.rs",
+      "sha256": "e55dcd04b20ab13ae7d17d5217d2d6085ca831685a108f49eaf4acec64ce756d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/engine.rs",
+      "sha256": "bc32111a02b6ef7a2f15d33c66a98a1ff319c1397ab894ee4446044da2ad5ea8"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/feature_file.rs",
+      "sha256": "2ad4833ec0eab15e4d26e603662c004c5bd899aca2cf3896d28d4c0f03cb5986"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/gate.rs",
+      "sha256": "5614d811d118800b0c3ce6b668a5a43e8c86e2f6af094210aeceec1ffb211e7d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/guard.rs",
+      "sha256": "6d12f324ef23059e38efeba9bc38f48061338c0e53ba1f6dc33fc9736f0af7ab"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/lib.rs",
+      "sha256": "e137d19ed42d5269d6e5e534227c904dc0bf055b5ff7944fc4d54a9f7e415a00"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/main.rs",
+      "sha256": "128b653c63141e7128c86803587a6dc12cfff130922334c8f4cb26e31b6caa5a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/mock.rs",
+      "sha256": "44152a2a53b5f057bca2d0e4c6316296ff3c1f2be02810cbe6bee116472237c7"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/protocol.rs",
+      "sha256": "b083d8167549b13ade8ad7825c82f65fc00905fbcfbbf8ef7edee30345eec808"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/pyjson.rs",
+      "sha256": "76c817ca0141e7a7c47efa82c26c3b31a1f1bd5a66a7715186bfa579b8c4efed"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/server.rs",
+      "sha256": "4c4021271189a20ed3646486008aef3154eb8c7695e6334c3358ed9b6b39ffe9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/session.rs",
+      "sha256": "7aff64bb2ef3c6d74e6935d344fe5a4991684232e9f26681547066f2c3068adf"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/sha256.rs",
+      "sha256": "4e55d8ed1d10aa3942e7aaabc3820d4d852e2f4f9f29b8a1d5c6b14ad22dd4af"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/telemetry.rs",
+      "sha256": "2cf5031cad79482ffdd7f91f6bab3010d73faa480281cd33afe7b5d073c97b30"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/tokenizer/mod.rs",
+      "sha256": "417f853e51a32455ab46ce6bb3532a2cc279c820698cd7cf9785ac1d6f9bfbe9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/tokenizer/pretok.rs",
+      "sha256": "cd5dc5f3553a2f8b59c6e2759396a926a8347814fe76a54c8212fab4c0198b6a"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/tokenizer/unicode_tables.rs",
+      "sha256": "003b5822ae45d473024f4891e6c58b57b677c06234f3fe47f349956ceb0c6306"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/src/vision.rs",
+      "sha256": "ae0ccf321b056d2156964aa9ec90eb6dd018052415bac8bfebe12264aa159514"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/engine_image_retry.rs",
+      "sha256": "9cb83f768b87a491b78be498cd47b15dfaa42438e9b1dc8d0275d30e95927782"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/public_contract.rs",
+      "sha256": "b4af6606d3449fead5ac3ea6221b7dbac56f93fa29e0f8a74a9b7434a3463316"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tests/vision_prefix_transport.rs",
+      "sha256": "eebfa6a2680e44d12e75a782a879d498817f7b3c1b442257555b98136af59f9d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/check_against_sglang.py",
+      "sha256": "9d6aaccbd018b8cab620b0da08222a968da84729ad512dffa87086feff15767d"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/fe_bench.py",
+      "sha256": "19bab7a9c5d11a8516c6b24bc161039754ac539ca7f1f53267ee373943f81beb"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/gen_encoding_cases.py",
+      "sha256": "ec14a73b4b2897fa8d5587b8b14db6099f85f704beed55486b73212433ae446e"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/gen_tokenizer_cases.py",
+      "sha256": "c99f22f4986996004e5f9d07f5ded66c551c694d22ceaade6f998030d0b444e3"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/gen_unicode_tables.py",
+      "sha256": "68100b868206b50812de24ebde0896e6c4e3aea525372d7ef898c0db433a47b9"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/frontend/tools/smoke_test.py",
+      "sha256": "e911ac237b3c6031f46740a93bd6f5133ec2c0bc193e06818e81df1b1b286f81"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/PROVENANCE.json",
+      "sha256": "ef8ea577b7212da95b1a1791014be449bd98e6bb4758e798459d421452054bab"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/encoder.py",
+      "sha256": "14e54451800ca94e4eaec78fb7d42d133ba6f91680b350d26024add0646aace6"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/reference_image_processor.py",
+      "sha256": "482759e3bcc4e9bb5ee582b244cc563f5d0e163d8b48dda91ebb7106e62f9272"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/reference_vision.py",
+      "sha256": "e66e47b74b600ca99c6ba0e7f7ddea82517883e7f65ee0ddb32c85e43b0092bc"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/requirements.txt",
+      "sha256": "ab91be6fa81a6ba361c7781f5c48f035d2d18dedc482126bb099271f5eab1cc4"
+    },
+    {
+      "path": "ds41f-4xgx10-switchless/vision/tests/test_encoder_cpu.py",
+      "sha256": "ecec5dcecf651aba776677a8be33c2d932f2d549ce6b6d773eea1d55a51ce5aa"
+    },
+    {
+      "path": "profiles/c4.json",
+      "sha256": "6a9b4f225861c4a3017d32b377258fd59db8365b4fc29ff470be9e6fc065167f"
+    },
+    {
+      "path": "profiles/c8-reference.json",
+      "sha256": "ad70d463adf135db8b1dd2dc3b1864b571426a041a43cfb397e39f1602b754dc"
+    },
+    {
+      "path": "tests/integration/native_capability_smoke.py",
+      "sha256": "b2339b061f86c6942325590f1302bc726fca44ffcf3bfcef54ed290fc212eef0"
+    },
+    {
+      "path": "tests/integration/probe.py",
+      "sha256": "4e3ffe7db6d5b775b833f5ddb914c537d133ab78a14ed8d8adfa4f49ffec5296"
+    },
+    {
+      "path": "tests/integration/probe_c2.py",
+      "sha256": "e2f3a446f70c9224de44f53ba8ca910b5ff132d420679e2e3a5fabb7981d487a"
+    },
+    {
+      "path": "tests/integration/probe_c8.py",
+      "sha256": "2db0a736681735b94d5b448c645891697dbb6776e71fd2072bb5eeff6bfe8e4c"
+    },
+    {
+      "path": "tests/integration/probe_capacity.py",
+      "sha256": "49eae2cd1ef3ab4c75fb58d43b6b8f653a34a6cf1f3d5269c363a4dc78ecd012"
+    },
+    {
+      "path": "tests/integration/probe_original.py",
+      "sha256": "26cfac14bcf6b9ba398241cfdfb52954e0fba6fad486597a04e3920925d82568"
+    },
+    {
+      "path": "tests/integration/probe_prefill.py",
+      "sha256": "d120642b9282c3c6a839b9920c6c83d0c72fe44397af93711829618f4f2834fe"
+    },
+    {
+      "path": "tests/integration/probe_prefill_interference.py",
+      "sha256": "1b6b80a55c75661ff5118890abe0dc3c478820df03f96e85bdf892f7ae9a865b"
+    },
+    {
+      "path": "tests/integration/trial_smoke.py",
+      "sha256": "b47f563faab22725b5fe5c5ec7b0b4b05f55167a48b5f203659fe1ce9b8a38a2"
+    },
+    {
+      "path": "tests/test_bundled_asset.py",
+      "sha256": "9e101a70f80fc4f2131d856d4f2413db6c6e080be4566b47b4b14cdd59b766f2"
+    },
+    {
+      "path": "tests/test_launch_policy.py",
+      "sha256": "f840e9151a9f25a790346d50085ce27f6849200a198d63b28efc0840d8212195"
+    },
+    {
+      "path": "tests/test_steering_asset.py",
+      "sha256": "16653f167ae002872ce80b0a5526978938fb9ecdcdd8151b3cfea2c71b7ac3bd"
+    },
+    {
+      "path": "tools/build.py",
+      "sha256": "29f733bbaddd022d69fe679f1255290194ecd5024b214b4f257cf85c6fc7bcb7"
+    },
+    {
+      "path": "tools/pack_creative.py",
+      "sha256": "e7aee8a2113aef3ed59e54baea09f69a1e14e094d127a9ccea043b661105e004"
+    },
+    {
+      "path": "tools/run.py",
+      "sha256": "44ba1c33ac0ae86a7dfd249e1a5150b92f097d692670a370633e0b68a242beec"
+    },
+    {
+      "path": "tools/serve_original.py",
+      "sha256": "87be4adc89947c5bafb275b53a51da907fadf078e9c55156d6bbda6f90e0cf38"
+    }
+  ],
+  "build_seconds": 146.36227083206177,
+  "resource_limits": {
+    "cpu_quota_percent": 200,
+    "memory_max_gib": 6,
+    "runtime_max_seconds": 2400
+  },
+  "toolchain": {
+    "architecture": "aarch64",
+    "cmake": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "cuda": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:57:39_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+    "rust": "rustc 1.99.1 (58cf8f9c3 2026-10-13)"
+  },
+  "commands": [
+    [
+      "python3",
+      "tools/build.py",
+      "--build-dir",
+      "<new-empty-build-dir>",
+      "--jobs",
+      "2",
+      "--offline",
+      "--full-frontend-tests"
+    ],
+    [
+      "cmake",
+      "--build",
+      "<build-dir>/engine",
+      "--parallel",
+      "2",
+      "--target",
+      "dsw_convert",
+      "dsw_verify",
+      "dsw_load",
+      "engram_pack"
+    ],
+    [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py",
+      "-v"
+    ]
+  ],
+  "checks": {
+    "host_tests_passed": 5,
+    "frontend_tests_passed": 50,
+    "frontend_tests_ignored": 0,
+    "launcher_asset_tests_passed": 7,
+    "speculative_sampling_host_checks": 3359678,
+    "speculative_sampling_failed": 0
+  },
+  "artifacts": {
+    "engine": {
+      "sha256": "f773e21b6d4103da083ae3a4cf5c8f3c42a44bed6558a0cad3a1f7ee8a8babb4",
+      "bytes": 50353856
+    },
+    "frontend": {
+      "sha256": "42d598299bc10978c6c13ab3a87fe05fb35b0b932091dcc6e96f4ce19cad7938",
+      "bytes": 20274952
+    },
+    "native24_probe": {
+      "sha256": "da9208749aba955a4d90dd6d7f38e014a2e9ad1aa7e0960ee75152192b4bfc12",
+      "bytes": 18665104
+    },
+    "creative_probe": {
+      "sha256": "7e4c2308e320847f9b7238494ce54be9f8e433df6fbed5ea0ce8d2b317eedbe3",
+      "bytes": 979160
+    },
+    "vision_probe": {
+      "sha256": "f48705a989cb87a71a3aa0698db478795a0419073620ae956ddf004cc6bc75e2",
+      "bytes": 1451264
+    }
+  },
+  "privacy": {
+    "scanner": "Gitleaks 8.30.1",
+    "default_rule_findings": 3,
+    "manually_reviewed_false_positives": 3,
+    "findings_with_exact_reviewed_rules": 0,
+    "live_keys_found": 0,
+    "private_operations_or_dsh_transcripts_included": false,
+    "legacy_integration_history_published": false,
+    "reviewed_public_upstream_fixtures_retained": true
+  },
+  "warnings": [
+    "existing unused-variable CUDA compiler warnings",
+    "existing Rust fetch_update deprecation warning"
+  ],
+  "evidence_limits": [
+    "This is a new clean build and CPU verification, not a repeated GPU performance matrix.",
+    "GPU/model capability evidence is separately dated in BENCHMARKS.md.",
+    "Executable whole-file hashes can vary with build paths and toolchain; bit-reproducible binaries are not claimed.",
+    "Secret scanning is supplemented by manual privacy review; it is not a proof of all possible security properties."
+  ],
+  "private_raw_receipt_sha256": {
+    "RESULT.json": "54d2c0aa1ed24b38a98b89b03275043b9e8a146acabafc20e09043c5c9254b61",
+    "BUILD_RESULT.json": "69abb1ea637ff30b396109d3fc6b6168aae13ea640521c0ed13abd6ebe8ee21a",
+    "build.log": "fb847df95310ed5b3b93d55f9c6e8ecac35f8dcfcf79e6271cb27d49be0e778f",
+    "BUILD_EXIT_AND_TOOLCHAIN.json": "ad6f2084fb11d65c117e9a10ed5a11ab0f719da31553da09efe299f75dc4b203"
+  }
+}
