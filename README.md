@@ -6,11 +6,13 @@
 
 Run the official 1017 checkpoint at its native mixed precision, with an OpenAI-compatible API, image input, tool calls and reusable conversation history. The default setup serves the original model without activation steering or extra weight quantization.
 
-| Everyday agent generation | Reading a long, uncached input | Eight independent contexts |
-|---|---|---|
-| **About 110 tokens/s** typical long-response speed | **About 9,600 tokens/s** at 262K input | **8 × 1M tokens**, filled and generated from |
+| Workload on 4 × GB10 | Measured result |
+|---|---|
+| Cold source-code input (prefill) | **9,611 input tokens/s**. A 262,145-token prompt reached first content in **27.28 s** on average across three runs with zero cache hits. |
+| Single-request code generation (decode) | **142.2 output tokens/s** on average across two runs of 2,048 output tokens each, with reasoning disabled. |
+| Context capacity | **8 × 1M tokens** in a separate test with synthetic input. Each request consumed 1,048,320 input tokens and generated 256 output tokens. |
 
-Agent speed describes longer responses in real tasks. Input-reading speed includes frontend overhead. The measurements, complete averages and conditions are explained below.
+The [prefill probe](docs/benchmarks/prefill-and-latency-20261109.md) measures the wait from request to first content. The [decode benchmark](docs/integration/VALIDATION_20261108.md) measures generation from first content to stream completion. Across 1,056 longer responses in [everyday agent tasks](docs/benchmarks/ordinary-agents-20261109.md), the median generation speed was 108.7 output tokens/s.
 
 ## What this is good at
 
@@ -61,7 +63,7 @@ The C8 capacity run actually sent **1,048,320 input tokens plus 256 generated to
 
 **8M is the total of eight 1M windows; a single request is still limited to 1M.** Input, image expansion, tool history and generated output share that window.
 
-Eight completely cold 1M inputs took about 14.6 minutes as a group. Prefills currently run sequentially, so the last request waited about 862 seconds for its first content. Cached agent continuations behave differently. One full-capacity run is complete; long-duration full-window endurance and comprehensive 1M answer quality remain open work.
+The eight cold requests used a repeated text pattern with retrieval markers. The group took about 14.6 minutes. With sequential prefill, the earliest request reached first content at 107.71 s and the latest at 862.04 s. The source-code latency measurements above cover 65K and 262K. A 1M latency measurement using the same corpus, long-duration full-window endurance and comprehensive 1M answer quality remain open.
 
 [Full 8M capacity test](docs/benchmarks/capacity-8m-20261108.md)
 
